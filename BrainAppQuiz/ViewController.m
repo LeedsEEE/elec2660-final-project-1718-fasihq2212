@@ -52,7 +52,7 @@
     
     
     
-    [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:3]];
+    [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]];
     
     appdel.window.rootViewController = self.drawercontroller;
     [appdel.window makeKeyAndVisible];
