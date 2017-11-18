@@ -15,6 +15,7 @@
 		CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA25CE9B1FC08E9F0075D56C /* LaunchScreen.storyboard */; };
 		CA25CEA81FC08E9F0075D56C /* BrainAppQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEA71FC08E9F0075D56C /* BrainAppQuizTests.m */; };
 		CA25CEB31FC08E9F0075D56C /* BrainAppQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */; };
+		CA25CEC91FC09BF30075D56C /* l3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC81FC09BF30075D56C /* l3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,13 @@
 		CA25CEAE1FC08E9F0075D56C /* BrainAppQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainAppQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainAppQuizUITests.m; sourceTree = "<group>"; };
 		CA25CEB41FC08E9F0075D56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA25CEC01FC093850075D56C /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Black.ttf"; path = "../../../Downloads/nilland/Nilland-Black.ttf"; sourceTree = "<group>"; };
+		CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Bold.ttf"; path = "../../../Downloads/nilland/Nilland-Bold.ttf"; sourceTree = "<group>"; };
+		CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-ExtraBold.ttf"; path = "../../../Downloads/nilland/Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps-Bold.ttf"; path = "../../../Downloads/nilland/Nilland-SmallCaps-Bold.ttf"; sourceTree = "<group>"; };
+		CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps.ttf"; path = "../../../Downloads/nilland/Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
+		CA25CEC51FC093850075D56C /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nilland.ttf; path = ../../../Downloads/nilland/Nilland.ttf; sourceTree = "<group>"; };
+		CA25CEC81FC09BF30075D56C /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l3.png; path = ../../../Downloads/l3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,13 @@
 				CA25CEA61FC08E9F0075D56C /* BrainAppQuizTests */,
 				CA25CEB11FC08E9F0075D56C /* BrainAppQuizUITests */,
 				CA25CE8B1FC08E9F0075D56C /* Products */,
+				CA25CEC01FC093850075D56C /* Nilland-Black.ttf */,
+				CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */,
+				CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */,
+				CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */,
+				CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */,
+				CA25CEC51FC093850075D56C /* Nilland.ttf */,
+				CA25CEC81FC09BF30075D56C /* l3.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA25CEC91FC09BF30075D56C /* l3.png in Resources */,
 				CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */,
 				CA25CE9A1FC08E9F0075D56C /* Assets.xcassets in Resources */,
 				CA25CE981FC08E9F0075D56C /* Main.storyboard in Resources */,

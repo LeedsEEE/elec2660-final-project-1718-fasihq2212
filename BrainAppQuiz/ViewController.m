@@ -26,4 +26,6 @@
 }
 
 
+- (IBAction)action1button:(UIButton *)sender {
+}
 @end
