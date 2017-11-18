@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
 // In this section we declare the permanent variables
 #pragma mark Permanent Variables
@@ -25,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonaction;
 
 - (IBAction)action1button:(UIButton *)sender;
+
+
 
 @end
 
