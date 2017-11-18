@@ -21,6 +21,7 @@
 		CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED61FC0A21A0075D56C /* MMDrawerVisualState.m */; };
 		CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */; };
 		CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */; };
+		CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEE41FC0CC670075D56C /* firstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		CA25CEE31FC0CC670075D56C /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewController.h; path = ../firstViewController.h; sourceTree = "<group>"; };
+		CA25CEE41FC0CC670075D56C /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				CA25CE911FC08E9F0075D56C /* AppDelegate.m */,
 				CA25CE931FC08E9F0075D56C /* ViewController.h */,
 				CA25CE941FC08E9F0075D56C /* ViewController.m */,
+				CA25CEE31FC0CC670075D56C /* firstViewController.h */,
+				CA25CEE41FC0CC670075D56C /* firstViewController.m */,
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
 				CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */,
 				CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */,
@@ -333,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
+				CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,
 				CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */,
 				CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */,
@@ -573,6 +579,7 @@
 				CA25CEB91FC08E9F0075D56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA25CEBA1FC08E9F0075D56C /* Build configuration list for PBXNativeTarget "BrainAppQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +588,7 @@
 				CA25CEBC1FC08E9F0075D56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA25CEBD1FC08E9F0075D56C /* Build configuration list for PBXNativeTarget "BrainAppQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +597,7 @@
 				CA25CEBF1FC08E9F0075D56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

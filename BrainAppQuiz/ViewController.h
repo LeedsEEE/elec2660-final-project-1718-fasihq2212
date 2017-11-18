@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "AppDelegate.h"
 
 
 @interface ViewController : UIViewController
@@ -19,13 +22,26 @@
 @property (weak, nonatomic) IBOutlet UIImageView *Imageoflogo;
 @property (weak, nonatomic) IBOutlet UILabel *ClickonButtontobegin;
 
+@property (nonatomic, strong) MMDrawerController *drawercontroller;
+
+
 // Here we have outlet and action for the button
 
 #pragma mark Button Variables
 
-@property (weak, nonatomic) IBOutlet UIButton *buttonaction;
-
 - (IBAction)action1button:(UIButton *)sender;
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
 
 
 
