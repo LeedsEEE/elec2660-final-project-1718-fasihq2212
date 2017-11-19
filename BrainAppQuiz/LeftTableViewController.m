@@ -33,23 +33,53 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 3;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstcell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Configure the cells
+    
+    if (indexPath.row == 0){
+    
+    cell.textLabel.text = @"Numerical Reasoning";
+    cell.detailTextLabel.text = @"Mathematics Based Topic";
+    cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+    
+    }
+    else if (indexPath.row == 1){
+        cell.textLabel.text = @"General Knowledge";
+        cell.detailTextLabel.text = @"Trivia Based Topic";
+        cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+    }
+    else if (indexPath.row == 2){
+        
+        cell.textLabel.text = @"Riddles";
+        cell.detailTextLabel.text = @"Think outside the box";
+        cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+    }
     
     return cell;
 }
-*/
 
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    NSInteger height = 0;
+    if (section == 0){
+        
+        height =  5;
+    }
+    return height;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

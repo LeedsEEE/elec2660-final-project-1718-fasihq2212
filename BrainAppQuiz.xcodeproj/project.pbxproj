@@ -118,6 +118,12 @@
 				CA25CEA61FC08E9F0075D56C /* BrainAppQuizTests */,
 				CA25CEB11FC08E9F0075D56C /* BrainAppQuizUITests */,
 				CA25CECB1FC0A0270075D56C /* Additional files */,
+			);
+			sourceTree = "<group>";
+		};
+		CA25CE8B1FC08E9F0075D56C /* Products */ = {
+			isa = PBXGroup;
+			children = (
 				CA25CEC01FC093850075D56C /* Nilland-Black.ttf */,
 				CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */,
 				CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */,
@@ -125,12 +131,6 @@
 				CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */,
 				CA25CEC51FC093850075D56C /* Nilland.ttf */,
 				CA25CEC81FC09BF30075D56C /* l3.png */,
-			);
-			sourceTree = "<group>";
-		};
-		CA25CE8B1FC08E9F0075D56C /* Products */ = {
-			isa = PBXGroup;
-			children = (
 				CA25CE8A1FC08E9F0075D56C /* BrainAppQuiz.app */,
 				CA25CEA31FC08E9F0075D56C /* BrainAppQuizTests.xctest */,
 				CA25CEAE1FC08E9F0075D56C /* BrainAppQuizUITests.xctest */,
