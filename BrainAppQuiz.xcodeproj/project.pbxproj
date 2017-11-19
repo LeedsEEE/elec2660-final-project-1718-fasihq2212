@@ -22,6 +22,12 @@
 		CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */; };
 		CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */; };
 		CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEE41FC0CC670075D56C /* firstViewController.m */; };
+		CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC01FC093850075D56C /* Nilland-Black.ttf */; };
+		CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */; };
+		CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */; };
+		CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */; };
+		CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */; };
+		CAADC2921FC13139007A173E /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC51FC093850075D56C /* Nilland.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +315,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */,
+				CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */,
+				CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */,
+				CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */,
+				CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */,
+				CAADC2921FC13139007A173E /* Nilland.ttf in Resources */,
 				CA25CEC91FC09BF30075D56C /* l3.png in Resources */,
 				CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */,
 				CA25CE9A1FC08E9F0075D56C /* Assets.xcassets in Resources */,
