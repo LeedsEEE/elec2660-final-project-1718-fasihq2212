@@ -54,8 +54,6 @@
     
     cell.textLabel.text = @"Numerical Reasoning";
     cell.detailTextLabel.text = @"Mathematics Based Topic";
-   
-   
     
     }
     else if (indexPath.row == 1){

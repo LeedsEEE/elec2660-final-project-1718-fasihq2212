@@ -31,6 +31,7 @@
 		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
 		CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */; };
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
+		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = typeoftestanddescription.m; sourceTree = "<group>"; };
 		CAD859D11FC2F06E0096E9DF /* implementtypeanddes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implementtypeanddes.h; sourceTree = "<group>"; };
 		CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implementtypeanddes.m; sourceTree = "<group>"; };
+		CAD859D41FC317D80096E9DF /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				CA25CEE31FC0CC670075D56C /* firstViewController.h */,
 				CA25CEE41FC0CC670075D56C /* firstViewController.m */,
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
+				CAD859D41FC317D80096E9DF /* ThirdViewController.h */,
+				CAD859D51FC317D80096E9DF /* ThirdViewController.m */,
 				CAADC2951FC251DD007A173E /* BeginSecondViewController.h */,
 				CAADC2961FC251DE007A173E /* BeginSecondViewController.m */,
 				CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */,
@@ -381,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */,
+				CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */,
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
 				CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,

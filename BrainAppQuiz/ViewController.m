@@ -50,6 +50,8 @@
     self.drawercontroller.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
     
     
+    [self.drawercontroller setMaximumLeftDrawerWidth:270];
+    
     
     
     [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]]; //This is the animation block.. different ones can be used such as parallax etc
