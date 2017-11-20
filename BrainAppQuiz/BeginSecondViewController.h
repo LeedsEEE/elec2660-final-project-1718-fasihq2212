@@ -7,7 +7,19 @@
 //
 
 #import "ViewController.h"
+#import "typeoftestanddescription.h" //imported type and description
 
 @interface BeginSecondViewController : ViewController
+
+#pragma mark Labels
+
+@property (nonatomic, strong) typeoftestanddescription *typee; //declared the type of test and description variables
+
+@property (weak, nonatomic) IBOutlet UILabel *typeoftestlabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionlabel;
+
+#pragma mark Button properties
+- (IBAction)backbuttonpressed:(UIButton *)sender; //action for when pressing 'go back'
 
 @end

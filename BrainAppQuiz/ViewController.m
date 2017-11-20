@@ -29,9 +29,9 @@
 
 
  #pragma mark - Navigation
-- (IBAction)action1button:(UIButton *)sender{
+- (IBAction)action1button:(UIButton *)sender{ // Here we are going to carry out the side drawer when the Begin button is pressed. It does not work when this code below is inserted into the viewdidload function in the welcome view controller
     
-    AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
 
     
     UIStoryboard *mainstory = [UIStoryboard storyboardWithName: @"Main" bundle:nil]; //create a story board

@@ -11,6 +11,6 @@
 
 @interface implementtypeanddes : NSObject
 
-@property (nonatomic, strong) NSMutableArray *firtsection;
+@property (nonatomic, strong) NSMutableArray *firtsection; //decalred as an array as it contains array of 3 topics
 
 @end

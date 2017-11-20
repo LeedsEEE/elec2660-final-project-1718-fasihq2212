@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.data = [[implementtypeanddes alloc]init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,11 +35,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return 1; //We need only one section with 3 topics
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
+    
+    // 3 rows in the section for each topic
 }
 
 
@@ -46,7 +50,7 @@
     
     // Configure the cells
     
-    if (indexPath.row == 0){
+    if (indexPath.row == 0){  //indexpath.row defines the row in the section.
     
     cell.textLabel.text = @"Numerical Reasoning";
     cell.detailTextLabel.text = @"Mathematics Based Topic";
@@ -71,7 +75,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    return @"Choose a Topic";
+    return @"Choose a Topic"; //the title of the section is Choose a topic
 }
 
 
@@ -116,15 +120,23 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([[segue identifier] isEqualToString:@"transmit"]){
+    if ([[segue identifier] isEqualToString:@"transmit"]){  // In this section, we are passing on the type of test and description from the table view to the beginsecondviewcontroller.
         
-        BeginSecondViewController *destinationViewController = [segue destinationViewController];
+        BeginSecondViewController *destinationViewController = [segue destinationViewController]; //we need to define the destination view controller. In this case, it is the beginsecondviewcontroller.
+        NSIndexPath *indexpath  = [self.tableView indexPathForSelectedRow]; //import tableview components so we can use indexpath.row and section.
         
+        if(indexpath.section ==0){ //there is only one section which contains 3 topics
+            
+            typeoftestanddescription *temptesr = [self.data.firtsection objectAtIndex:indexpath.row]; //'data' has been declared in the h file of the tableview controller. It refers to the implementtypeanddes.h file. The first section from this h file components are being fetched. These components are the type of test(typeoftest) and the full description (desc). There are 3 rows and 3 topics, thus objectatIndex function assigns the specific row in the table view
+            
+            destinationViewController.typee = temptesr; //set the temporary typeoftestanddescription (temptesr) as an object in the new viewcontroller
+            
+
         
     }
     
     
 }
-
+}
 
 @end
