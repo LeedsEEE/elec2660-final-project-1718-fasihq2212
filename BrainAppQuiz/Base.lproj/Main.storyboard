@@ -84,7 +84,7 @@
         <scene sceneID="RPc-dW-AHn">
             <objects>
                 <tableViewController storyboardIdentifier="LeftTableViewController" id="Qd1-nI-EUv" customClass="LeftTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="161" sectionHeaderHeight="28" sectionFooterHeight="28" id="ji9-Rx-HEG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="161" sectionHeaderHeight="28" sectionFooterHeight="28" id="ji9-Rx-HEG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,7 +114,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.8784313725490196" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="CBC-zJ-Xpx" kind="show" identifier="transmit" id="IaY-y8-VHQ"/>
+                                    <segue destination="CBC-zJ-Xpx" kind="presentation" id="ovs-Lv-dgk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="829.60000000000002" y="786.65667166416802"/>
         </scene>
-        <!--View Controller-->
+        <!--Begin Second View Controller-->
         <scene sceneID="GKF-XE-A1n">
             <objects>
-                <viewController id="CBC-zJ-Xpx" sceneMemberID="viewController">
+                <viewController id="CBC-zJ-Xpx" customClass="BeginSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="psk-c1-f0N"/>
                         <viewControllerLayoutGuide type="bottom" id="7kY-Dn-VEu"/>
@@ -139,6 +139,15 @@
                     <view key="view" contentMode="scaleToFill" id="F2k-Ps-2Nc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQr-yP-0Sh">
+                                <rect key="frame" x="166" y="283" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
@@ -165,22 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-Yl-pUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2225" y="139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9bD-ak-fID">
-            <objects>
-                <navigationController id="jKX-FO-kkh" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wLN-7O-ed5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="CBC-zJ-Xpx" kind="show" id="IU5-mf-tbG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyd-lF-baO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1537" y="-649"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -273,7 +266,4 @@
     <resources>
         <image name="l3.png" width="550" height="400"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="IaY-y8-VHQ"/>
-    </inferredMetricsTieBreakers>
 </document>
