@@ -28,6 +28,7 @@
 		CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */; };
 		CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */; };
 		CAADC2921FC13139007A173E /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC51FC093850075D56C /* Nilland.ttf */; };
+		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
 		CA25CEE31FC0CC670075D56C /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewController.h; path = ../firstViewController.h; sourceTree = "<group>"; };
 		CA25CEE41FC0CC670075D56C /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
+		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
+		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				CA25CEE31FC0CC670075D56C /* firstViewController.h */,
 				CA25CEE41FC0CC670075D56C /* firstViewController.m */,
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
+				CAADC2951FC251DD007A173E /* BeginSecondViewController.h */,
+				CAADC2961FC251DE007A173E /* BeginSecondViewController.m */,
 				CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */,
 				CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */,
 				CA25CE991FC08E9F0075D56C /* Assets.xcassets */,
@@ -349,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */,
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
 				CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,

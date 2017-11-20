@@ -50,36 +50,31 @@
     
     cell.textLabel.text = @"Numerical Reasoning";
     cell.detailTextLabel.text = @"Mathematics Based Topic";
-    cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+   
+   
     
     }
     else if (indexPath.row == 1){
         cell.textLabel.text = @"General Knowledge";
         cell.detailTextLabel.text = @"Trivia Based Topic";
-        cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+      
     }
     else if (indexPath.row == 2){
         
         cell.textLabel.text = @"Riddles";
         cell.detailTextLabel.text = @"Think outside the box";
-        cell.imageView.image = [UIImage imageNamed:@"l3.png"];
+       
     }
     
     return cell;
 }
 
-
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    NSInteger height = 0;
-    if (section == 0){
-        
-        height =  5;
-    }
-    return height;
+    return @"Choose a Topic";
 }
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -114,14 +109,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"transmit"]){
+        
+       [segue destinationViewController];
+        
+    }
+    
+    
 }
-*/
+
 
 @end

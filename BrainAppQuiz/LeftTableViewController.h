@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BeginSecondViewController.h"
 
 @interface LeftTableViewController : UITableViewController
 
