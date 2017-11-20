@@ -29,6 +29,8 @@
 		CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */; };
 		CAADC2921FC13139007A173E /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC51FC093850075D56C /* Nilland.ttf */; };
 		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
+		CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */; };
+		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +67,13 @@
 		CA25CEAE1FC08E9F0075D56C /* BrainAppQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainAppQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainAppQuizUITests.m; sourceTree = "<group>"; };
 		CA25CEB41FC08E9F0075D56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA25CEC01FC093850075D56C /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Black.ttf"; path = "../../../Downloads/nilland/Nilland-Black.ttf"; sourceTree = "<group>"; };
-		CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Bold.ttf"; path = "../../../Downloads/nilland/Nilland-Bold.ttf"; sourceTree = "<group>"; };
-		CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-ExtraBold.ttf"; path = "../../../Downloads/nilland/Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
-		CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps-Bold.ttf"; path = "../../../Downloads/nilland/Nilland-SmallCaps-Bold.ttf"; sourceTree = "<group>"; };
-		CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps.ttf"; path = "../../../Downloads/nilland/Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
-		CA25CEC51FC093850075D56C /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nilland.ttf; path = ../../../Downloads/nilland/Nilland.ttf; sourceTree = "<group>"; };
-		CA25CEC81FC09BF30075D56C /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l3.png; path = ../../../Downloads/l3.png; sourceTree = "<group>"; };
+		CA25CEC01FC093850075D56C /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Black.ttf"; path = "../../../../Downloads/nilland/Nilland-Black.ttf"; sourceTree = "<group>"; };
+		CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Bold.ttf"; path = "../../../../Downloads/nilland/Nilland-Bold.ttf"; sourceTree = "<group>"; };
+		CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-ExtraBold.ttf"; path = "../../../../Downloads/nilland/Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps-Bold.ttf"; path = "../../../../Downloads/nilland/Nilland-SmallCaps-Bold.ttf"; sourceTree = "<group>"; };
+		CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps.ttf"; path = "../../../../Downloads/nilland/Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
+		CA25CEC51FC093850075D56C /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nilland.ttf; path = ../../../../Downloads/nilland/Nilland.ttf; sourceTree = "<group>"; };
+		CA25CEC81FC09BF30075D56C /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l3.png; path = ../../../../Downloads/l3.png; sourceTree = "<group>"; };
 		CA25CED01FC0A21A0075D56C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerBarButtonItem.h"; sourceTree = "<group>"; };
 		CA25CED11FC0A21A0075D56C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerBarButtonItem.m"; sourceTree = "<group>"; };
 		CA25CED21FC0A21A0075D56C /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerController.h"; sourceTree = "<group>"; };
@@ -87,6 +89,10 @@
 		CA25CEE41FC0CC670075D56C /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
+		CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeoftestanddescription.h; sourceTree = "<group>"; };
+		CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = typeoftestanddescription.m; sourceTree = "<group>"; };
+		CAD859D11FC2F06E0096E9DF /* implementtypeanddes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implementtypeanddes.h; sourceTree = "<group>"; };
+		CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implementtypeanddes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,13 +133,6 @@
 		CA25CE8B1FC08E9F0075D56C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA25CEC01FC093850075D56C /* Nilland-Black.ttf */,
-				CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */,
-				CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */,
-				CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */,
-				CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */,
-				CA25CEC51FC093850075D56C /* Nilland.ttf */,
-				CA25CEC81FC09BF30075D56C /* l3.png */,
 				CA25CE8A1FC08E9F0075D56C /* BrainAppQuiz.app */,
 				CA25CEA31FC08E9F0075D56C /* BrainAppQuizTests.xctest */,
 				CA25CEAE1FC08E9F0075D56C /* BrainAppQuizUITests.xctest */,
@@ -144,6 +143,8 @@
 		CA25CE8C1FC08E9F0075D56C /* BrainAppQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CAD859CD1FC2ED0C0096E9DF /* Pictures */,
+				CAD859CC1FC2ECE50096E9DF /* Fonts */,
 				CA25CE901FC08E9F0075D56C /* AppDelegate.h */,
 				CA25CE911FC08E9F0075D56C /* AppDelegate.m */,
 				CA25CE931FC08E9F0075D56C /* ViewController.h */,
@@ -155,6 +156,10 @@
 				CAADC2961FC251DE007A173E /* BeginSecondViewController.m */,
 				CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */,
 				CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */,
+				CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */,
+				CAD859D11FC2F06E0096E9DF /* implementtypeanddes.h */,
+				CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */,
+				CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */,
 				CA25CE991FC08E9F0075D56C /* Assets.xcassets */,
 				CA25CE9B1FC08E9F0075D56C /* LaunchScreen.storyboard */,
 				CA25CE9E1FC08E9F0075D56C /* Info.plist */,
@@ -212,6 +217,27 @@
 				CA25CE8B1FC08E9F0075D56C /* Products */,
 			);
 			name = "Additional files";
+			sourceTree = "<group>";
+		};
+		CAD859CC1FC2ECE50096E9DF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA25CEC01FC093850075D56C /* Nilland-Black.ttf */,
+				CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */,
+				CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */,
+				CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */,
+				CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */,
+				CA25CEC51FC093850075D56C /* Nilland.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		CAD859CD1FC2ED0C0096E9DF /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				CA25CEC81FC09BF30075D56C /* l3.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +387,8 @@
 				CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */,
 				CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */,
 				CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */,
+				CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */,
+				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
