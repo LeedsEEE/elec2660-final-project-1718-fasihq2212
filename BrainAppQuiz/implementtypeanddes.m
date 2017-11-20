@@ -24,7 +24,7 @@
         
         self.firtsection = [NSMutableArray array];
         typeoftestanddescription *sender1 = [[typeoftestanddescription alloc]init];
-        sender1.typeoftest = 
+       
         
     }
     return self;
