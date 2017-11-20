@@ -20,6 +20,10 @@
     
     self.typeoftestlabel.text = self.typee.typeoftest; //declaring the variables here 'typee' is the class for the type of test and description
     self.descriptionlabel.text = self.typee.desc;
+    
+//Line break code from stack overflow -- https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel ////
+    
+    
     self.descriptionlabel.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
     self.descriptionlabel.numberOfLines = 0;
 }
@@ -40,6 +44,10 @@
 */
 
 - (IBAction)backbuttonpressed:(UIButton *)sender { //similar to the initial view controller, when the go back button is pressed, the side panel in the welcome screen is initiated
+    
+    ///////////////////// MMDDrawerController by MutualMobile-- fetched from Github.com////////////////////////
+    ///////////////Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel/////
+
     
     
     AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate];

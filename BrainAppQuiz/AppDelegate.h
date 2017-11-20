@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MMDrawerController.h" //Declaration
-#import "MMDrawerVisualState.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-//Here we are declaring the variables in order to use the side panel
+
 
 @property (strong, nonatomic) UIWindow *window;
 

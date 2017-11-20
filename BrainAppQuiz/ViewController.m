@@ -31,6 +31,11 @@
  #pragma mark - Navigation
 - (IBAction)action1button:(UIButton *)sender{ // Here we are going to carry out the side drawer when the Begin button is pressed. It does not work when this code below is inserted into the viewdidload function in the welcome view controller
     
+    
+    ///////////////////// MMDDrawerController by MutualMobile-- fetched from Github.com////////////////////////
+    ///////////////Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel/////
+  
+    
     AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
 
     
@@ -58,6 +63,10 @@
     
     appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
     [appdel.window makeKeyAndVisible];
+    
+    
+    
+    
     
     
 }

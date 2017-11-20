@@ -10,6 +10,8 @@
 
 @implementation implementtypeanddes
 
+///// Fetched from Lab 3////////
+
 
 - (instancetype)init
 {

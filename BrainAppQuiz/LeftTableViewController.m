@@ -6,6 +6,9 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
+///////////////////////////////// tableview code fetched from Lab 3////////////////////////////////////////
+
+
 #import "LeftTableViewController.h"
 
 @interface LeftTableViewController ()
@@ -113,6 +116,8 @@
 
 
 #pragma mark - Navigation
+
+
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

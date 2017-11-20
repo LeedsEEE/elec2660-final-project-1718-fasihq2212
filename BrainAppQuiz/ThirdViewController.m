@@ -34,4 +34,19 @@
 }
 */
 
+
+
+
+
+- (IBAction)firstbuttonchoice:(UIButton *)sender {
+}
+
+- (IBAction)secondbuttonchoice:(UIButton *)sender {
+}
+
+- (IBAction)thirdbuttonchoice:(UIButton *)sender {
+}
+
+- (IBAction)fourthbuttonchoice:(UIButton *)sender {
+}
 @end
