@@ -33,16 +33,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ 
+ if([segue.identifier isEqualToString:@"quizbegin"]){
+     
+     ThirdViewController *controller = (ThirdViewController *) segue.destinationViewController;
+     controller.testtype = self.typee.typeoftest;
+     
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
+}
 - (IBAction)backbuttonpressed:(UIButton *)sender { //similar to the initial view controller, when the go back button is pressed, the side panel in the welcome screen is initiated
     
     ///////////////////// MMDDrawerController by MutualMobile-- fetched from Github.com////////////////////////

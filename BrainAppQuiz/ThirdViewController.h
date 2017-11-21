@@ -13,7 +13,8 @@
 @interface ThirdViewController : ViewController
 
 @property (nonatomic, strong) QuestionAnswerBank *questionS;
-@property (nonatomic, strong) BeginSecondViewController *reference;
+@property (nonatomic, strong) NSString *testtype;
+
 
 #pragma mark Labels
 
@@ -32,10 +33,7 @@
 
 #pragma mark Functions for Questions and answers
 
--(void) printquestion;
--(void) printanswerchoices;
--(void) checkanswer;
--(void) nextquestionfunc;
+
 
 
 

@@ -47,15 +47,25 @@
                      ];
 
         
-        
-        
-        
-        
+    
         
     }
     return self;
 }
 
+-(NSString*) printquestion: (NSString*) testtypefunc :(int) index{
+    
+    
+
+    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
+        
+       _finalquestion = [self.questionfornumerical objectAtIndex: index];
+        
+    }
+     
+    return _finalquestion;
+    
+}
 
 
 

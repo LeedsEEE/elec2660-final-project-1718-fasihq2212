@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 @interface QuestionAnswerBank : NSObject
+
 
 @property (nonatomic, strong) NSArray *questionfornumerical;
 @property (nonatomic, strong) NSArray *questionforgeneral;
@@ -21,5 +24,14 @@
 @property (nonatomic, strong) NSArray *choicesfornumerical;
 @property (nonatomic, strong) NSArray *choicesforgeneral;
 @property (nonatomic, strong) NSArray *choicesforriddle;
+
+@property (nonatomic, strong) NSString *finalquestion;
+
+
+-(NSString*) printquestion: (NSString*) testtypefunc :(int) index;
+-(NSString*) printanswerchoices;
+-(NSString*) checkanswer;
+-(NSString*) nextquestionfunc;
+
 
 @end

@@ -17,15 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.questionS = [[QuestionAnswerBank alloc] init];
-    self.reference = [[BeginSecondViewController alloc]init];
-    self.questionS.questionfornumerical = [NSArray array];
-    self.questionS.answerfornumerical = [NSArray array];
-    self.questionS.choicesfornumerical = [NSArray array];
-    
-    NSLog(@"%@", self.reference.typeoftestlabel.text);
+        
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,24 +41,15 @@
 
 -(void) printquestion{
     
-    NSLog(@"%@", self.reference.typee.typeoftest);
-    
-    if ([self.reference.typee.typeoftest isEqualToString: @"Numerical Reasoning"]){
+    if ([self.testtype isEqualToString:@"Numerical Reasoning"]){
         
-        NSLog (@"Correct");
-        
-        NSLog (@"%@", [self.questionS.questionfornumerical objectAtIndex:0]);
-      
-        
-        self.Questionlabelfirst.text = [self.questionS.questionfornumerical objectAtIndex:0];
-        
-        
-        
-        
+        QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
+
+        self.Questionlabelfirst.text =  [func printquestion:@"Numerical Reasoning" :0];
     }
-    
-    
 }
+
+
 -(void) printanswerchoices{
     
     
