@@ -39,16 +39,10 @@
                     @"11"];
         
         self.choicesfornumerical =
-                                    @[@"10",
+                    @[@"10",
                      @"21",
                      @"18",
-                     @"15",
-                     
-                     ];
-
-        
-    
-        
+                      @"15",];
     }
     return self;
 }
@@ -64,6 +58,38 @@
     }
      
     return _finalquestion;
+    
+}
+
+-(NSString*) printanswerchoices: (NSString*) testtypefunc :(int) index{
+    
+    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
+        
+        _choice = [self.choicesfornumerical objectAtIndex:index];
+        
+    }
+  
+    return _choice;
+}
+
+-(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(int) index{
+    
+    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
+        
+        if ([answer isEqualToString: [self.answerfornumerical objectAtIndex:index]]){
+            
+            _result = @"Correct!";
+            
+        }
+        else {
+            
+            _result = @"Incorrect!";
+        }
+        
+    }
+    
+    
+    return _result;
     
 }
 

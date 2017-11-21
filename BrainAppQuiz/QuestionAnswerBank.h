@@ -26,11 +26,13 @@
 @property (nonatomic, strong) NSArray *choicesforriddle;
 
 @property (nonatomic, strong) NSString *finalquestion;
+@property (nonatomic, strong) NSString *choice;
+@property (nonatomic, strong) NSString *result;
 
 
 -(NSString*) printquestion: (NSString*) testtypefunc :(int) index;
--(NSString*) printanswerchoices;
--(NSString*) checkanswer;
+-(NSString*) printanswerchoices: (NSString*) testtypefunc :(int) index;
+-(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(int) index;
 -(NSString*) nextquestionfunc;
 
 
