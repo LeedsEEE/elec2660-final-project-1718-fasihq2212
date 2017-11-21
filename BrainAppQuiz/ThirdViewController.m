@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.questionS = [[QuestionAnswerBank alloc] init];
+    self.reference = [[BeginSecondViewController alloc]init];
+    self.questionS.questionfornumerical = [NSArray array];
+    self.questionS.answerfornumerical = [NSArray array];
+    self.questionS.choicesfornumerical = [NSArray array];
+    
+    NSLog(@"%@", self.reference.typeoftestlabel.text);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +45,46 @@
 
 
 
+-(void) printquestion{
+    
+    NSLog(@"%@", self.reference.typee.typeoftest);
+    
+    if ([self.reference.typee.typeoftest isEqualToString: @"Numerical Reasoning"]){
+        
+        NSLog (@"Correct");
+        
+        NSLog (@"%@", [self.questionS.questionfornumerical objectAtIndex:0]);
+      
+        
+        self.Questionlabelfirst.text = [self.questionS.questionfornumerical objectAtIndex:0];
+        
+        
+        
+        
+    }
+    
+    
+}
+-(void) printanswerchoices{
+    
+    
+    
+}
+-(void) checkanswer{
+    
+    
+    
+}
+-(void) nextquestionfunc{
+    
+    
+    
+}
+
+
 
 - (IBAction)firstbuttonchoice:(UIButton *)sender {
+    
 }
 
 - (IBAction)secondbuttonchoice:(UIButton *)sender {

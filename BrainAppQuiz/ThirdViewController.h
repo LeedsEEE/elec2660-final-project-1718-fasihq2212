@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import "QuestionAnswerBank.h"
+#import "BeginSecondViewController.h"
 
 @interface ThirdViewController : ViewController
+
+@property (nonatomic, strong) QuestionAnswerBank *questionS;
+@property (nonatomic, strong) BeginSecondViewController *reference;
 
 #pragma mark Labels
 
@@ -25,6 +29,14 @@
 - (IBAction)secondbuttonchoice:(UIButton *)sender;
 - (IBAction)thirdbuttonchoice:(UIButton *)sender;
 - (IBAction)fourthbuttonchoice:(UIButton *)sender;
+
+#pragma mark Functions for Questions and answers
+
+-(void) printquestion;
+-(void) printanswerchoices;
+-(void) checkanswer;
+-(void) nextquestionfunc;
+
 
 
 

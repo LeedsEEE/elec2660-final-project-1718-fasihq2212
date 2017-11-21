@@ -10,11 +10,16 @@
 
 @interface QuestionAnswerBank : NSObject
 
-@property (nonatomic, strong) NSArray *question;
-@property (nonatomic, strong) NSArray *answer;
-@property (nonatomic, strong) NSArray *choices;
--(void) questionanswerforNumerical;
--(void) questionanswerforGeneral;
--(void) questionanswerforRiddle;
+@property (nonatomic, strong) NSArray *questionfornumerical;
+@property (nonatomic, strong) NSArray *questionforgeneral;
+@property (nonatomic, strong) NSArray *questionforriddle;
+
+@property (nonatomic, strong) NSArray *answerfornumerical;
+@property (nonatomic, strong) NSArray *answerforgeneral;
+@property (nonatomic, strong) NSArray *answerforriddle;
+
+@property (nonatomic, strong) NSArray *choicesfornumerical;
+@property (nonatomic, strong) NSArray *choicesforgeneral;
+@property (nonatomic, strong) NSArray *choicesforriddle;
 
 @end
