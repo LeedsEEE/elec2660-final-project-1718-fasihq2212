@@ -22,19 +22,19 @@
     
     
    
-    if ([_finaltest isEqualToString:@"Numerical Reasoning"]){
+    if ([self.finaltest isEqualToString:@"Numerical Reasoning"]){
 
         QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
         
-        NSString *firstquestion =   [func printquestion:@"Numerical Reasoning" :0];
+        NSString *firstquestion =   [func printquestion: self.finaltest :0];
         self.Questionlabelfirst.text = firstquestion;
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
         self.Questionlabelfirst.numberOfLines = 0;
         
-         self.firstchoice.text = [func printanswerchoices:@"Numerical Reasoning" :0];
-         self.secondchoice.text = [func printanswerchoices:@"Numerical Reasoning" :1];
-         self.thirdchoice.text = [func printanswerchoices:@"Numerical Reasoning" :2];
-        self.fourthchoice.text = [func printanswerchoices:@"Numerical Reasoning" :3];
+         self.firstchoice.text = [func printanswerchoices:self.finaltest :0];
+         self.secondchoice.text = [func printanswerchoices:self.finaltest :1];
+         self.thirdchoice.text = [func printanswerchoices:self.finaltest :2];
+        self.fourthchoice.text = [func printanswerchoices:self.finaltest :3];
 
     }
     
@@ -64,7 +64,7 @@
         
         NSLog( @"%@", self.testtype);
         
-        self.notification.text = [func checkanswer:@"Numerical Reasoning" :self.firstchoice.text :0];
+        self.notification.text = [func checkanswer:self.finaltest :self.firstchoice.text :0];
         
     }
     
@@ -78,7 +78,7 @@
         
         NSLog( @"%@", self.testtype);
         
-        self.notification.text = [func checkanswer:@"Numerical Reasoning" :self.secondchoice.text :0];
+        self.notification.text = [func checkanswer:self.finaltest :self.secondchoice.text :0];
         
     }
 
@@ -92,7 +92,7 @@
         
         NSLog( @"%@", self.testtype);
         
-        self.notification.text = [func checkanswer:@"Numerical Reasoning" :self.thirdchoice.text :0];
+        self.notification.text = [func checkanswer:self.finaltest :self.thirdchoice.text :0];
         
     }
     
@@ -106,7 +106,7 @@
         
         NSLog( @"%@", self.testtype);
         
-        self.notification.text = [func checkanswer:@"Numerical Reasoning" :self.fourthchoice.text :0];
+        self.notification.text = [func checkanswer:self.finaltest: self.fourthchoice.text :0];
         
     }
     

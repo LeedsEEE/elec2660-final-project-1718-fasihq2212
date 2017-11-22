@@ -35,15 +35,9 @@
 - (IBAction)thirdbuttonchoice:(UIButton *)sender;
 - (IBAction)fourthbuttonchoice:(UIButton *)sender;
 
-#pragma mark Functions for Questions and answers
 
--(void) printquestion;
 
--(void) printanswerchoices;;
-    
--(void) checkanswer;
-    
--(void) nextquestionfunc;
+
     
     
 
