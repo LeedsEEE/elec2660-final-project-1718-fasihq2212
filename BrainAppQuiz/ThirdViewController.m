@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _finaltest = self.testtype;
+    self.notification.text = @"";
+    self.questionnumber = 0;
     
     
     
@@ -56,60 +58,78 @@
 }
 */
 
-- (IBAction)firstbuttonchoice:(UIButton *)sender {
+
+
+
+- (IBAction)choicepressed:(UIButton*)sender {
     
-    QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
+    
+    NSLog(@"%li", sender.tag);
+  
+    ThirdViewController *controller = [[ThirdViewController alloc]init];
     
     if ([self.finaltest isEqualToString: @"Numerical Reasoning"]){
+        if (sender.tag == 1){
+            self.chosenanswer = self.firstchoice.text;
+        }
         
-        NSLog( @"%@", self.testtype);
+        else if (sender.tag == 2) {
+            self.chosenanswer = self.secondchoice.text;
+        }
+        else if (sender.tag == 3){
+            
+            self.chosenanswer = self.thirdchoice.text;
+        }
+        else if(sender.tag ==4){
+            
+            self.chosenanswer = self.fourthchoice.text;
+        }
+       
+        [controller  checkanswerfunc];
         
-        self.notification.text = [func checkanswer:self.finaltest :self.firstchoice.text :0];
-        
-    }
-    
-    }
+        self.questionnumber = self.questionnumber + 1;
 
-- (IBAction)secondbuttonchoice:(UIButton *)sender {
-    
-    QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
-    
-    if ([self.finaltest isEqualToString: @"Numerical Reasoning"]){
         
-        NSLog( @"%@", self.testtype);
-        
-        self.notification.text = [func checkanswer:self.finaltest :self.secondchoice.text :0];
         
     }
-
 }
 
-- (IBAction)thirdbuttonchoice:(UIButton *)sender {
+
+
+-(NSString*) checkanswerfunc{
     
-    QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
+     QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
     
-    if ([self.finaltest isEqualToString: @"Numerical Reasoning"]){
+    
+        self.notification.text = [func checkanswer: self.finaltest :self.chosenanswer : *(self.questionnumber)];
         
-        NSLog( @"%@", self.testtype);
-        
-        self.notification.text = [func checkanswer:self.finaltest :self.thirdchoice.text :0];
-        
-    }
+
+    
+    return self.notification.text;
     
 }
 
-- (IBAction)fourthbuttonchoice:(UIButton *)sender {
-    
+-(NSString*) nextquestion{
+
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
-    
-    if ([self.finaltest isEqualToString: @"Numerical Reasoning"]){
+    if ([self.finaltest isEqualToString:@"Numerical Reasoning"]){
         
-        NSLog( @"%@", self.testtype);
+        if (*(_questionnumber) <20){
+            
+            self.Questionlabelfirst.text = [func printquestion:self.testtype : *(self.questionnumber)];
+
+        }
         
-        self.notification.text = [func checkanswer:self.finaltest: self.fourthchoice.text :0];
         
     }
+    return self.Questionlabelfirst.text;
+    
+}
+
     
 
-}
+    
+    
+
+
 @end

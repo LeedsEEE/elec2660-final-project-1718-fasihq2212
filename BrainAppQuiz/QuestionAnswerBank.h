@@ -30,9 +30,9 @@
 @property (nonatomic, strong) NSString *result;
 
 
--(NSString*) printquestion: (NSString*) testtypefunc :(int) index;
--(NSString*) printanswerchoices: (NSString*) testtypefunc :(int) index;
--(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(int) index;
+-(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index;
+-(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index;
+-(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index;
 -(NSString*) nextquestionfunc;
 
 

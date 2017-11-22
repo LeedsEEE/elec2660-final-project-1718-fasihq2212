@@ -47,7 +47,7 @@
     return self;
 }
 
--(NSString*) printquestion: (NSString*) testtypefunc :(int) index{
+-(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index{
     
     
 
@@ -61,7 +61,7 @@
     
 }
 
--(NSString*) printanswerchoices: (NSString*) testtypefunc :(int) index{
+-(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index{
     
     if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
         
@@ -72,7 +72,7 @@
     return _choice;
 }
 
--(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(int) index{
+-(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index{
     
     if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
         

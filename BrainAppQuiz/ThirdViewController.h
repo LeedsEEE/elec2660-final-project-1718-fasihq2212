@@ -15,9 +15,9 @@
 @property (nonatomic, strong) QuestionAnswerBank *questionS;
 @property (nonatomic, strong) NSString *testtype;
 @property(nonatomic,strong) NSString *finaltest;
-
-
-
+@property(nonatomic, strong) NSString *chosenanswer;
+@property (nonatomic, strong) NSString *actualanswer;
+@property NSInteger *questionnumber;
 
 #pragma mark Labels
 
@@ -28,12 +28,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
 @property (weak, nonatomic) IBOutlet UILabel *notification;
 
-#pragma mark Button Actions
+#pragma mark Question Functions
+-(NSString*) checkanswerfunc;
+-(NSString*) nextquestion;
 
-- (IBAction)firstbuttonchoice:(UIButton *)sender;
-- (IBAction)secondbuttonchoice:(UIButton *)sender;
-- (IBAction)thirdbuttonchoice:(UIButton *)sender;
-- (IBAction)fourthbuttonchoice:(UIButton *)sender;
+#pragma mark Button Action
+- (IBAction)choicepressed:(UIButton*)sender;
+
 
 
 
