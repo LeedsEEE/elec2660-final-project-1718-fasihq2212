@@ -295,6 +295,7 @@
                         <outlet property="firstchoice" destination="tOL-ny-kiq" id="Nr9-J0-NOJ"/>
                         <outlet property="fourthchoice" destination="Gpr-EJ-BKm" id="Ogh-eP-IYz"/>
                         <outlet property="notification" destination="iJZ-zu-Ye4" id="6gS-da-V3Q"/>
+                        <outlet property="propertofbutton" destination="atI-Z9-05R" id="5pP-F1-eYm"/>
                         <outlet property="secondchoice" destination="t52-Vx-PYr" id="GXX-ci-0cm"/>
                         <outlet property="thirdchoice" destination="aGK-IG-IoP" id="zwE-xn-cCM"/>
                     </connections>

@@ -9,15 +9,16 @@
 #import "ViewController.h"
 #import "QuestionAnswerBank.h"
 #import "BeginSecondViewController.h"
+#import "additionalclassfunction.h"
 
 @interface ThirdViewController : ViewController
 
-@property (nonatomic, strong) QuestionAnswerBank *questionS;
 @property (nonatomic, strong) NSString *testtype;
-@property(nonatomic,strong) NSString *finaltest;
 @property(nonatomic, strong) NSString *chosenanswer;
 @property (nonatomic, strong) NSString *actualanswer;
-@property NSInteger *questionnumber;
+@property NSInteger questionnumber;
+
+
 
 #pragma mark Labels
 
@@ -28,13 +29,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
 @property (weak, nonatomic) IBOutlet UILabel *notification;
 
-#pragma mark Question Functions
--(NSString*) checkanswerfunc;
--(NSString*) nextquestion;
-
 #pragma mark Button Action
 - (IBAction)choicepressed:(UIButton*)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *propertofbutton;
 
 
 

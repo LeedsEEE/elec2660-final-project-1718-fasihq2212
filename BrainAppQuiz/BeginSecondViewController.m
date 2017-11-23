@@ -42,7 +42,9 @@
  if([segue.identifier isEqualToString:@"quizbegin"]){
      
      ThirdViewController *controller = (ThirdViewController *) segue.destinationViewController;
+     
      controller.testtype = self.typee.typeoftest;
+     
      
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
