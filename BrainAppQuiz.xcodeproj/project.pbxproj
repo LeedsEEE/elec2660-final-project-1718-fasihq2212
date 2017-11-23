@@ -33,7 +33,6 @@
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 		CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */; };
-		CAD85A321FC663C70096E9DF /* additionalclassfunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD85A311FC663C70096E9DF /* additionalclassfunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +99,6 @@
 		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerBank.h; sourceTree = "<group>"; };
 		CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerBank.m; sourceTree = "<group>"; };
-		CAD85A301FC663C60096E9DF /* additionalclassfunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = additionalclassfunction.h; sourceTree = "<group>"; };
-		CAD85A311FC663C70096E9DF /* additionalclassfunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = additionalclassfunction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +160,6 @@
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
 				CAD859D41FC317D80096E9DF /* ThirdViewController.h */,
 				CAD859D51FC317D80096E9DF /* ThirdViewController.m */,
-				CAD85A301FC663C60096E9DF /* additionalclassfunction.h */,
-				CAD85A311FC663C70096E9DF /* additionalclassfunction.m */,
 				CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */,
 				CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */,
 				CAADC2951FC251DD007A173E /* BeginSecondViewController.h */,
@@ -408,7 +403,6 @@
 				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
-				CAD85A321FC663C70096E9DF /* additionalclassfunction.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,14 +9,17 @@
 #import "ViewController.h"
 #import "QuestionAnswerBank.h"
 #import "BeginSecondViewController.h"
-#import "additionalclassfunction.h"
+
 
 @interface ThirdViewController : ViewController
 
 @property (nonatomic, strong) NSString *testtype;
 @property(nonatomic, strong) NSString *chosenanswer;
 @property (nonatomic, strong) NSString *actualanswer;
+@property (nonatomic, strong) NSString *question;
+@property (nonatomic, strong) NSString *choice;
 @property NSInteger questionnumber;
+@property NSInteger choicenumber;
 
 
 
@@ -32,7 +35,17 @@
 #pragma mark Button Action
 - (IBAction)choicepressed:(UIButton*)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *propertofbutton;
+
+
+#pragma mark Question Functions
+
+-(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie;
+-(NSString*) nextquestion: (NSString*) test : (NSInteger) indie;
+-(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie;
+
+
+
+
 
 
 

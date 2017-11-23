@@ -245,28 +245,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOL-ny-kiq">
-                                <rect key="frame" x="166" y="423" width="42" height="21"/>
+                                <rect key="frame" x="166" y="423" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-IG-IoP">
-                                <rect key="frame" x="166" y="532" width="42" height="21"/>
+                                <rect key="frame" x="166" y="532" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpr-EJ-BKm">
-                                <rect key="frame" x="166" y="595" width="42" height="21"/>
+                                <rect key="frame" x="166" y="595" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t52-Vx-PYr">
-                                <rect key="frame" x="166" y="477" width="42" height="21"/>
+                                <rect key="frame" x="166" y="477" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -295,7 +295,6 @@
                         <outlet property="firstchoice" destination="tOL-ny-kiq" id="Nr9-J0-NOJ"/>
                         <outlet property="fourthchoice" destination="Gpr-EJ-BKm" id="Ogh-eP-IYz"/>
                         <outlet property="notification" destination="iJZ-zu-Ye4" id="6gS-da-V3Q"/>
-                        <outlet property="propertofbutton" destination="atI-Z9-05R" id="5pP-F1-eYm"/>
                         <outlet property="secondchoice" destination="t52-Vx-PYr" id="GXX-ci-0cm"/>
                         <outlet property="thirdchoice" destination="aGK-IG-IoP" id="zwE-xn-cCM"/>
                     </connections>

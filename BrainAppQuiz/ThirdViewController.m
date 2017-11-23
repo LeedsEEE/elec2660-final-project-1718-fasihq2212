@@ -14,25 +14,24 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber;
+@synthesize testtype, questionnumber, choicenumber;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
     self.notification.text = @"";
     self.questionnumber = 0;
+    self.choicenumber = 0;
     NSLog(@"%@", self.testtype);
     
-    additionalclassfunction *function = [[additionalclassfunction alloc]init];
-
-    self.Questionlabelfirst.text = [function nextquestion:self.testtype :self.questionnumber];
+    ThirdViewController *controller = [[ThirdViewController alloc] init];
+    self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
     self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
     self.Questionlabelfirst.numberOfLines = 0;
-    
-    self.firstchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber];
-    self.secondchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber + 1];
-    self.thirdchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 2];
-     self.fourthchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 3];
+    self.firstchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber];
+    self.secondchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber +1];
+    self.thirdchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+2];
+    self.fourthchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+3];
 }
 
 
@@ -53,85 +52,87 @@
 
 - (IBAction)choicepressed:(UIButton*)sender {
     
+    ThirdViewController *controller  = [[ThirdViewController alloc] init];
+    
    NSString *ans = self.testtype;
   
-    additionalclassfunction *function = [[additionalclassfunction alloc]init];
-
-    
     if ([self.testtype isEqualToString: @"Numerical Reasoning"]){
+        
         if (sender.tag == 1){
-            self.chosenanswer = self.firstchoice.text;
-          self.notification.text =   [function checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-            
-            self.questionnumber = self.questionnumber + 1;
-            
-            self.Questionlabelfirst.text = [function nextquestion:self.testtype :self.questionnumber];
-            self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
-            self.Questionlabelfirst.numberOfLines = 0;
-            
-            self.firstchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber];
-            self.secondchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber + 1];
-            self.thirdchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 2];
-            self.fourthchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 3];
-
+        self.chosenanswer = self.firstchoice.text;
         }
         
         else if (sender.tag == 2) {
             self.chosenanswer = self.secondchoice.text;
-            self.notification.text = [function checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-            
-            self.questionnumber = self.questionnumber + 1;
-            
-            self.Questionlabelfirst.text = [function nextquestion:self.testtype :self.questionnumber];
-            self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
-            self.Questionlabelfirst.numberOfLines = 0;
-            
-            self.firstchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber];
-            self.secondchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber + 1];
-            self.thirdchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 2];
-            self.fourthchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 3];
-
-        }
+                    }
         else if (sender.tag == 3){
             
             self.chosenanswer = self.thirdchoice.text;
-            self.notification.text = [function checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
             
-            self.questionnumber = self.questionnumber + 1;
-            
-            self.Questionlabelfirst.text = [function nextquestion:self.testtype :self.questionnumber];
-            self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
-            self.Questionlabelfirst.numberOfLines = 0;
-            
-            self.firstchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber];
-            self.secondchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber + 1];
-            self.thirdchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 2];
-            self.fourthchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 3];
 
         }
         else if(sender.tag ==4){
             
             self.chosenanswer = self.fourthchoice.text;
-           self.notification.text =  [function checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-            
-            self.questionnumber = self.questionnumber + 1;
-            
-            self.Questionlabelfirst.text = [function nextquestion:self.testtype :self.questionnumber];
-            self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
-            self.Questionlabelfirst.numberOfLines = 0;
-            
-            self.firstchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber];
-            self.secondchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber + 1];
-            self.thirdchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 2];
-            self.fourthchoice.text = [function nextanswerchoice:self.testtype :self.questionnumber+ 3];
-
+          
         }
-       
         
+        self.notification.text = [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
         
+        self.questionnumber = self.questionnumber + 1;
+        self.choicenumber = self.choicenumber + 4 ;
         
+        self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
+        self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
+        self.Questionlabelfirst.numberOfLines = 0;
+        self.firstchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber];
+        self.secondchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber +1];
+        self.thirdchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+2];
+        self.fourthchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+3];
     }
 }
+
+
+-(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie{
+    
+    QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
+    
+    return [func checkanswer:test :chosen :indie];
+    
+}
+
+-(NSString*) nextquestion: (NSString*) test : (NSInteger) indie{
+   
+    QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
+    
+    
+    if ([test isEqualToString:@"Numerical Reasoning"]){
+        
+        if (indie <20){
+            
+            _question = [func printquestion:test :indie];
+        }
+        
+    }
+    
+    return _question;
+}
+
+-(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie :(NSInteger) secondindie{
+    QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
+    
+    
+    if ([test isEqualToString:@"Numerical Reasoning"]){
+        
+        if (indie <20){
+            
+            _choice = [func printanswerchoices:test :secondindie];
+        }
+    }
+    
+    return _choice;
+}
+
 
 
 
