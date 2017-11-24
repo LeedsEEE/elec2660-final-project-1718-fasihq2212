@@ -29,7 +29,6 @@
 @property (nonatomic, strong) NSString *choice;
 @property (nonatomic, strong) NSString *result;
 
-
 -(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index;
 -(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index;
 -(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index;

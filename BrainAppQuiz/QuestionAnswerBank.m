@@ -30,20 +30,20 @@
                                     @"A merchant can place 8 large boxes or 10 small boxes into a carton for shipping. In one shipment, he sent a total of 96 boxes. If there are more large boxes than small boxes, how many cartons did he ship?",
                                     nil];
         
-        self.answerfornumerical = @[@"21",
+        self.answerfornumerical = @[@"21 seats",
                     @"-2088",
                     @"None",
-                    @"120",
-                    @"12",
-                    @"3",
-                    @"72",
-                    @"11"];
+                    @"120 minutes",
+                    @"12 people",
+                    @"3 socks",
+                    @"72 years old",
+                    @"11 Boxes"];
         
         self.choicesfornumerical =
-                    @[@"10",
-                     @"21",
-                     @"18",
-                      @"15",
+                    @[@"10 seats",
+                     @"21 seats",
+                     @"18 seats",
+                      @"15 seats",
                       
                       @"-2085",
                       @"-2086",
@@ -55,30 +55,32 @@
                       @"Two",
                       @"Three",
                       
-                      @"120",
-                      @"150",
-                      @"130",
-                      @"140",
+                      @"120 minutes",
+                      @"150 minutes",
+                      @"130 minutes",
+                      @"140 minutes",
                       
-                      @"10",
-                      @"8",
-                      @"6",
-                      @"12",
+                      @"10 people",
+                      @"8 people",
+                      @"6 people",
+                      @"12 people",
                       
-                      @"3",
-                      @"5",
-                      @"4",
-                      @"2",
+                      @"3 socks",
+                      @"5 socks",
+                      @"4 socks",
+                      @"2 socks",
                       
-                      @"69",
-                      @"70",
-                      @"72",
-                      @"74",
+                      @"69 years old",
+                      @"70 years old",
+                      @"72 years old",
+                      @"74 years old",
                       
-                      @"9",
-                      @"11",
-                      @"13",
-                      @"15"];
+                      @"9 Boxes",
+                      @"11 Boxes",
+                      @"13 Boxes",
+                      @"15 Boxes"];
+        
+        
         
     }
     return self;

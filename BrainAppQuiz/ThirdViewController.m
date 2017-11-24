@@ -14,24 +14,24 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber, choicenumber;
+@synthesize testtype, questionnumber, alpha;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
     self.notification.text = @"";
-    self.questionnumber = 0;
-    self.choicenumber = 0;
+    self.questionnumber = arc4random() % 7;
+    self.alpha = 0;
     NSLog(@"%@", self.testtype);
     
     ThirdViewController *controller = [[ThirdViewController alloc] init];
     self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
     self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
     self.Questionlabelfirst.numberOfLines = 0;
-    self.firstchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber];
-    self.secondchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber +1];
-    self.thirdchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+2];
-    self.fourthchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+3];
+    self.firstchoice.text = [controller nextanswerchoice:self.testtype : self.questionnumber*4];
+    self.secondchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4) +1];
+    self.thirdchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+2];
+    self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
 }
 
 
@@ -58,6 +58,10 @@
   
     if ([self.testtype isEqualToString: @"Numerical Reasoning"]){
         
+        if (self.alpha <=19){
+        
+        NSLog(@"%ld", (long)self.questionnumber);
+        
         if (sender.tag == 1){
         self.chosenanswer = self.firstchoice.text;
         }
@@ -79,17 +83,22 @@
         
         self.notification.text = [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
         
-        self.questionnumber = self.questionnumber + 1;
-        self.choicenumber = self.choicenumber + 4 ;
+        self.questionnumber = arc4random() % 7;
+        self.alpha = self.alpha + 1;
         
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
         self.Questionlabelfirst.numberOfLines = 0;
-        self.firstchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber];
-        self.secondchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber +1];
-        self.thirdchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+2];
-        self.fourthchoice.text = [controller nextanswerchoice:self.testtype :self.questionnumber: self.choicenumber+3];
+        self.firstchoice.text = [controller nextanswerchoice:self.testtype : self.questionnumber*4];
+        self.secondchoice.text = [controller nextanswerchoice:self.testtype :(self.questionnumber*4) +1];
+        self.thirdchoice.text = [controller nextanswerchoice:self.testtype  :(self.questionnumber*4)+2];
+        self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
+
+        }
     }
+
+
+
 }
 
 
@@ -104,37 +113,27 @@
 -(NSString*) nextquestion: (NSString*) test : (NSInteger) indie{
    
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
-    
-    
+
     if ([test isEqualToString:@"Numerical Reasoning"]){
         
-        if (indie <20){
-            
             _question = [func printquestion:test :indie];
-        }
-        
     }
     
     return _question;
 }
 
--(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie :(NSInteger) secondindie{
+-(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie {
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
     
     
     if ([test isEqualToString:@"Numerical Reasoning"]){
         
-        if (indie <20){
             
-            _choice = [func printanswerchoices:test :secondindie];
-        }
+            _choice = [func printanswerchoices:test :indie];
     }
     
     return _choice;
 }
-
-
-
 
 
 

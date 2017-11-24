@@ -19,7 +19,9 @@
 @property (nonatomic, strong) NSString *question;
 @property (nonatomic, strong) NSString *choice;
 @property NSInteger questionnumber;
-@property NSInteger choicenumber;
+@property NSInteger alpha;
+
+
 
 
 
