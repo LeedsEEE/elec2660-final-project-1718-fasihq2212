@@ -33,6 +33,8 @@
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 		CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */; };
+		CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */; };
+		CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFA58811FC8D63100F68AAB /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerBank.h; sourceTree = "<group>"; };
 		CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerBank.m; sourceTree = "<group>"; };
+		CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.bundle"; sourceTree = "<group>"; };
+		CAFA58801FC8D63100F68AAB /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.h"; sourceTree = "<group>"; };
+		CAFA58811FC8D63100F68AAB /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +186,9 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */,
+				CAFA58801FC8D63100F68AAB /* ProgressHUD.h */,
+				CAFA58811FC8D63100F68AAB /* ProgressHUD.m */,
 				CA25CED01FC0A21A0075D56C /* MMDrawerBarButtonItem.h */,
 				CA25CED11FC0A21A0075D56C /* MMDrawerBarButtonItem.m */,
 				CA25CED21FC0A21A0075D56C /* MMDrawerController.h */,
@@ -356,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */,
 				CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */,
 				CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */,
 				CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */,
@@ -402,6 +411,7 @@
 				CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */,
 				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
+				CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
 			);

@@ -11,6 +11,7 @@
 #import "BeginSecondViewController.h"
 
 
+
 @interface ThirdViewController : ViewController
 
 @property (nonatomic, strong) NSString *testtype;
@@ -44,19 +45,6 @@
 -(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie;
 -(NSString*) nextquestion: (NSString*) test : (NSInteger) indie;
 -(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie;
-
-
-
-
-
-
-
-
-    
-    
-
-
-
 
 
 

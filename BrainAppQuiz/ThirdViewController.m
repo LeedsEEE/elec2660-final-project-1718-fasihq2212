@@ -20,7 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view
     self.notification.text = @"";
-    self.questionnumber = arc4random() % 7;
+    //self.questionnumber = arc4random() % 7;
+    self.questionnumber = 0;
     self.alpha = 0;
     NSLog(@"%@", self.testtype);
     
@@ -83,7 +84,8 @@
         
         self.notification.text = [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
         
-        self.questionnumber = arc4random() % 7;
+        //self.questionnumber = arc4random() % 7;
+            self.questionnumber = self.questionnumber + 1;
         self.alpha = self.alpha + 1;
         
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
@@ -95,11 +97,9 @@
         self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
 
         }
+        }
     }
 
-
-
-}
 
 
 -(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie{
