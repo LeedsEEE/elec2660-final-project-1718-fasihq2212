@@ -88,4 +88,9 @@
     
 
 }
+- (IBAction)BeginAction:(UIButton *)sender {
+    
+    [self.beginoutlet.layer setBorderWidth:1.0];
+    [self.beginoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+}
 @end

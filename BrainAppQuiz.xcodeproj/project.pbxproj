@@ -24,6 +24,7 @@
 		CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEE41FC0CC670075D56C /* firstViewController.m */; };
 		CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */; };
 		CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */; };
+		CA4F950D1FCA6C2B00F8D7F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */; };
 		CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC01FC093850075D56C /* Nilland-Black.ttf */; };
 		CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */; };
 		CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */; };
@@ -97,6 +98,7 @@
 		CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.h"; sourceTree = "<group>"; };
 		CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.m"; sourceTree = "<group>"; };
+		CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
 		CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeoftestanddescription.h; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4F950D1FCA6C2B00F8D7F8 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +147,7 @@
 				CA25CEA61FC08E9F0075D56C /* BrainAppQuizTests */,
 				CA25CEB11FC08E9F0075D56C /* BrainAppQuizUITests */,
 				CA25CECB1FC0A0270075D56C /* Additional files */,
+				CA4F950B1FCA6C2B00F8D7F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +249,14 @@
 				CA25CE8B1FC08E9F0075D56C /* Products */,
 			);
 			name = "Additional files";
+			sourceTree = "<group>";
+		};
+		CA4F950B1FCA6C2B00F8D7F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CAD859CC1FC2ECE50096E9DF /* Fonts */ = {

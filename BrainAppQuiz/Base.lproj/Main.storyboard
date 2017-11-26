@@ -158,7 +158,8 @@
                                     <color key="titleShadowColor" red="0.41960784309999999" green="0.058823529409999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9cq-24-wAw" kind="show" identifier="quizbegin" id="hqO-o4-amO"/>
+                                    <action selector="BeginAction:" destination="CBC-zJ-Xpx" eventType="touchUpInside" id="g0q-I6-BUQ"/>
+                                    <segue destination="9cq-24-wAw" kind="showDetail" identifier="quizbegin" action="showViewController:sender:" id="hqO-o4-amO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-FL-395">
@@ -201,7 +202,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
+                        <outlet property="beginoutlet" destination="eqy-2N-nX2" id="27K-v1-uK8"/>
                         <outlet property="descriptionlabel" destination="1QU-cv-VwC" id="Urp-8o-uHS"/>
+                        <outlet property="gobackoutlet" destination="rwr-FL-395" id="XCX-eS-8u8"/>
                         <outlet property="typeoftestlabel" destination="fQr-yP-0Sh" id="YnY-nz-thw"/>
                     </connections>
                 </viewController>
@@ -296,6 +299,24 @@
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbO-p6-dkb">
+                                <rect key="frame" x="52" y="65" width="260" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Use-Xe-83m">
+                                <rect key="frame" x="8" y="79" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Goback:" destination="9cq-24-wAw" eventType="touchUpInside" id="mJS-o8-ZvB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.8784313725490196" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -304,8 +325,10 @@
                         <outlet property="Questionlabelfirst" destination="0j1-ic-Tu4" id="u5D-Cz-Joi"/>
                         <outlet property="firstchoice" destination="tOL-ny-kiq" id="Nr9-J0-NOJ"/>
                         <outlet property="fourthchoice" destination="Gpr-EJ-BKm" id="Ogh-eP-IYz"/>
+                        <outlet property="gobackoutlet" destination="Use-Xe-83m" id="ZeI-nQ-brl"/>
                         <outlet property="secondchoice" destination="t52-Vx-PYr" id="GXX-ci-0cm"/>
                         <outlet property="thirdchoice" destination="aGK-IG-IoP" id="zwE-xn-cCM"/>
+                        <outlet property="timerlabel" destination="AbO-p6-dkb" id="FxC-Xa-Zdz"/>
                         <segue destination="lCG-oP-17L" kind="presentation" identifier="resultsegue" id="EwN-ed-LJ2"/>
                     </connections>
                 </viewController>

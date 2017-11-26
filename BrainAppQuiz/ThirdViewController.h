@@ -28,6 +28,7 @@
 
 
 
+
 #pragma mark Labels
 
 @property (weak, nonatomic) IBOutlet UILabel *Questionlabelfirst;
@@ -36,10 +37,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *thirdchoice;
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
 @property (weak, nonatomic) IBOutlet UILabel *notification;
+@property (weak, nonatomic) IBOutlet UILabel *timerlabel;
 
 #pragma mark Button Action
 - (IBAction)choicepressed:(UIButton*)sender;
+- (IBAction)Goback:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *gobackoutlet;
 
 
 #pragma mark Question Functions

@@ -21,6 +21,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *descriptionlabel;
 
 #pragma mark Button properties
+
+
 - (IBAction)backbuttonpressed:(UIButton *)sender; //action for when pressing 'go back'
+- (IBAction)BeginAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *beginoutlet;
+@property (weak, nonatomic) IBOutlet UIButton *gobackoutlet;
 
 @end
