@@ -43,48 +43,48 @@
                                     @"What is the next number in the sequence? 1,11,21,1211,111221,312211",
                                     nil];
         
-        self.questionforgeneral = [NSArray arrayWithObjects: @"Grand Central Terminal, Park Avenue, New York is the world's"
-                                   @"Entomology is the science that studies"
-                                   @"For which of the following disciplines is Nobel Prize awarded?"
-                                   @"Epsom (England) is the place associated with"
-                                   @"Galileo was an Italian astronomer who"
-                                   @"First Afghan War took place in"
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @""
-                                   @"", nil];
+        self.questionforgeneral = [NSArray arrayWithObjects: @"Grand Central Terminal, Park Avenue, New York is the world's",
+                                   @"Entomology is the science that studies",
+                                   @"For which of the following disciplines is Nobel Prize awarded?",
+                                   @"Epsom (England) is the place associated with",
+                                   @"Galileo was an Italian astronomer who",
+                                   @"First Afghan War took place in",
+                                   @"First China War was fought between",
+                                   @"Federation Cup, World Cup, Allywyn International Trophy and Challenge Cup are awarded to winners of",
+                                   @"Each year World Red Cross and Red Crescent Day is celebrated on",
+                                   @"Friction can be reduced by changing from",
+                                   @"During World War II, when did Germany attack France?",
+                                   @"Logarithm tables were invented by",
+                                   @"Joule is the unit of",
+                                   @"Kemal Ataturk was",
+                                   @"Normally the Commonwealth Games are held at intervals of",
+                                   @"Name the instrument used to measure relative humidity",
+                                   @"Michael Faraday discovered",
+                                   @"Mother Teresa won the Nobel Prize for Peace in",
+                                   @"Most commonly used bleaching agent is",
+                                   @"Neil Armstrong and Edwin Aldrin were the first to", nil];
         
-        self.answerforgeneral = @[@"largest railway station"
-                                  @"Insects"
-                                  @"All of the above"
-                                  @"Horse racing"
-                                  @"All of them"
-                                  @"1839"
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  @""
-                                  ]
+        self.answerforgeneral = @[@"largest railway station",
+                                  @"Insects",
+                                  @"All of the above",
+                                  @"Horse racing",
+                                  @"All of them",
+                                  @"1839",
+                                  @"China and Britain",
+                                  @"Volleyball",
+                                  @"May 8",
+                                  @"sliding to rolling",
+                                  @"1940",
+                                  @"John Napier",
+                                  @"energy",
+                                  @"the founder of modern Turkey",
+                                  @"4 years",
+                                  @"Hygrometer",
+                                  @"All of the above",
+                                  @"1979",
+                                  @"chlorine",
+                                  @"step on the moon"
+                                  ];
         
         self.answerfornumerical = @[@"21 seats",
                     @"-2088",
@@ -209,114 +209,116 @@
                       @"13112112",
                       @"13112221"];
         
-        self.choicesforgeneral = @[@"argest railway station"
-                                   @"highest railway station"
-                                   @"longest railway station"
-                                   @"None of the above"
+        self.choicesforgeneral = @[@"largest railway station",
+                                   @"highest railway station",
+                                   @"longest railway station",
+                                   @"None of the above",
                                    
-                                   @"Behavior of human beings"
-                                   @"The formation of rocks"
-                                   @"The origin and history of technical and scientific terms"
-                                   @"Insects"
+                                   @"Behavior of human beings",
+                                   @"The formation of rocks",
+                                   @"The origin and history of technical and scientific terms",
+                                   @"Insects",
                                    
-                                   @"Physics and Chemistry"
-                                   @"Physiology or Medicine"
-                                   @"Literature, Peace and Economics"
-                                   @"All of the above"
+                                   @"Physics and Chemistry",
+                                   @"Physiology or Medicine",
+                                   @"Literature, Peace and Economics",
+                                   @"All of the above",
                                    
-                                   @"Shooting"
-                                   @"Horse racing"
-                                   @"Polo"
-                                   @"Snooker"
+                                   @"Shooting",
+                                   @"Horse racing",
+                                   @"Polo",
+                                   @"Snooker",
         
-                                   @"All of them"
-                                   @"discovered that the movement of pendulum produces a regular time measurement"
-                                   @"discovered four satellites of Jupite"
-                                   @"developed the telescope"
+                                   @"All of them",
+                                   @"discovered that the movement of pendulum produces a regular time measurement",
+                                   @"discovered four satellites of Jupite",
+                                   @"developed the telescope",
         
-                                   @"1843"
-                                   @"1839"
-                                   @"1833"
-                                   @"1848"
+                                   @"1843",
+                                   @"1839",
+                                   @"1833",
+                                   @"1848",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"China and Britain",
+                                   @"China and France",
+                                   @"China and Egypt",
+                                   @"China and Greek",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"Basketball",
+                                   @"Tennis",
+                                   @"Volleyball",
+                                   @"Cricket",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"May 8",
+                                   @"May 18",
+                                   @"June 8",
+                                   @"June 18",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"sliding to rolling",
+                                   @"potential energy to kinetic energy",
+                                   @"rolling to sliding",
+                                   @"dynamic to static",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"1943",
+                                   @"1940",
+                                   @"1941",
+                                   @"1942",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"John Napier",
+                                   @"John Doe",
+                                   @"John Harrison",
+                                   @"John Douglas",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"heat",
+                                   @"pressure",
+                                   @"energy",
+                                   @"temperature",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"None of the choices",
+                                   @"the first President of Independent Kenya",
+                                   @"revolutionary leader of Soviet Union",
+                                   @"the founder of modern Turkey",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"4 years",
+                                   @"5 years",
+                                   @"there is no fixed interval",
+                                   @"3 years",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"Hydrometer",
+                                   @"Mercury Thermometer",
+                                   @"Hygrometer",
+                                   @"Barometer",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"electromagnetism",
+                                   @"benzene, liquid gases and optical glass",
+                                   @"the induction of electric current",
+                                   @"All of the above",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"1954",
+                                   @"1988",
+                                   @"1979",
+                                   @"1992",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"chlorine",
+                                   @"sodium chloride",
+                                   @"carbon dioxide",
+                                   @"alcohol",
         
-                                   @""
-                                   @""
-                                   @""
-                                   @""
+                                   @"circle the moon",
+                                   @"step on the moon",
+                                   @"walk in space",
+                                   @"journey into space", ];
                                    
                                    
         
-        
-        
+
     }
+    
     return self;
 }
 
+    
+    
 -(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index{
     
     
@@ -325,6 +327,13 @@
         
        _finalquestion = [self.questionfornumerical objectAtIndex: index];
         
+    }
+    
+    else if ([testtypefunc isEqualToString:@"General Knowledge"]){
+        
+        
+        _finalquestion = [self.questionforgeneral objectAtIndex: index];
+
     }
      
     return _finalquestion;
@@ -337,6 +346,11 @@
         
         _choice = [self.choicesfornumerical objectAtIndex:index];
         
+    }
+    
+    else if ([testtypefunc isEqualToString:@"General Knowledge"]){
+        
+        _choice = [self.choicesforgeneral objectAtIndex:index];
     }
   
     return _choice;
@@ -355,11 +369,26 @@
             [ProgressHUD showError:@"Wrong"];
         }
     }
-    return _result;
     
+ else if ([testtypefunc isEqualToString:@"General Knowledge"]){
+        
+        if ([answer isEqualToString:[self.answerforgeneral objectAtIndex:index]]){
+            
+            [ProgressHUD showSuccess:@"Excellent"];
+
+        }
+        
+        else {
+            
+            [ProgressHUD showError:@"Wrong"];
+
+        }
+        
+        
+  }
+    
+return _result;
 }
-
-
 
 
 @end

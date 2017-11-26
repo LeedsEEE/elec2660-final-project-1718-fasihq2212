@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view
     self.notification.text = @"";
+    
+    
     //self.questionnumber = arc4random() % 7;
     self.questionnumber = 0;
     self.alpha = 0;
@@ -41,14 +43,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
+
+/*
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-}
+
 */
 
 - (IBAction)choicepressed:(UIButton*)sender {
@@ -57,9 +63,7 @@
     
    NSString *ans = self.testtype;
   
-    if ([self.testtype isEqualToString: @"Numerical Reasoning"]){
-        
-        if (self.alpha <=19){
+        if (self.alpha <19){
         
         NSLog(@"%ld", (long)self.questionnumber);
         
@@ -82,7 +86,7 @@
           
         }
         
-        self.notification.text = [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+       [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
         
         //self.questionnumber = arc4random() % 7;
             self.questionnumber = self.questionnumber + 1;
@@ -97,8 +101,45 @@
         self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
 
         }
+    
+        else{
+            
+            if (sender.tag == 1){
+                self.chosenanswer = self.firstchoice.text;
+                [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                UIViewController *result = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
+                [self.navigationController presentViewController:result animated:YES completion:nil];
+            }
+            
+            else if (sender.tag == 2) {
+                self.chosenanswer = self.secondchoice.text;
+                [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                [self performSegueWithIdentifier:@"resultsegue" sender:self];
+            }
+           
+                else if (sender.tag == 3){
+            
+                
+                self.chosenanswer = self.thirdchoice.text;
+                [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                    [self performSegueWithIdentifier:@"resultsegue" sender:self];
+
+                
+                
+            }
+            else if(sender.tag ==4){
+                
+                self.chosenanswer = self.fourthchoice.text;
+                [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                [self performSegueWithIdentifier:@"resultsegue" sender:self];
+
+                
+            }
+            
+            
+
         }
-    }
+}
 
 
 
@@ -113,24 +154,17 @@
 -(NSString*) nextquestion: (NSString*) test : (NSInteger) indie{
    
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
-
-    if ([test isEqualToString:@"Numerical Reasoning"]){
-        
-            _question = [func printquestion:test :indie];
-    }
-    
+    _question = [func printquestion:test :indie];
+  
     return _question;
 }
 
 -(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie {
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
     
-    
-    if ([test isEqualToString:@"Numerical Reasoning"]){
-        
-            
-            _choice = [func printanswerchoices:test :indie];
-    }
+
+    _choice = [func printanswerchoices:test :indie];
+   
     
     return _choice;
 }

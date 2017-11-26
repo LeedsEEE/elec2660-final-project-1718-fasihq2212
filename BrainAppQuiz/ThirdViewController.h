@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "QuestionAnswerBank.h"
 #import "BeginSecondViewController.h"
+#import "ResultViewController.h"
+#import "MZTimerLabel.h"
 
 
 

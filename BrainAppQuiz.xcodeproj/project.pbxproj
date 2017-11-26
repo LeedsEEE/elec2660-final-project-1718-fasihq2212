@@ -22,6 +22,8 @@
 		CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */; };
 		CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */; };
 		CA25CEE51FC0CC670075D56C /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEE41FC0CC670075D56C /* firstViewController.m */; };
+		CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */; };
+		CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */; };
 		CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC01FC093850075D56C /* Nilland-Black.ttf */; };
 		CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */; };
 		CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */; };
@@ -91,6 +93,10 @@
 		CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
 		CA25CEE31FC0CC670075D56C /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewController.h; path = ../firstViewController.h; sourceTree = "<group>"; };
 		CA25CEE41FC0CC670075D56C /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
+		CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.h"; sourceTree = "<group>"; };
+		CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.m"; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
 		CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeoftestanddescription.h; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 				CA25CEE31FC0CC670075D56C /* firstViewController.h */,
 				CA25CEE41FC0CC670075D56C /* firstViewController.m */,
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
+				CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */,
+				CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */,
 				CAD859D41FC317D80096E9DF /* ThirdViewController.h */,
 				CAD859D51FC317D80096E9DF /* ThirdViewController.m */,
 				CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */,
@@ -186,6 +194,8 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */,
+				CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */,
 				CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */,
 				CAFA58801FC8D63100F68AAB /* ProgressHUD.h */,
 				CAFA58811FC8D63100F68AAB /* ProgressHUD.m */,
@@ -400,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */,
+				CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */,
 				CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */,
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
 				CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */,
@@ -414,6 +425,7 @@
 				CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
+				CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
