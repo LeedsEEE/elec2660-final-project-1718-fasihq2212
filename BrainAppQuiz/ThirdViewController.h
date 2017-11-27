@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString *actualanswer;
 @property (nonatomic, strong) NSString *question;
 @property (nonatomic, strong) NSString *choice;
+@property  NSInteger *score;
 @property (nonatomic, strong) MZTimerLabel *label;
 @property NSInteger questionnumber;
 @property NSInteger alpha;
@@ -39,6 +40,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
 @property (weak, nonatomic) IBOutlet UILabel *notification;
 @property (weak, nonatomic) IBOutlet UILabel *timerlabel;
+@property (weak, nonatomic) IBOutlet UILabel *scorelabel;
 
 #pragma mark Button Action
 - (IBAction)choicepressed:(UIButton*)sender;

@@ -21,12 +21,14 @@
     // Do any additional setup after loading the view
     self.notification.text = @"";
     
-    //self.questionnumber = arc4random() % 7;
+    self.questionnumber = arc4random() % 18;
     
     label = [[MZTimerLabel alloc] initWithLabel:self.timerlabel];
     [label start];
-    self.questionnumber = 0;
+    //self.questionnumber = 0;
     self.alpha = 0;
+    self.score = 0;
+    self.scorelabel.text = [NSString stringWithFormat: @"Score = %li",(long)self.score];
     NSLog(@"%@", self.testtype);
     
     ThirdViewController *controller = [[ThirdViewController alloc] init];
@@ -69,7 +71,7 @@
     
    NSString *ans = self.testtype;
   
-        if (self.alpha <19){
+        if (self.alpha <9){
         
         NSLog(@"%ld", (long)self.questionnumber);
         
@@ -93,9 +95,10 @@
         }
         
        [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+            self.score = self.score + 1;
         
-        //self.questionnumber = arc4random() % 7;
-            self.questionnumber = self.questionnumber + 1;
+        self.questionnumber = arc4random() % 18;
+           // self.questionnumber = self.questionnumber + 1;
         self.alpha = self.alpha + 1;
         
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
@@ -114,12 +117,26 @@
                 self.chosenanswer = self.firstchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                  [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                NSTimeInterval timeRemain = [label  getTimeCounted];
+                
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
+                [alertView show];
+                
+
                             }
             
             else if (sender.tag == 2) {
                 self.chosenanswer = self.secondchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                NSTimeInterval timeRemain = [label  getTimeCounted];
+                
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
+                [alertView show];
+                
+
             }
            
                 else if (sender.tag == 3){
@@ -128,6 +145,13 @@
                 self.chosenanswer = self.thirdchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                     [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                    NSTimeInterval timeRemain = [label  getTimeCounted];
+                    
+                    NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
+                    [alertView show];
+                    
+
 
                 
                 
@@ -137,25 +161,25 @@
                 self.chosenanswer = self.fourthchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                NSTimeInterval timeRemain = [label  getTimeCounted];
+                
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
+                [alertView show];
+                
+
 
                 
             }
             
-            NSTimeInterval timeRemain = [label  getTimeCounted];
             
-            NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
-            [alertView show];
- 
-
         }
 }
 
 - (IBAction)Goback:(UIButton *)sender {
     
-    MZTimerLabel *stopwatch = [[MZTimerLabel alloc] initWithLabel:self.timerlabel];
- self.timerlabel.text = @"";
-    
+ 
+    [label pause];
   
     
     UIAlertController *back = [UIAlertController alertControllerWithTitle:@"You have chosen to quit"
@@ -191,17 +215,17 @@
                                                               
                                                               appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
                                                               [appdel.window makeKeyAndVisible];
-
+                                                              [label reset];
 
                                                               
                                                             
-                                                              [stopwatch reset];
+                                                              
 
                                                           }];
     UIAlertAction* second = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleDefault
                                                   handler:^(UIAlertAction * action) {
                                                       
-
+                                                      [label start];
                                                   
                                                   }];
     

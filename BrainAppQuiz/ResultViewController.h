@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "PHConfettiView.h"
 
 
 @interface ResultViewController : ViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *timerlab;
+@property (nonatomic, strong) PHConfettiView *confetti;
+
+
 
 
 

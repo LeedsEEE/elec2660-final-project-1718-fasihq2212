@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */; };
+		CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */; };
 		CA25CE8F1FC08E9F0075D56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE8E1FC08E9F0075D56C /* main.m */; };
 		CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE911FC08E9F0075D56C /* AppDelegate.m */; };
 		CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE941FC08E9F0075D56C /* ViewController.m */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/ConfettiImages.bundle"; sourceTree = "<group>"; };
+		CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.h"; sourceTree = "<group>"; };
+		CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.m"; sourceTree = "<group>"; };
 		CA25CE8A1FC08E9F0075D56C /* BrainAppQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainAppQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA25CE8E1FC08E9F0075D56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA25CE901FC08E9F0075D56C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,6 +203,9 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */,
+				CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */,
+				CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */,
 				CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */,
 				CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */,
 				CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */,
@@ -389,6 +397,7 @@
 				CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */,
 				CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */,
 				CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */,
+				CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */,
 				CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */,
 				CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */,
 				CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */,
@@ -427,6 +436,7 @@
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
 				CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,
+				CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */,
 				CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */,
 				CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */,
 				CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */,
