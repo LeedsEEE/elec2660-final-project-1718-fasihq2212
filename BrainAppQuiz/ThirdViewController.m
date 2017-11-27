@@ -14,17 +14,17 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber, alpha;
+@synthesize testtype, questionnumber, alpha, label;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
     self.notification.text = @"";
     
-    MZTimerLabel *stopwatch = [[MZTimerLabel alloc] initWithLabel:self.timerlabel];
-    [stopwatch start];
-    
     //self.questionnumber = arc4random() % 7;
+    
+    label = [[MZTimerLabel alloc] initWithLabel:self.timerlabel];
+    [label start];
     self.questionnumber = 0;
     self.alpha = 0;
     NSLog(@"%@", self.testtype);
@@ -51,7 +51,7 @@
 
 #pragma mark - Navigation
 
-/*
+
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -60,11 +60,12 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 
-*/
+}
 
 - (IBAction)choicepressed:(UIButton*)sender {
     
     ThirdViewController *controller  = [[ThirdViewController alloc] init];
+
     
    NSString *ans = self.testtype;
   
@@ -112,9 +113,8 @@
             if (sender.tag == 1){
                 self.chosenanswer = self.firstchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-                UIViewController *result = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
-                [self.navigationController presentViewController:result animated:YES completion:nil];
-            }
+                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                            }
             
             else if (sender.tag == 2) {
                 self.chosenanswer = self.secondchoice.text;
@@ -141,7 +141,12 @@
                 
             }
             
+            NSTimeInterval timeRemain = [label  getTimeCounted];
             
+            NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
+            [alertView show];
+ 
 
         }
 }

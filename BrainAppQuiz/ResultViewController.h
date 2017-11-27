@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
+
 @interface ResultViewController : ViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *timerlab;
 
 
 

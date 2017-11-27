@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString *actualanswer;
 @property (nonatomic, strong) NSString *question;
 @property (nonatomic, strong) NSString *choice;
+@property (nonatomic, strong) MZTimerLabel *label;
 @property NSInteger questionnumber;
 @property NSInteger alpha;
 

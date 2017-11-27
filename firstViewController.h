@@ -2,17 +2,18 @@
 //  firstViewController.h
 //  BrainAppQuiz
 //
-//  Created by Fasih Qureshi on 18/11/2017.
+//  Created by Fasih Qureshi on 26/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "MMDrawerController.h"
-#import "MMDrawerVisualState.h"
+
+
+
 
 @interface firstViewController : ViewController
-
-
+@property (strong, nonatomic) IBOutlet UILabel *welc;
+@property (strong, nonatomic) IBOutlet UILabel *swipe;
 
 
 @end
