@@ -43,7 +43,7 @@
     self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
     
     [self.gobackoutlet.layer setBorderWidth:1.0];
-    [self.gobackoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [self.gobackoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
 }
 
 
@@ -56,7 +56,7 @@
 #pragma mark - Navigation
 
 
-/*
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
@@ -73,7 +73,7 @@
     // Pass the selected object to the new view controller.
 
 }
- */
+ 
 
 - (IBAction)choicepressed:(UIButton*)sender {
     
@@ -189,6 +189,8 @@
 
 - (IBAction)Goback:(UIButton *)sender {
     
+    
+    self.gobackoutlet.selected = YES;
  
     [label pause];
   
@@ -237,6 +239,8 @@
                                                   handler:^(UIAlertAction * action) {
                                                       
                                                       [label start];
+                                                      
+                                                      self.gobackoutlet.selected = NO;
                                                   
                                                   }];
     

@@ -10,9 +10,7 @@
 #import "PHConfettiView.h"
 #import "MMDrawerController.h"
 #import "AppDelegate.h"
-
-
-
+#import "ThirdViewController.h"
 
 @interface ResultViewController : ViewController
 

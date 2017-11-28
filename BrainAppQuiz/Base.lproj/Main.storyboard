@@ -216,7 +216,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-Rd-d9B" customClass="RQShineLabel">
-                                <rect key="frame" x="-28" y="36" width="176" height="31"/>
+                                <rect key="frame" x="195" y="38" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -236,15 +236,8 @@
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbO-p6-dkb">
-                                <rect key="frame" x="57" y="20" width="260" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Use-Xe-83m">
-                                <rect key="frame" x="158" y="77" width="59" height="35"/>
+                                <rect key="frame" x="16" y="36" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
                                 <state key="normal" title="Quit">
@@ -266,6 +259,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="26"/>
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbO-p6-dkb">
+                                <rect key="frame" x="57" y="22" width="260" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -349,7 +349,7 @@
                                 <state key="normal" title="Try again"/>
                                 <connections>
                                     <action selector="tryagain:" destination="lCG-oP-17L" eventType="touchUpInside" id="uld-2G-b3P"/>
-                                    <segue destination="9cq-24-wAw" kind="show" id="hq5-h7-Rru"/>
+                                    <segue destination="9cq-24-wAw" kind="presentation" identifier="tryagainsegue" modalTransitionStyle="crossDissolve" id="ip4-dr-beY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -516,6 +516,6 @@
         <image name="l3.png" width="550" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hq5-h7-Rru"/>
+        <segue reference="ip4-dr-beY"/>
     </inferredMetricsTieBreakers>
 </document>
