@@ -11,6 +11,9 @@
 #import "BeginSecondViewController.h"
 #import "ResultViewController.h"
 #import "MZTimerLabel.h"
+#import "RQShineLabel.h"
+
+
 
 
 
@@ -25,6 +28,7 @@
 @property (nonatomic, strong) MZTimerLabel *label;
 @property NSInteger questionnumber;
 @property NSInteger alpha;
+@property (weak, nonatomic) IBOutlet RQShineLabel *rqshinelabel;
 
 
 

@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.welcanimate shine];
+    [self.swipanimate shine];
+    
     // Do any additional setup after loading the view.
 }
 

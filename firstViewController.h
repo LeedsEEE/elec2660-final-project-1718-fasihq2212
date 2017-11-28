@@ -7,13 +7,14 @@
 //
 
 #import "ViewController.h"
-
-
+#import "RQShineLabel.h"
 
 
 @interface firstViewController : ViewController
-@property (strong, nonatomic) IBOutlet UILabel *welc;
-@property (strong, nonatomic) IBOutlet UILabel *swipe;
+
+@property (weak, nonatomic) IBOutlet RQShineLabel *welcanimate;
+
+@property (weak, nonatomic) IBOutlet RQShineLabel *swipanimate;
 
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA028B591FCCCFC00023395A /* RQShineLabel.m */; };
 		CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */; };
 		CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */; };
 		CA25CE8F1FC08E9F0075D56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE8E1FC08E9F0075D56C /* main.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA028B581FCCCFC00023395A /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQShineLabel.h; path = "../../../../Downloads/RQShineLabel-master/Classes/RQShineLabel.h"; sourceTree = "<group>"; };
+		CA028B591FCCCFC00023395A /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQShineLabel.m; path = "../../../../Downloads/RQShineLabel-master/Classes/RQShineLabel.m"; sourceTree = "<group>"; };
 		CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/ConfettiImages.bundle"; sourceTree = "<group>"; };
 		CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.h"; sourceTree = "<group>"; };
 		CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.m"; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA028B581FCCCFC00023395A /* RQShineLabel.h */,
+				CA028B591FCCCFC00023395A /* RQShineLabel.m */,
 				CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */,
 				CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */,
 				CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */,
@@ -442,6 +447,7 @@
 				CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */,
 				CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */,
 				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
+				CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */,
 				CA73EBF41FCB56F0004EEC8E /* firstViewController.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
 				CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */,

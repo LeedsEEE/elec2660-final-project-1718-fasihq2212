@@ -24,66 +24,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--First View Controller-->
-        <scene sceneID="0TZ-5e-cTb">
-            <objects>
-                <viewController storyboardIdentifier="CentreViewController" id="E1H-Tm-C0b" customClass="firstViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IJU-LZ-OuB"/>
-                        <viewControllerLayoutGuide type="bottom" id="QhT-aV-65X"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vb9-zA-HAg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to Choose Topic " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwe-BN-cjp">
-                                <rect key="frame" x="53" y="591" width="269" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="ri6-IN-uQS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-2U-VfU">
-                                <rect key="frame" x="54" y="80" width="267" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="JNA-9q-RNS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="56"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l3.png" translatesAutoresizingMaskIntoConstraints="NO" id="TEa-2H-ahY">
-                                <rect key="frame" x="48" y="208" width="279" height="185"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="pXU-3j-tZS"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.86274509803921573" green="0.8784313725490196" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3pV-2U-VfU" firstAttribute="centerX" secondItem="Vb9-zA-HAg" secondAttribute="centerX" id="AAE-QX-90W"/>
-                            <constraint firstItem="Wwe-BN-cjp" firstAttribute="centerX" secondItem="TEa-2H-ahY" secondAttribute="centerX" id="Dp7-gr-Vkt"/>
-                            <constraint firstItem="TEa-2H-ahY" firstAttribute="top" secondItem="3pV-2U-VfU" secondAttribute="bottom" constant="33" id="MWg-jb-Iln"/>
-                            <constraint firstItem="3pV-2U-VfU" firstAttribute="top" secondItem="IJU-LZ-OuB" secondAttribute="bottom" constant="16" id="OV0-2Q-ABb"/>
-                            <constraint firstItem="TEa-2H-ahY" firstAttribute="centerX" secondItem="3pV-2U-VfU" secondAttribute="centerX" id="TPq-X6-o7e"/>
-                            <constraint firstItem="Wwe-BN-cjp" firstAttribute="leading" secondItem="Vb9-zA-HAg" secondAttribute="leadingMargin" constant="37" id="TzG-tG-REd"/>
-                            <constraint firstItem="3pV-2U-VfU" firstAttribute="leading" secondItem="Vb9-zA-HAg" secondAttribute="leadingMargin" constant="38" id="Xlx-HH-7Q3"/>
-                            <constraint firstItem="QhT-aV-65X" firstAttribute="top" secondItem="Wwe-BN-cjp" secondAttribute="bottom" constant="33" id="jJ0-LV-dpe"/>
-                            <constraint firstItem="TEa-2H-ahY" firstAttribute="leading" secondItem="Vb9-zA-HAg" secondAttribute="leadingMargin" constant="32" id="w16-6x-QQz"/>
-                        </constraints>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <outlet property="swipe" destination="Wwe-BN-cjp" id="R0d-oL-gJ3"/>
-                        <outlet property="welc" destination="3pV-2U-VfU" id="5K9-LA-Hh3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1vc-32-IOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="138.98050974512745"/>
-        </scene>
         <!--Left Table View Controller-->
         <scene sceneID="RPc-dW-AHn">
             <objects>
@@ -131,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Um-lr-X3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="786.65667166416802"/>
+            <point key="canvasLocation" x="777" y="796"/>
         </scene>
         <!--Begin Second View Controller-->
         <scene sceneID="GKF-XE-A1n">
@@ -275,17 +215,17 @@
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-Rd-d9B" customClass="RQShineLabel">
+                                <rect key="frame" x="-28" y="36" width="176" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t52-Vx-PYr">
                                 <rect key="frame" x="97" y="450" width="264" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j1-ic-Tu4">
-                                <rect key="frame" x="8" y="65" width="359" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="26"/>
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -297,14 +237,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbO-p6-dkb">
-                                <rect key="frame" x="57" y="65" width="260" height="63"/>
+                                <rect key="frame" x="57" y="20" width="260" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Use-Xe-83m">
-                                <rect key="frame" x="8" y="79" width="59" height="35"/>
+                                <rect key="frame" x="158" y="77" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
                                 <state key="normal" title="Quit">
@@ -321,18 +261,11 @@
                                 <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a2-0i-k1G">
-                                <rect key="frame" x="164" y="65" width="260" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j1-ic-Tu4">
+                                <rect key="frame" x="4" y="108" width="367" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVC-DA-hVO">
-                                <rect key="frame" x="164" y="65" width="260" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="26"/>
+                                <color key="textColor" red="0.41960784313725491" green="0.058823529411764705" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -344,7 +277,7 @@
                         <outlet property="firstchoice" destination="tOL-ny-kiq" id="Nr9-J0-NOJ"/>
                         <outlet property="fourthchoice" destination="Gpr-EJ-BKm" id="Ogh-eP-IYz"/>
                         <outlet property="gobackoutlet" destination="Use-Xe-83m" id="ZeI-nQ-brl"/>
-                        <outlet property="scorelabel" destination="0a2-0i-k1G" id="SQG-mV-B6C"/>
+                        <outlet property="rqshinelabel" destination="ubW-Rd-d9B" id="Fen-uM-dpC"/>
                         <outlet property="secondchoice" destination="t52-Vx-PYr" id="GXX-ci-0cm"/>
                         <outlet property="thirdchoice" destination="aGK-IG-IoP" id="zwE-xn-cCM"/>
                         <outlet property="timerlabel" destination="AbO-p6-dkb" id="FxC-Xa-Zdz"/>
@@ -367,20 +300,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-g8-6cn">
-                                <rect key="frame" x="62" y="57" width="251" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-g8-6cn">
+                                <rect key="frame" x="0.0" y="11" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-ON-wWg">
+                                <rect key="frame" x="16" y="174" width="204" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-qh-XVw">
+                                <rect key="frame" x="-9" y="432" width="152" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-KD-2ol">
+                                <rect key="frame" x="-35" y="473" width="204" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have completed: " lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-i8-Q1W">
+                                <rect key="frame" x="16" y="260" width="343" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Th-90-RJ3">
+                                <rect key="frame" x="232" y="582" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose Category"/>
+                                <connections>
+                                    <action selector="chooseanother:" destination="lCG-oP-17L" eventType="touchUpInside" id="JC1-p1-Ckk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-yJ-7q9">
+                                <rect key="frame" x="36" y="582" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Try again"/>
+                                <connections>
+                                    <action selector="tryagain:" destination="lCG-oP-17L" eventType="touchUpInside" id="uld-2G-b3P"/>
+                                    <segue destination="9cq-24-wAw" kind="show" id="hq5-h7-Rru"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="chooseagainprop" destination="6Th-90-RJ3" id="13G-N9-LMg"/>
+                        <outlet property="tryagainprop" destination="iTI-yJ-7q9" id="HJu-0h-ncV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03o-Ob-d2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2912.8000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="3024.8000000000002" y="138.98050974512745"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -430,7 +412,7 @@
                                 <state key="normal" title="Begin"/>
                                 <connections>
                                     <action selector="action1button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ScP-fy-Z3w"/>
-                                    <segue destination="E1H-Tm-C0b" kind="presentation" identifier="seguepush" modalTransitionStyle="crossDissolve" id="ybn-Uc-z7K"/>
+                                    <segue destination="LkV-Zg-li0" kind="presentation" identifier="seguepush" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6M2-tn-TuO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l3.png" translatesAutoresizingMaskIntoConstraints="NO" id="xGy-5m-Etb">
@@ -469,8 +451,71 @@
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="138.98050974512745"/>
         </scene>
+        <!--First View Controller-->
+        <scene sceneID="MPx-wf-Xyf">
+            <objects>
+                <viewController storyboardIdentifier="CentreViewController" id="LkV-Zg-li0" customClass="firstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="22Q-q2-o9r"/>
+                        <viewControllerLayoutGuide type="bottom" id="C9K-qL-p24"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="55c-jG-3gA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to Choose Topic " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-cC-bMr" customClass="RQShineLabel">
+                                <rect key="frame" x="53" y="591" width="269" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="6ID-Gr-U1I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-qt-S9p" customClass="RQShineLabel">
+                                <rect key="frame" x="54" y="80" width="267" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="QBJ-L8-Hiw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l3.png" translatesAutoresizingMaskIntoConstraints="NO" id="wqn-fb-EAc">
+                                <rect key="frame" x="48" y="208" width="279" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="tam-i2-f9i"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.87843137250000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lg9-qt-S9p" firstAttribute="centerX" secondItem="55c-jG-3gA" secondAttribute="centerX" id="4iK-lA-TtV"/>
+                            <constraint firstItem="wqn-fb-EAc" firstAttribute="top" secondItem="Lg9-qt-S9p" secondAttribute="bottom" constant="33" id="6zd-K8-B2z"/>
+                            <constraint firstItem="wqn-fb-EAc" firstAttribute="centerX" secondItem="Lg9-qt-S9p" secondAttribute="centerX" id="Fna-oB-gV9"/>
+                            <constraint firstItem="4R2-cC-bMr" firstAttribute="centerX" secondItem="wqn-fb-EAc" secondAttribute="centerX" id="NGs-65-lJ0"/>
+                            <constraint firstItem="wqn-fb-EAc" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="32" id="SHA-Mn-SPP"/>
+                            <constraint firstItem="4R2-cC-bMr" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="37" id="Tyn-3W-KuW"/>
+                            <constraint firstItem="Lg9-qt-S9p" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="38" id="aPa-BZ-FEw"/>
+                            <constraint firstItem="Lg9-qt-S9p" firstAttribute="top" secondItem="22Q-q2-o9r" secondAttribute="bottom" constant="16" id="iU5-MN-uBt"/>
+                            <constraint firstItem="C9K-qL-p24" firstAttribute="top" secondItem="4R2-cC-bMr" secondAttribute="bottom" constant="33" id="vWA-3O-zZ1"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="swipanimate" destination="4R2-cC-bMr" id="ak3-cg-nEA"/>
+                        <outlet property="welcanimate" destination="Lg9-qt-S9p" id="kE5-qm-Ty2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiU-67-0wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="l3.png" width="550" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hq5-h7-Rru"/>
+    </inferredMetricsTieBreakers>
 </document>

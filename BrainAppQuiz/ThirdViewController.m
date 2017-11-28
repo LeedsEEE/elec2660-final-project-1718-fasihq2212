@@ -22,6 +22,8 @@
     self.notification.text = @"";
     
     self.questionnumber = arc4random() % 18;
+    //self.rqshinelabel.text = @"test";
+    //[self.rqshinelabel shine];
     
     label = [[MZTimerLabel alloc] initWithLabel:self.timerlabel];
     [label start];
@@ -54,15 +56,24 @@
 #pragma mark - Navigation
 
 
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"resultsegue"]){
+        
+        
+        ResultViewController *resu = (ResultViewController *) segue.destinationViewController;
+        resu.passedonteststring = self.testtype;
+        
+    }
     
 
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 
 }
+ */
 
 - (IBAction)choicepressed:(UIButton*)sender {
     
