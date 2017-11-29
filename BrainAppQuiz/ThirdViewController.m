@@ -14,7 +14,7 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber, alpha, label;
+@synthesize testtype, questionnumber, alpha, label, score;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,9 +30,11 @@
     //self.questionnumber = 0;
     self.alpha = 0;
     self.score = 0;
-    self.scorelabel.text = [NSString stringWithFormat: @"Score = %li",(long)self.score];
+    self.scoreshine.text = [NSString stringWithFormat: @"Score:%li",(long)self.score];
+    [self.scoreshine shine];
+    self.scoreanswer.text = @"0";
+    [self.scoreanswer shine];
     NSLog(@"%@", self.testtype);
-    
     ThirdViewController *controller = [[ThirdViewController alloc] init];
     self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
     self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
@@ -44,6 +46,16 @@
     
     [self.gobackoutlet.layer setBorderWidth:1.0];
     [self.gobackoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.firstbuttonoutlet.layer setBorderWidth:1.0];
+    [self.firstbuttonoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.secondbuttoutlet.layer setBorderWidth:1.0];
+    [self.secondbuttoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.thirdbuttonoutlet.layer setBorderWidth:1.0];
+    [self.thirdbuttonoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.fourthbuttonoutlet.layer setBorderWidth:1.0];
+    [self.fourthbuttonoutlet.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    
+    
 }
 
 
@@ -77,7 +89,13 @@
 
 - (IBAction)choicepressed:(UIButton*)sender {
     
+    ;
+    
     ThirdViewController *controller  = [[ThirdViewController alloc] init];
+    
+    NSTimeInterval recorded = [label getTimeCounted];
+    
+    NSLog(@"time = %f",recorded);
 
     
    NSString *ans = self.testtype;
@@ -105,9 +123,18 @@
           
         }
         
+      
+           
+            
        [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-            self.score = self.score + 1;
-        
+            
+            NSLog(@"Score  = %ld",(long)self.score);
+ 
+           
+                self.score = self.score + 1;
+            self.scoreanswer.text = [NSString stringWithFormat:@"%li", (long)self.score];
+            [self.scoreanswer shine];
+            
         self.questionnumber = arc4random() % 18;
            // self.questionnumber = self.questionnumber + 1;
         self.alpha = self.alpha + 1;
@@ -119,6 +146,8 @@
         self.secondchoice.text = [controller nextanswerchoice:self.testtype :(self.questionnumber*4) +1];
         self.thirdchoice.text = [controller nextanswerchoice:self.testtype  :(self.questionnumber*4)+2];
         self.fourthchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+3];
+
+         
 
         }
     
@@ -173,7 +202,6 @@
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
                 NSTimeInterval timeRemain = [label  getTimeCounted];
-                
                 NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
                 [alertView show];

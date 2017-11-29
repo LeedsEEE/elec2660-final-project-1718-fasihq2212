@@ -20,6 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.view addSubview:self.resultfinish];
+    
+    self.resultfinish.text = self.passedonteststring;
+       [self.resultfinish shine];
+    
+    
+    
     self.confetti = [[PHConfettiView alloc] initWithFrame:self.view.bounds];
     self.confetti.colors = @[[UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
                                  [UIColor colorWithRed:1.00 green:0.78 blue:0.36 alpha:1.0],
