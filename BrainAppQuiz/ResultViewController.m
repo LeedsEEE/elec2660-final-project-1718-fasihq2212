@@ -15,17 +15,18 @@
 
 @implementation ResultViewController
 
-@synthesize passedonteststring;
+@synthesize passedonteststring, label, finalscorealpha, passedonscore;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [self.view addSubview:self.resultfinish];
+    [self.view addSubview:self.finalscorealpha];
     
     self.resultfinish.text = self.passedonteststring;
        [self.resultfinish shine];
-    
-    
+   
     
     self.confetti = [[PHConfettiView alloc] initWithFrame:self.view.bounds];
     self.confetti.colors = @[[UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
@@ -41,8 +42,21 @@
     
     [self.view addSubview:self.tryagainprop];
      [self.view addSubview:self.chooseagainprop];
-
+    [self.view addSubview:self.infooutlet];
     
+    self.timeshine.text = [NSString stringWithFormat:@"Time: %.2f seconds", self.passedontime];
+    self.scoreshine.text = [NSString stringWithFormat:@"Score: %li", (long)self.passedonscore];
+    
+    [self.timeshine shine];
+    [self.scoreshine shine];
+    
+    self.label = [[DPScrollNumberLabel alloc] initWithNumber:@(1) font:[UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:40] textColor:[UIColor grayColor] rowNumber:5];
+    
+    self.label.frame = CGRectMake(210, 500, self.label.frame.size.width, self.label.frame.size.height);
+    
+    [self.view addSubview:self.label];
+    
+
 
 
 }
@@ -114,5 +128,17 @@
     [appdel.window makeKeyAndVisible];
     
 
+}
+
+- (IBAction)displayinfo:(UIButton *)sender {
+
+    
+    [self.label changeToNumber:@(self.passedonscore) animated:YES];
+     [self.finalscorealpha shine];
+    
+
+    
+    
+    
 }
 @end

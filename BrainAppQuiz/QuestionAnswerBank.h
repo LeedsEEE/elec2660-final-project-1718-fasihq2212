@@ -29,10 +29,11 @@
 @property (nonatomic, strong) NSString *finalquestion;
 @property (nonatomic, strong) NSString *choice;
 @property (nonatomic, strong) NSString *result;
+@property NSInteger score;
 
 -(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index;
 -(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index;
--(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index;
+-(NSInteger*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index;
 -(NSString*) nextquestionfunc;
 
 

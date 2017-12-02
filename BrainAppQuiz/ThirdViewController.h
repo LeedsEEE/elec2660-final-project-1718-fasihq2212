@@ -14,9 +14,6 @@
 #import "RQShineLabel.h"
 
 
-
-
-
 @interface ThirdViewController : ViewController
 
 @property (nonatomic, strong) NSString *testtype;
@@ -28,7 +25,7 @@
 @property (nonatomic, strong) MZTimerLabel *label;
 @property NSInteger questionnumber;
 @property NSInteger alpha;
-@property (weak, nonatomic) IBOutlet RQShineLabel *rqshinelabel;
+
 
 
 #pragma mark Labels
@@ -38,11 +35,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondchoice;
 @property (weak, nonatomic) IBOutlet UILabel *thirdchoice;
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
-@property (weak, nonatomic) IBOutlet UILabel *notification;
 @property (weak, nonatomic) IBOutlet UILabel *timerlabel;
-@property (weak, nonatomic) IBOutlet RQShineLabel *scoreshine;
-
-@property (weak, nonatomic) IBOutlet RQShineLabel *scoreanswer;
+@property (weak, nonatomic) IBOutlet UILabel *scoreanswer;
+@property NSTimeInterval timeelapsed;
 
 #pragma mark Button Outlets
 
@@ -50,10 +45,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondbuttoutlet;
 @property (weak, nonatomic) IBOutlet UIButton *thirdbuttonoutlet;
 @property (weak, nonatomic) IBOutlet UIButton *fourthbuttonoutlet;
-
-
-
-
 
 
 
@@ -66,7 +57,7 @@
 
 #pragma mark Question Functions
 
--(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie;
+-(NSInteger*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie;
 -(NSString*) nextquestion: (NSString*) test : (NSInteger) indie;
 -(NSString*) nextanswerchoice: (NSString*) test :(NSInteger) indie;
 

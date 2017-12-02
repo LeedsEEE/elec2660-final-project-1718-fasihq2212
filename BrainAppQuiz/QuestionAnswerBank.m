@@ -356,17 +356,20 @@
     return _choice;
 }
 
--(NSString*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index{
+-(NSInteger*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index{
     
     if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
         
         if ([answer isEqualToString: [self.answerfornumerical objectAtIndex:index]]){
             
             [ProgressHUD showSuccess:@"Excellent"];
+            self.score = self.score + 1;
+            
         }
         else {
             
             [ProgressHUD showError:@"Wrong"];
+           
         }
     }
     
@@ -374,20 +377,22 @@
         
         if ([answer isEqualToString:[self.answerforgeneral objectAtIndex:index]]){
             
+            
             [ProgressHUD showSuccess:@"Excellent"];
+            self.score = self.score + 1;
 
         }
         
         else {
             
             [ProgressHUD showError:@"Wrong"];
+            
 
         }
         
         
   }
-    
-return _result;
+    return &(_score);
 }
 
 

@@ -14,12 +14,12 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber, alpha, label, score;
+@synthesize testtype, questionnumber, alpha, label, score, scoreanswer, timeelapsed;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
-    self.notification.text = @"";
+  
     
     self.questionnumber = arc4random() % 18;
     //self.rqshinelabel.text = @"test";
@@ -29,11 +29,8 @@
     [label start];
     //self.questionnumber = 0;
     self.alpha = 0;
-    self.score = 0;
-    self.scoreshine.text = [NSString stringWithFormat: @"Score:%li",(long)self.score];
-    [self.scoreshine shine];
+    [self.view addSubview:self.scoreanswer];
     self.scoreanswer.text = @"0";
-    [self.scoreanswer shine];
     NSLog(@"%@", self.testtype);
     ThirdViewController *controller = [[ThirdViewController alloc] init];
     self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
@@ -77,6 +74,10 @@
         
         ResultViewController *resu = (ResultViewController *) segue.destinationViewController;
         resu.passedonteststring = self.testtype;
+        resu.passedontime = [label getTimeCounted];
+        resu.passedonscore = self.score;
+        
+        
         
     }
     
@@ -88,10 +89,12 @@
  
 
 - (IBAction)choicepressed:(UIButton*)sender {
-    
-    ;
-    
+
     ThirdViewController *controller  = [[ThirdViewController alloc] init];
+    QuestionAnswerBank *func = [[QuestionAnswerBank alloc] init];
+    
+    NSArray *arr = [func answerfornumerical];
+    NSArray *arr1 = [func answerforgeneral];
     
     NSTimeInterval recorded = [label getTimeCounted];
     
@@ -122,23 +125,28 @@
             self.chosenanswer = self.fourthchoice.text;
           
         }
-        
-      
-           
-            
-       [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-            
+            [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+    
+            if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
+                
+                self.score = self.score + 1;
+                self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+              
+            }
+
+            else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
+                self.score = self.score + 1;
+                self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                
+            }
+
+
             NSLog(@"Score  = %ld",(long)self.score);
  
-           
-                self.score = self.score + 1;
-            self.scoreanswer.text = [NSString stringWithFormat:@"%li", (long)self.score];
-            [self.scoreanswer shine];
-            
+
         self.questionnumber = arc4random() % 18;
            // self.questionnumber = self.questionnumber + 1;
         self.alpha = self.alpha + 1;
-        
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
         self.Questionlabelfirst.numberOfLines = 0;
@@ -157,9 +165,9 @@
                 self.chosenanswer = self.firstchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                  [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                NSTimeInterval timeRemain = [label  getTimeCounted];
+                self.timeelapsed = [label  getTimeCounted];
                 
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
                 [alertView show];
                 
@@ -170,9 +178,9 @@
                 self.chosenanswer = self.secondchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                NSTimeInterval timeRemain = [label  getTimeCounted];
+               self.timeelapsed = [label  getTimeCounted];
                 
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
                 [alertView show];
                 
@@ -185,9 +193,9 @@
                 self.chosenanswer = self.thirdchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                     [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                    NSTimeInterval timeRemain = [label  getTimeCounted];
+                  self.timeelapsed = [label  getTimeCounted];
                     
-                    NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+                    NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
                     [alertView show];
                     
@@ -201,8 +209,8 @@
                 self.chosenanswer = self.fourthchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                NSTimeInterval timeRemain = [label  getTimeCounted];
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",timeRemain];
+               self.timeelapsed = [label  getTimeCounted];
+                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
                 [alertView show];
                 
@@ -226,10 +234,6 @@
     UIAlertController *back = [UIAlertController alertControllerWithTitle:@"You have chosen to quit"
                                                                   message:@"Are you sure?"
                                                            preferredStyle:UIAlertControllerStyleAlert];
-    
-    
-    
-    
     UIAlertAction* first = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
                                                               
@@ -258,10 +262,6 @@
                                                               [appdel.window makeKeyAndVisible];
                                                               [label reset];
 
-                                                              
-                                                            
-                                                              
-
                                                           }];
     UIAlertAction* second = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleDefault
                                                   handler:^(UIAlertAction * action) {
@@ -281,11 +281,13 @@
 
 
 
--(NSString*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie{
+-(NSInteger*) checkanswerfunc: (NSString*) test :(NSString*) chosen : (NSInteger) indie{
     
     QuestionAnswerBank *func = [[QuestionAnswerBank alloc]init];
     
-    return [func checkanswer:test :chosen :indie];
+   return  [func checkanswer:test :chosen :indie];
+    
+
     
 }
 

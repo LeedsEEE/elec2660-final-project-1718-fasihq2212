@@ -35,21 +35,21 @@
                         <color key="separatorColor" red="0.19215686274509802" green="0.031372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="firstcell" editingAccessoryType="detailDisclosureButton" textLabel="aBX-XE-yjz" detailTextLabel="3BS-Rx-Vh0" rowHeight="113" style="IBUITableViewCellStyleSubtitle" id="saP-6A-1SG">
-                                <rect key="frame" x="0.0" y="56" width="375" height="113"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="saP-6A-1SG" id="Yph-2o-LCf">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="112"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="112.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aBX-XE-yjz">
-                                            <rect key="frame" x="15" y="35" width="40" height="24"/>
+                                            <rect key="frame" x="15" y="35" width="39.5" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Nilland-Black" family="Nilland-Black" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3BS-Rx-Vh0">
-                                            <rect key="frame" x="15" y="59" width="43" height="19"/>
+                                            <rect key="frame" x="15" y="58.5" width="43" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Nilland-SmallCaps" family="Nilland-SmallCaps" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -261,15 +261,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-Rd-d9B" customClass="RQShineLabel">
-                                <rect key="frame" x="57" y="79" width="176" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkO-Je-MNL" customClass="RQShineLabel">
-                                <rect key="frame" x="178" y="73" width="103" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkO-Je-MNL">
+                                <rect key="frame" x="241" y="25" width="136" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -287,7 +280,6 @@
                         <outlet property="fourthchoice" destination="Gpr-EJ-BKm" id="Ogh-eP-IYz"/>
                         <outlet property="gobackoutlet" destination="Use-Xe-83m" id="ZeI-nQ-brl"/>
                         <outlet property="scoreanswer" destination="LkO-Je-MNL" id="P7I-JM-DYm"/>
-                        <outlet property="scoreshine" destination="ubW-Rd-d9B" id="Ehl-gp-z5c"/>
                         <outlet property="secondbuttoutlet" destination="idh-mx-h2O" id="QS1-WW-XOc"/>
                         <outlet property="secondchoice" destination="t52-Vx-PYr" id="GXX-ci-0cm"/>
                         <outlet property="thirdbuttonoutlet" destination="dW2-Ub-UT8" id="17I-c5-3lV"/>
@@ -312,72 +304,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-g8-6cn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-g8-6cn">
                                 <rect key="frame" x="0.0" y="11" width="375" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="DQl-3j-EtD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-qh-XVw" customClass="RQShineLabel">
-                                <rect key="frame" x="-9" y="432" width="152" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-KD-2ol" customClass="RQShineLabel">
+                                <rect key="frame" x="0.0" y="495" width="169" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="db1-C9-BCr"/>
+                                    <constraint firstAttribute="width" constant="169" id="v3x-uq-SEO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-KD-2ol" customClass="RQShineLabel">
-                                <rect key="frame" x="-35" y="473" width="204" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-i8-Q1W" customClass="RQShineLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-i8-Q1W" customClass="RQShineLabel">
                                 <rect key="frame" x="16" y="260" width="343" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="nEC-kj-Myq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have completed " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-KN-LGk" customClass="RQShineLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have completed " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-KN-LGk" customClass="RQShineLabel">
                                 <rect key="frame" x="85" y="215" width="204" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="cks-Zz-AVR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nilland-Black" family="Nilland-Black" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Th-90-RJ3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Th-90-RJ3">
                                 <rect key="frame" x="232" y="582" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Choose Category"/>
                                 <connections>
                                     <action selector="chooseanother:" destination="lCG-oP-17L" eventType="touchUpInside" id="JC1-p1-Ckk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-yJ-7q9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-yJ-7q9">
                                 <rect key="frame" x="36" y="582" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Try again"/>
                                 <connections>
                                     <action selector="tryagain:" destination="lCG-oP-17L" eventType="touchUpInside" id="uld-2G-b3P"/>
                                     <segue destination="9cq-24-wAw" kind="presentation" identifier="tryagainsegue" modalTransitionStyle="crossDissolve" id="ip4-dr-beY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-ON-wWg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-ON-wWg">
                                 <rect key="frame" x="29" y="174" width="316" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="Xa0-xS-8mx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-YM-lyC" customClass="RQShineLabel">
+                                <rect key="frame" x="164" y="419" width="204" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="aWH-uD-Ea8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmi-GS-O7K">
+                                <rect key="frame" x="176" y="144" width="22" height="22"/>
+                                <connections>
+                                    <action selector="displayinfo:" destination="lCG-oP-17L" eventType="touchUpInside" id="M5T-eM-YxL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-qh-XVw" customClass="RQShineLabel">
+                                <rect key="frame" x="4" y="432" width="152" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="6KC-zk-7Vr"/>
+                                    <constraint firstAttribute="width" constant="152" id="C7i-tK-KhJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nilland-ExtraBold" family="Nilland-ExtraBold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ear-ON-wWg" firstAttribute="top" secondItem="6gI-g8-6cn" secondAttribute="bottom" constant="8" symbolic="YES" id="5be-TZ-cEy"/>
+                            <constraint firstItem="iTI-yJ-7q9" firstAttribute="top" secondItem="wdr-KD-2ol" secondAttribute="bottom" constant="20" id="9eY-lQ-Hd1"/>
+                            <constraint firstItem="wdr-KD-2ol" firstAttribute="top" secondItem="hy4-qh-XVw" secondAttribute="bottom" constant="1" id="9qj-Au-Vdm"/>
+                            <constraint firstItem="iTI-yJ-7q9" firstAttribute="centerX" secondItem="wdr-KD-2ol" secondAttribute="centerX" constant="-17.5" id="DA5-G9-6Zp"/>
+                            <constraint firstItem="6Th-90-RJ3" firstAttribute="baseline" secondItem="iTI-yJ-7q9" secondAttribute="baseline" id="DmL-Ih-gjH"/>
+                            <constraint firstItem="hy4-qh-XVw" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leadingMargin" constant="-12" id="ElU-CM-f59"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Th-90-RJ3" secondAttribute="trailing" constant="7" id="JG0-ac-mlA"/>
+                            <constraint firstItem="ear-ON-wWg" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leadingMargin" constant="13" id="JPF-cq-c9c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BYe-YM-lyC" secondAttribute="trailing" constant="-9" id="OOW-py-lsU"/>
+                            <constraint firstItem="6gI-g8-6cn" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leading" id="PdX-Aw-zUy"/>
+                            <constraint firstItem="DsW-KN-LGk" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leadingMargin" constant="69" id="XXO-vU-mtt"/>
+                            <constraint firstItem="TSY-i8-Q1W" firstAttribute="centerX" secondItem="6gI-g8-6cn" secondAttribute="centerX" id="XY5-yS-1y5"/>
+                            <constraint firstItem="hy4-qh-XVw" firstAttribute="centerY" secondItem="BYe-YM-lyC" secondAttribute="centerY" id="Zgj-w6-vZg"/>
+                            <constraint firstItem="BYe-YM-lyC" firstAttribute="leading" secondItem="hy4-qh-XVw" secondAttribute="trailing" constant="8" symbolic="YES" id="a0v-kz-F91"/>
+                            <constraint firstItem="DsW-KN-LGk" firstAttribute="top" secondItem="6gI-g8-6cn" secondAttribute="bottom" constant="49" id="cte-lF-Zb0"/>
+                            <constraint firstItem="mmi-GS-O7K" firstAttribute="centerX" secondItem="ear-ON-wWg" secondAttribute="centerX" id="eij-d1-Nyq"/>
+                            <constraint firstItem="TSY-i8-Q1W" firstAttribute="centerX" secondItem="DsW-KN-LGk" secondAttribute="centerX" id="fC0-kO-Dyg"/>
+                            <constraint firstItem="6gI-g8-6cn" firstAttribute="top" secondItem="H6j-eC-HoT" secondAttribute="topMargin" constant="11" id="fln-G6-dh4"/>
+                            <constraint firstItem="TSY-i8-Q1W" firstAttribute="top" secondItem="6gI-g8-6cn" secondAttribute="bottom" constant="94" id="geN-BG-rVH"/>
+                            <constraint firstAttribute="trailing" secondItem="6gI-g8-6cn" secondAttribute="trailing" id="h2j-0l-Il6"/>
+                            <constraint firstItem="ear-ON-wWg" firstAttribute="top" secondItem="mmi-GS-O7K" secondAttribute="bottom" constant="8" symbolic="YES" id="pIi-yL-aK2"/>
+                            <constraint firstItem="wdr-KD-2ol" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leadingMargin" constant="-16" id="qha-W0-tm8"/>
+                            <constraint firstItem="TSY-i8-Q1W" firstAttribute="leading" secondItem="H6j-eC-HoT" secondAttribute="leadingMargin" id="tpL-Xy-EyW"/>
+                            <constraint firstItem="DsW-KN-LGk" firstAttribute="centerX" secondItem="ear-ON-wWg" secondAttribute="centerX" id="ugU-aB-8gC"/>
+                            <constraint firstItem="wdr-KD-2ol" firstAttribute="top" secondItem="TSY-i8-Q1W" secondAttribute="bottom" constant="56" id="vG5-xV-X1B"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="chooseagainprop" destination="6Th-90-RJ3" id="13G-N9-LMg"/>
                         <outlet property="completelabel" destination="ear-ON-wWg" id="WE6-yn-P3c"/>
+                        <outlet property="finalscorealpha" destination="BYe-YM-lyC" id="EYj-cg-G8B"/>
                         <outlet property="improvementlabel" destination="TSY-i8-Q1W" id="OZZ-qu-0UN"/>
+                        <outlet property="infooutlet" destination="mmi-GS-O7K" id="CoG-Ik-29P"/>
                         <outlet property="resultfinish" destination="DsW-KN-LGk" id="N8w-12-pbI"/>
                         <outlet property="scoreshine" destination="hy4-qh-XVw" id="wX3-Y3-9ng"/>
                         <outlet property="timeshine" destination="wdr-KD-2ol" id="yvs-zf-wpz"/>
