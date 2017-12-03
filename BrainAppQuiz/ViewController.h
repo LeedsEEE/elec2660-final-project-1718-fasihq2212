@@ -32,6 +32,7 @@
 - (IBAction)action1button:(UIButton *)sender;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonp;
 
     
     

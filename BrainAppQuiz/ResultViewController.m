@@ -20,13 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tryagainprop.layer setBorderWidth:1.0];
+    [self.tryagainprop.layer setBorderColor:[[UIColor blackColor] CGColor]];
     
+    [self.chooseagainprop.layer setBorderWidth:1.0];
+    [self.chooseagainprop.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    
+
     [self.view addSubview:self.resultfinish];
     [self.view addSubview:self.finalscorealpha];
-    
+ 
+
     self.resultfinish.text = self.passedonteststring;
        [self.resultfinish shine];
-   
     
     self.confetti = [[PHConfettiView alloc] initWithFrame:self.view.bounds];
     self.confetti.colors = @[[UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
@@ -35,7 +41,7 @@
                                  [UIColor colorWithRed:0.30 green:0.76 blue:0.85 alpha:1.0],
                                  [UIColor colorWithRed:0.58 green:0.39 blue:0.55 alpha:1.0]];
     self.confetti.type = PHConfettiTypeConfetti;
-   
+    [self.finalscorealpha shine];
     
     [self.view addSubview:self.confetti];
     [self.confetti startConfetti];
@@ -49,15 +55,17 @@
     
     [self.timeshine shine];
     [self.scoreshine shine];
-    
-    self.label = [[DPScrollNumberLabel alloc] initWithNumber:@(1) font:[UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:40] textColor:[UIColor grayColor] rowNumber:5];
+    self.label = [[DPScrollNumberLabel alloc] initWithNumber:@(0) font:[UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:40] textColor:[UIColor grayColor] rowNumber:5];
     
     self.label.frame = CGRectMake(210, 500, self.label.frame.size.width, self.label.frame.size.height);
     
     [self.view addSubview:self.label];
+
+
+    [self performSelector:@selector(displayfinalscore) withObject:nil afterDelay:3.0];
     
-
-
+    
+    
 
 }
     // start Animation
@@ -130,15 +138,60 @@
 
 }
 
-- (IBAction)displayinfo:(UIButton *)sender {
+-(void) displayfinalscore{
+    
+    if (self.passedonscore <10){
+        
+        int score = (self.passedonscore * 1) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+        NSLog(@"first");
+    }
+    
+    else if (self.passedonscore >=10 && self.passedonscore <15){
+        
+        int score = (self.passedonscore * 2.5) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+         NSLog(@"sec");
 
+    }
+    else if (self.passedonscore >=15 && self.passedonscore <20){
+        
+        int score = (self.passedonscore * 3.5) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+         NSLog(@"third");
+
+        
+    }
+    else if (self.passedonscore >=20 && self.passedonscore <25){
+        
+        int score = (self.passedonscore * 5) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+         NSLog(@"fourth");
+
+        
+    }
     
-    [self.label changeToNumber:@(self.passedonscore) animated:YES];
-     [self.finalscorealpha shine];
+    else if (self.passedonscore >=25 && self.passedonscore <30){
+        
+        int score = (self.passedonscore * 6) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+         NSLog(@"fifth");
+
+        
+    }
+    
+    else if (self.passedonscore>=30){
+        
+        int score = (self.passedonscore * 8) + (1000/self.passedontime);
+        [self.label changeToNumber:@(score) animated:YES];
+         NSLog(@"six");
+        
+
+    }
     
 
-    
-    
-    
+    [ProgressHUD showSuccess];
 }
+
+
 @end

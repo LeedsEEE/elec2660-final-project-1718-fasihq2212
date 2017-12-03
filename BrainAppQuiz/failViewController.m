@@ -1,29 +1,33 @@
 //
-//  ViewController.m
+//  failViewController.m
 //  BrainAppQuiz
 //
-//  Created by Fasih Qureshi on 18/11/2017.
+//  Created by Fasih Qureshi on 02/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "failViewController.h"
 
-
-@interface ViewController ()
+@interface failViewController ()
 
 @end
 
-@implementation ViewController
+@implementation failViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    [self.buttonp.layer setBorderWidth:1.0];
-    [self.buttonp.layer setBorderColor:[[UIColor blackColor] CGColor]];
-  
-    }
-
+    self.scorefinalnegative.text = @"You achieved a score below 0!";
+    [self.scorefinalnegative shine];
+    
+    [self.tryagainp.layer setBorderWidth:1.0];
+    [self.tryagainp.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    
+    [self.chooseanother.layer setBorderWidth:1.0];
+    [self.chooseanother.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    
+    // Do any additional setup after loading the view.
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -31,16 +35,32 @@
 }
 
 
- #pragma mark - Navigation
-- (IBAction)action1button:(UIButton *)sender{ // Here we are going to carry out the side drawer when the Begin button is pressed. It does not work when this code below is inserted into the viewdidload function in the welcome view controller
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    if ([segue.identifier isEqualToString:@"tryfromfail"]){
+        
+        ThirdViewController *final = (ThirdViewController*) segue.destinationViewController;
+        final.testtype = self.functest;
+    }
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+
+
+- (IBAction)failtry:(UIButton *)sender {
     
-    ///////////////////// MMDDrawerController by MutualMobile-- fetched from Github.com////////////////////////
-    ///////////////Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel/////
-  
+    [self performSegueWithIdentifier:@"tryfromfail" sender:self];
+
+}
+
+- (IBAction)choosefail:(UIButton *)sender {
+    
     
     AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
-
+    
     
     UIStoryboard *mainstory = [UIStoryboard storyboardWithName: @"Main" bundle:nil]; //create a story board
     
@@ -59,20 +79,12 @@
     
     
     [self.drawercontroller setMaximumLeftDrawerWidth:270];
-
+    
     
     [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]]; //This is the animation block.. different ones can be used such as parallax etc
     
     appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
     [appdel.window makeKeyAndVisible];
-    
-    
 
-    
 }
-
- 
-
-
-
 @end

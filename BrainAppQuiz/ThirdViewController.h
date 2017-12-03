@@ -12,6 +12,7 @@
 #import "ResultViewController.h"
 #import "MZTimerLabel.h"
 #import "RQShineLabel.h"
+#import "failViewController.h"
 
 
 @interface ThirdViewController : ViewController
@@ -37,7 +38,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *fourthchoice;
 @property (weak, nonatomic) IBOutlet UILabel *timerlabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreanswer;
-@property NSTimeInterval timeelapsed;
 
 #pragma mark Button Outlets
 

@@ -14,7 +14,7 @@
 
 @implementation ThirdViewController
 
-@synthesize testtype, questionnumber, alpha, label, score, scoreanswer, timeelapsed;
+@synthesize testtype, questionnumber, alpha, label, score, scoreanswer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,13 +29,17 @@
     [label start];
     //self.questionnumber = 0;
     self.alpha = 0;
+    self.score = 10;
     [self.view addSubview:self.scoreanswer];
-    self.scoreanswer.text = @"0";
+    self.scoreanswer.text = @"10";
     NSLog(@"%@", self.testtype);
     ThirdViewController *controller = [[ThirdViewController alloc] init];
     self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
     self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
     self.Questionlabelfirst.numberOfLines = 0;
+    [self.Questionlabelfirst.layer setBorderWidth:1.0];
+    [self.Questionlabelfirst.layer setBorderColor:[[UIColor blackColor] CGColor]];
+
     self.firstchoice.text = [controller nextanswerchoice:self.testtype : self.questionnumber*4];
     self.secondchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4) +1];
     self.thirdchoice.text = [controller nextanswerchoice:self.testtype : (self.questionnumber*4)+2];
@@ -76,8 +80,13 @@
         resu.passedonteststring = self.testtype;
         resu.passedontime = [label getTimeCounted];
         resu.passedonscore = self.score;
+    
+    }
+
+    else if ([segue.identifier isEqualToString:@"fail"]){
         
-        
+        failViewController *fail = (failViewController*) segue.destinationViewController;
+        fail.functest = self.testtype;
         
     }
     
@@ -129,17 +138,28 @@
     
             if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
                 
-                self.score = self.score + 1;
+                self.score = self.score + 10;
                 self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
               
             }
-
             else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
-                self.score = self.score + 1;
-                self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
                 
+                self.score = self.score + 10;
+                self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+
+            }
+        
+            else {
+                
+                self.score = self.score - arc4random()%15;
+                self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+
             }
 
+            if (self.score <0){
+                
+                [self performSegueWithIdentifier:@"fail" sender:self];
+            }
 
             NSLog(@"Score  = %ld",(long)self.score);
  
@@ -150,6 +170,9 @@
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber];
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
         self.Questionlabelfirst.numberOfLines = 0;
+        [self.Questionlabelfirst.layer setBorderWidth:1.0];
+        [self.Questionlabelfirst.layer setBorderColor:[[UIColor blackColor] CGColor]];
+
         self.firstchoice.text = [controller nextanswerchoice:self.testtype : self.questionnumber*4];
         self.secondchoice.text = [controller nextanswerchoice:self.testtype :(self.questionnumber*4) +1];
         self.thirdchoice.text = [controller nextanswerchoice:self.testtype  :(self.questionnumber*4)+2];
@@ -164,27 +187,41 @@
             if (sender.tag == 1){
                 self.chosenanswer = self.firstchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                self.timeelapsed = [label  getTimeCounted];
+                if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
+                    
+                    self.score = self.score + 10;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
+                    
+                    self.score = self.score + 5;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
                 
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
-                [alertView show];
+                else {
+                    
+                    self.score = self.score - arc4random()%15;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                
+                if (self.score <0){
+                    
+                    [self performSegueWithIdentifier:@"fail" sender:self];
+                }
                 
 
+                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                
                             }
             
             else if (sender.tag == 2) {
                 self.chosenanswer = self.secondchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
-               self.timeelapsed = [label  getTimeCounted];
-                
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
-                [alertView show];
-                
-
+              
             }
            
                 else if (sender.tag == 3){
@@ -192,14 +229,34 @@
                 
                 self.chosenanswer = self.thirdchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-                    [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                  self.timeelapsed = [label  getTimeCounted];
+                    if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
+                        
+                        self.score = self.score + 10;
+                        self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                        
+                    }
+                    else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
+                        
+                        self.score = self.score + 5;
+                        self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                        
+                    }
                     
-                    NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
-                    [alertView show];
+                    else {
+                        
+                        self.score = self.score - arc4random()%15;
+                        self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                        
+                    }
+                    
+                    if (self.score <0){
+                        
+                        [self performSegueWithIdentifier:@"fail" sender:self];
+                    }
                     
 
+                    [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                  
 
                 
                 
@@ -208,14 +265,35 @@
                 
                 self.chosenanswer = self.fourthchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
-                [self performSegueWithIdentifier:@"resultsegue" sender:self];
-               self.timeelapsed = [label  getTimeCounted];
-                NSString *msg = [NSString stringWithFormat:@"You completed the test in: %f seconds",self.timeelapsed];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Completed!" message:msg delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles:nil];
-                [alertView show];
+                if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
+                    
+                    self.score = self.score + 10;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
+                    
+                    self.score = self.score + 5;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                
+                else {
+                    
+                    self.score = self.score - arc4random()%15;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                
+                if (self.score <0){
+                    
+                    [self performSegueWithIdentifier:@"fail" sender:self];
+                }
                 
 
-
+                [self performSegueWithIdentifier:@"resultsegue" sender:self];
+               
+            
                 
             }
             

@@ -16,15 +16,15 @@
 
 @property (nonatomic, strong) NSArray *questionfornumerical;
 @property (nonatomic, strong) NSArray *questionforgeneral;
-@property (nonatomic, strong) NSArray *questionforriddle;
+@property (nonatomic, strong) NSArray *questionfortruefalse;
 
 @property (nonatomic, strong) NSArray *answerfornumerical;
 @property (nonatomic, strong) NSArray *answerforgeneral;
-@property (nonatomic, strong) NSArray *answerforriddle;
+@property (nonatomic, strong) NSArray *answerfortruefalse;
 
 @property (nonatomic, strong) NSArray *choicesfornumerical;
 @property (nonatomic, strong) NSArray *choicesforgeneral;
-@property (nonatomic, strong) NSArray *choicesforriddle;
+@property (nonatomic, strong) NSArray *choicesfortruefalse;
 
 @property (nonatomic, strong) NSString *finalquestion;
 @property (nonatomic, strong) NSString *choice;
@@ -34,7 +34,6 @@
 -(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index;
 -(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index;
 -(NSInteger*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index;
--(NSString*) nextquestionfunc;
 
 
 @end

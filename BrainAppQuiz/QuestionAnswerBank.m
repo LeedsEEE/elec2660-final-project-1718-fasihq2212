@@ -16,10 +16,7 @@
     self = [super init];
     if (self) {
         
-        self.questionfornumerical = [NSArray array];
-        self.answerfornumerical = [NSArray array];
-        self.choicesfornumerical = [NSArray array];
-        
+
         self.questionfornumerical =[NSArray arrayWithObjects: @" In my row in the theatre the seats are numbered consecutively from T1 to T50. I am sitting in seat T17 and you are sitting in seat T39. How many seats are there between us?",
                                     @"What is 2014 − 4102 ?",
                                     @"How many prime numbers are there in the list 1, 12, 123, 1234, 12 345, 123 456 ?",
@@ -64,6 +61,51 @@
                                    @"Most commonly used bleaching agent is",
                                    @"Neil Armstrong and Edwin Aldrin were the first to", nil];
         
+        self.questionfortruefalse = [NSArray arrayWithObjects:@"As far as has ever been reported, no-one has ever seen an ostrich bury its head in the sand"
+                                     @"Approximately one quarter of human bones are in the feet",
+                                     @"Popeye’s nephews were called Peepeye, Poopeye, Pipeye and Pupeye",
+                                     @"In ancient Rome, a special room called a vomitorium was available for diners to purge food in during meals",
+                                     @"The average person will shed 10 pounds of skin during their lifetime",
+                                     @"Sneezes regularly exceed 100 m.p.h",
+                                     @"A slug’s blood is green",
+                                     @"The Great Wall Of China is visible from the moon",
+                                     @"Virtually all Las Vegas gambling casinos ensure that they have no clocks",
+                                     @"The total surface area of two human lungs have a surface area of approximately 70 square metres",
+                                     @" Alliumphobia is a fear of garlic",
+                                     @"‘Fauntleroy’ is the middle name of Donald Duck",
+                                     @"Henry VIII had an extra finger on each hand",
+                                     @"The singer ‘Cher’ was born Cherilyn Sarkisian",
+                                     @"Alfred Hitchcock had no belly button as it was removed during surgery",
+                                     @" The ‘black box’ in an aeroplane is black",
+                                     @"Michael Jackson had a pet python called ‘Crusher’",
+                                     @" The distance, as the crow flies, from London to Edinburgh, is greater than the distance from London to Glasgow",
+                                     @" Geri Halliwell named her daughter ‘Bluebell Madonna’",
+                                     @" Brendan O’Carroll, famous as ‘Mrs Brown’ from ‘Mrs Brown’s Boys’ is the cousin of Kenneth Branagh"
+                                     , nil];
+        
+        self.answerfortruefalse = @[@"True",
+                                   @"True",
+                                   @"True.",
+                                   @"False",
+                                   @"False",
+                                   @"True",
+                                   @"True",
+                                   @"False",
+                                   @"True",
+                                   @"True",
+                                   @"True",
+                                   @"True",
+                                   @"False",
+                                   @"True",
+                                   @"True",
+                                   @"False",
+                                   @"True",
+                                   @"False",
+                                   @"True",
+                                   @"False"
+                                   
+                                   ];
+        
         self.answerforgeneral = @[@"largest railway station",
                                   @"Insects",
                                   @"All of the above",
@@ -95,7 +137,7 @@
                     @"72 years old",
                     @"11 Boxes",
                     @"1024",
-                    @"127923",
+                    @"127929",
                     @"87",
                     @"For every 10 days like today, it will rain on 3 of the following days",
                     @"Normal",
@@ -106,6 +148,9 @@
                     @"0%",
                     @"In the back",
                     @"13112221"];
+        
+        self.choicesfortruefalse = @[@"True",
+                                     @"False"];
         
         self.choicesfornumerical =
                     @[@"10 seats",

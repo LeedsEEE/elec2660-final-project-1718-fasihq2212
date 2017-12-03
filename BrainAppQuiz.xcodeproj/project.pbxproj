@@ -10,6 +10,7 @@
 		CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA028B591FCCCFC00023395A /* RQShineLabel.m */; };
 		CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */; };
 		CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */; };
+		CA1E37E71FD34C0C00BB0676 /* failViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E37E61FD34C0C00BB0676 /* failViewController.m */; };
 		CA25CE8F1FC08E9F0075D56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE8E1FC08E9F0075D56C /* main.m */; };
 		CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE911FC08E9F0075D56C /* AppDelegate.m */; };
 		CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE941FC08E9F0075D56C /* ViewController.m */; };
@@ -67,6 +68,8 @@
 		CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/ConfettiImages.bundle"; sourceTree = "<group>"; };
 		CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.h"; sourceTree = "<group>"; };
 		CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.m"; sourceTree = "<group>"; };
+		CA1E37E51FD34C0C00BB0676 /* failViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = failViewController.h; sourceTree = "<group>"; };
+		CA1E37E61FD34C0C00BB0676 /* failViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = failViewController.m; sourceTree = "<group>"; };
 		CA25CE8A1FC08E9F0075D56C /* BrainAppQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainAppQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA25CE8E1FC08E9F0075D56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA25CE901FC08E9F0075D56C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */,
 				CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */,
 				CAD859D41FC317D80096E9DF /* ThirdViewController.h */,
+				CA1E37E51FD34C0C00BB0676 /* failViewController.h */,
+				CA1E37E61FD34C0C00BB0676 /* failViewController.m */,
 				CAD859D51FC317D80096E9DF /* ThirdViewController.m */,
 				CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */,
 				CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */,
@@ -441,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */,
+				CA1E37E71FD34C0C00BB0676 /* failViewController.m in Sources */,
 				CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */,
 				CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */,
 				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
@@ -611,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BrainAppQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fasih-Qureshi.BrainAppQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -622,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BrainAppQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Fasih-Qureshi.BrainAppQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";

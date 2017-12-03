@@ -27,12 +27,12 @@
         self.firtsection = [NSMutableArray array];
         typeoftestanddescription *sender1 = [[typeoftestanddescription alloc]init];
        sender1.typeoftest = @"General Knowledge";
-        sender1.desc = @"A test of ones ignorance. You will be tested on your overall knoweldge of key events and recognised indvicuals. Be prepared for some challenging questions";
+        sender1.desc = @"A test of your ignorance. You will be tested on your overall knoweldge of key events and recognised indvicuals. Be prepared for some challenging questions";
         
         self.firtsection = [NSMutableArray array];
         typeoftestanddescription *sender3 = [[typeoftestanddescription alloc] init];
-        sender3.typeoftest = @"Riddles";
-        sender3.desc = @"The most diffuclt challenge yet. These simple yet fiendish riddles will twist your perception and make you question yourself";
+        sender3.typeoftest = @"True/False Trivia";
+        sender3.desc = @"One of the more traditional quiz. You will be presented with a selection of True/False Questions. Sounds easy but be wary, the score system here is very unpredictable";
         
         [self.firtsection addObject:sender];
         [self.firtsection addObject:sender1]; // add object for each topic assigned

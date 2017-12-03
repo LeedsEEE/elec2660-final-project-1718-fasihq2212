@@ -13,6 +13,7 @@
 #import "ThirdViewController.h"
 #import "RQShineLabel.h"
 #import "DPScrollNumberLabel.h"
+#import "ProgressHUD.h"
 
 @interface ResultViewController : ViewController
 
@@ -36,12 +37,14 @@
 @property (nonatomic, strong) DPScrollNumberLabel *label;
 @property NSNumber* time;
 
+-(void) displayfinalscore;
+
+
 - (IBAction)tryagain:(id)sender;
 
 
 - (IBAction)chooseanother:(id)sender;
 
-- (IBAction)displayinfo:(UIButton *)sender;
 
 
 @end

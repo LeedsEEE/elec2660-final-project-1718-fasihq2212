@@ -11,6 +11,7 @@
 
 #import "LeftTableViewController.h"
 
+
 @interface LeftTableViewController ()
 
 @end
@@ -66,8 +67,8 @@
     }
     else if (indexPath.row == 2){
         
-        cell.textLabel.text = @"Riddles";
-        cell.detailTextLabel.text = @"Think outside the box";
+        cell.textLabel.text = @"True/False Trivia";
+        cell.detailTextLabel.text = @"50/50 chance. Easy.";
        
     }
     
@@ -75,6 +76,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
     
     return @"Choose a Topic"; //the title of the section is Choose a topic
 }

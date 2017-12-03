@@ -12,6 +12,6 @@
 
 
 @interface LeftTableViewController : UITableViewController
-@property (nonatomic, strong) implementtypeanddes *data; //the implementation of the type of test and description is mentioned here. 
+@property (nonatomic, strong) implementtypeanddes *data; //the implementation of the type of test and description is mentioned here.
 
 @end
