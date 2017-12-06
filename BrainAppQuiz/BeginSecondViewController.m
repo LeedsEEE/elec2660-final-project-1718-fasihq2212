@@ -97,12 +97,32 @@
     appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
     [appdel.window makeKeyAndVisible];
     
+    NSString *path = [NSString stringWithFormat:@"%@/buttontune.mp3", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [self.audio play];
+    
+
+    
 
 }
 - (IBAction)BeginAction:(UIButton *)sender {
     
     [self.beginoutlet.layer setBorderWidth:1.0];
     [self.beginoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/buttontune.mp3", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [self.audio play];
+    
+
     
     if ([self.typeoftestlabel.text isEqualToString:@"Numerical Reasoning"] || [self.typeoftestlabel.text isEqualToString:@"General Knowledge"]){
         

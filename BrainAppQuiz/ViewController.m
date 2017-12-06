@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 
+
 @interface ViewController ()
 
 @end
@@ -21,8 +22,11 @@
     
     [self.buttonp.layer setBorderWidth:1.0];
     [self.buttonp.layer setBorderColor:[[UIColor blackColor] CGColor]];
-  
+    
+    
     }
+
+
 // Here we are using the setborderwidth function in order to set a border for the 'Begin" button.
 
 - (void)didReceiveMemoryWarning {
@@ -33,9 +37,7 @@
 
  #pragma mark - Navigation
 - (IBAction)action1button:(UIButton *)sender{
-  
     
-    AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
 
     
     UIStoryboard *mainstory = [UIStoryboard storyboardWithName: @"Main" bundle:nil]; //create a story board
@@ -57,9 +59,21 @@
     
     [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]]; //This is the animation block.. different ones can be used such as parallax etc
     
-    appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
-    [appdel.window makeKeyAndVisible];
+    [self presentViewController:self.drawercontroller animated:YES completion:nil];
     
+    //appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
+    //[appdel.window makeKeyAndVisible];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/Puzzle-Game_Looping.mp3", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [self.audio play];
+    self.audio.numberOfLoops = -1;
+    
+  
 
 }
 

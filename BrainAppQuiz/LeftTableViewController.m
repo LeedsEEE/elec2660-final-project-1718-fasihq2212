@@ -29,6 +29,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+-(void) viewWillDisappear{
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -54,6 +58,7 @@
     
     // Configure the cells
     
+
     if (indexPath.row == 0){  //indexpath.row defines the row in the section.
     
     cell.textLabel.text = @"Numerical Reasoning";

@@ -10,12 +10,14 @@
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h" //This is needed for the animation according to the documentation
 #import "AppDelegate.h"   //We need to import app delegate so that we can fetch the root view controller
+#import <AVFoundation/AVFoundation.h>
+
 
 
 @interface ViewController : UIViewController
 // In this section we declare the permanent variables
 #pragma mark Permanent Variables
-
+@property (nonatomic, strong) AVAudioPlayer *audio;
 @property (weak, nonatomic) IBOutlet UILabel *OneStepQuiztitle;
 @property (weak, nonatomic) IBOutlet UILabel *welcomelabel;
 @property (weak, nonatomic) IBOutlet UIImageView *Imageoflogo;

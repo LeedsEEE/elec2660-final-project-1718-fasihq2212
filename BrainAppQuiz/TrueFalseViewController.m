@@ -140,6 +140,13 @@
                 
                 self.scoretrue = self.scoretrue + 10;
                 self.scorelabeltrue.text = [NSString stringWithFormat: @"%li", self.scoretrue];
+                NSString *path = [NSString stringWithFormat:@"%@/131660__bertrof__game-sound-correct.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
                 
             }
             
@@ -147,6 +154,14 @@
                 
                 self.scoretrue = self.scoretrue - arc4random()%25;
                 self.scorelabeltrue.text = [NSString stringWithFormat: @"%li", self.scoretrue];
+                NSString *path = [NSString stringWithFormat:@"%@/131657__bertrof__game-sound-wrong.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
+
                 
             }
         

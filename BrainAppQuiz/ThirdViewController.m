@@ -118,21 +118,23 @@
         
         if (sender.tag == 1){
         self.chosenanswer = self.firstchoice.text;
+      
         }
         
         else if (sender.tag == 2) {
             self.chosenanswer = self.secondchoice.text;
+        
                     }
         else if (sender.tag == 3){
             
             self.chosenanswer = self.thirdchoice.text;
-            
-
+         
+        
         }
         else if(sender.tag ==4){
             
             self.chosenanswer = self.fourthchoice.text;
-          
+        
         }
             [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
     
@@ -140,12 +142,29 @@
                 
                 self.score = self.score + 10;
                 self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                NSString *path = [NSString stringWithFormat:@"%@/131660__bertrof__game-sound-correct.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
+
+                
               
             }
             else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
                 
                 self.score = self.score + 10;
                 self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                NSString *path = [NSString stringWithFormat:@"%@/131660__bertrof__game-sound-correct.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
+
 
             }
         
@@ -153,6 +172,14 @@
                 
                 self.score = self.score - arc4random()%15;
                 self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                NSString *path = [NSString stringWithFormat:@"%@/131657__bertrof__game-sound-wrong.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
+
 
             }
 

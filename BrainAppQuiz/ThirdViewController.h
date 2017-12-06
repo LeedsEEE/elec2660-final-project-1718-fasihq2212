@@ -13,6 +13,7 @@
 #import "MZTimerLabel.h"
 #import "RQShineLabel.h"
 #import "failViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface ThirdViewController : ViewController

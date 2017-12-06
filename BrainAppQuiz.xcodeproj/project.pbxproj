@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA028B591FCCCFC00023395A /* RQShineLabel.m */; };
-		CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */; };
-		CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */; };
 		CA1E37E71FD34C0C00BB0676 /* failViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E37E61FD34C0C00BB0676 /* failViewController.m */; };
 		CA25CE8F1FC08E9F0075D56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE8E1FC08E9F0075D56C /* main.m */; };
 		CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CE911FC08E9F0075D56C /* AppDelegate.m */; };
@@ -20,15 +17,25 @@
 		CA25CEA81FC08E9F0075D56C /* BrainAppQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEA71FC08E9F0075D56C /* BrainAppQuizTests.m */; };
 		CA25CEB31FC08E9F0075D56C /* BrainAppQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */; };
 		CA25CEC91FC09BF30075D56C /* l3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC81FC09BF30075D56C /* l3.png */; };
-		CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED11FC0A21A0075D56C /* MMDrawerBarButtonItem.m */; };
-		CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED31FC0A21A0075D56C /* MMDrawerController.m */; };
-		CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED61FC0A21A0075D56C /* MMDrawerVisualState.m */; };
-		CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */; };
 		CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */; };
 		CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */; };
-		CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */; };
 		CA4F950D1FCA6C2B00F8D7F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */; };
 		CA73EBF41FCB56F0004EEC8E /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA73EBF31FCB56F0004EEC8E /* firstViewController.m */; };
+		CA8209A41FD7738F006306F6 /* ConfettiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA8209A11FD7738F006306F6 /* ConfettiImages.bundle */; };
+		CA8209A51FD7738F006306F6 /* PHConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209A31FD7738F006306F6 /* PHConfettiView.m */; };
+		CA8209A81FD773CF006306F6 /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209A71FD773CF006306F6 /* RQShineLabel.m */; };
+		CA8209AB1FD774F1006306F6 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209AA1FD774F1006306F6 /* MZTimerLabel.m */; };
+		CA8209AF1FD77518006306F6 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA8209AC1FD77518006306F6 /* ProgressHUD.bundle */; };
+		CA8209B01FD77518006306F6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209AE1FD77518006306F6 /* ProgressHUD.m */; };
+		CA8209BA1FD77547006306F6 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209B21FD77547006306F6 /* MMDrawerBarButtonItem.m */; };
+		CA8209BB1FD77547006306F6 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209B41FD77547006306F6 /* MMDrawerController.m */; };
+		CA8209BC1FD77547006306F6 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209B71FD77547006306F6 /* MMDrawerVisualState.m */; };
+		CA8209BD1FD77547006306F6 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8209B91FD77547006306F6 /* UIViewController+MMDrawerController.m */; };
+		CA8209BF1FD7785E006306F6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8209BE1FD7785E006306F6 /* AVFoundation.framework */; };
+		CA8209CC1FD780DA006306F6 /* buttontune.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA8209CB1FD780DA006306F6 /* buttontune.mp3 */; };
+		CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */; };
+		CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */; };
+		CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */; };
 		CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC01FC093850075D56C /* Nilland-Black.ttf */; };
 		CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */; };
 		CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */; };
@@ -42,8 +49,6 @@
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 		CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */; };
-		CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */; };
-		CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFA58811FC8D63100F68AAB /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +69,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA028B581FCCCFC00023395A /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQShineLabel.h; path = "../../../../Downloads/RQShineLabel-master/Classes/RQShineLabel.h"; sourceTree = "<group>"; };
-		CA028B591FCCCFC00023395A /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQShineLabel.m; path = "../../../../Downloads/RQShineLabel-master/Classes/RQShineLabel.m"; sourceTree = "<group>"; };
-		CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ConfettiImages.bundle; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/ConfettiImages.bundle"; sourceTree = "<group>"; };
-		CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfettiView.h; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.h"; sourceTree = "<group>"; };
-		CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfettiView.m; path = "../../../../Downloads/PHConfettiView-master/PHConfettiView/PHConfettiView.m"; sourceTree = "<group>"; };
 		CA1E37E51FD34C0C00BB0676 /* failViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = failViewController.h; sourceTree = "<group>"; };
 		CA1E37E61FD34C0C00BB0676 /* failViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = failViewController.m; sourceTree = "<group>"; };
 		CA25CE8A1FC08E9F0075D56C /* BrainAppQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainAppQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,24 +94,37 @@
 		CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps.ttf"; path = "../../../../Downloads/nilland/Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
 		CA25CEC51FC093850075D56C /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nilland.ttf; path = ../../../../Downloads/nilland/Nilland.ttf; sourceTree = "<group>"; };
 		CA25CEC81FC09BF30075D56C /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l3.png; path = ../../../../Downloads/l3.png; sourceTree = "<group>"; };
-		CA25CED01FC0A21A0075D56C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerBarButtonItem.h"; sourceTree = "<group>"; };
-		CA25CED11FC0A21A0075D56C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerBarButtonItem.m"; sourceTree = "<group>"; };
-		CA25CED21FC0A21A0075D56C /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerController.h"; sourceTree = "<group>"; };
-		CA25CED31FC0A21A0075D56C /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerController.m"; sourceTree = "<group>"; };
-		CA25CED41FC0A21A0075D56C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		CA25CED51FC0A21A0075D56C /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerVisualState.h"; sourceTree = "<group>"; };
-		CA25CED61FC0A21A0075D56C /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/MMDrawerVisualState.m"; sourceTree = "<group>"; };
-		CA25CED71FC0A21A0075D56C /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "../../../../Downloads/MMDrawerController-master/MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
 		CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
-		CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.h"; sourceTree = "<group>"; };
-		CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = "../../../../Downloads/MZTimerLabel-master/MZTimerLabel/MZTimerLabel.m"; sourceTree = "<group>"; };
 		CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CA73EBF21FCB56F0004EEC8E /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewController.h; path = ../firstViewController.h; sourceTree = "<group>"; };
 		CA73EBF31FCB56F0004EEC8E /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
+		CA8209A11FD7738F006306F6 /* ConfettiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConfettiImages.bundle; sourceTree = "<group>"; };
+		CA8209A21FD7738F006306F6 /* PHConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHConfettiView.h; sourceTree = "<group>"; };
+		CA8209A31FD7738F006306F6 /* PHConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHConfettiView.m; sourceTree = "<group>"; };
+		CA8209A61FD773CF006306F6 /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabel.h; sourceTree = "<group>"; };
+		CA8209A71FD773CF006306F6 /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabel.m; sourceTree = "<group>"; };
+		CA8209A91FD774F1006306F6 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		CA8209AA1FD774F1006306F6 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		CA8209AC1FD77518006306F6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		CA8209AD1FD77518006306F6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		CA8209AE1FD77518006306F6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		CA8209B11FD77547006306F6 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		CA8209B21FD77547006306F6 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		CA8209B31FD77547006306F6 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		CA8209B41FD77547006306F6 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		CA8209B51FD77547006306F6 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		CA8209B61FD77547006306F6 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		CA8209B71FD77547006306F6 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		CA8209B81FD77547006306F6 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		CA8209B91FD77547006306F6 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		CA8209BE1FD7785E006306F6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CA8209CB1FD780DA006306F6 /* buttontune.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttontune.mp3; sourceTree = "<group>"; };
+		CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "131657__bertrof__game-sound-wrong.wav"; sourceTree = "<group>"; };
+		CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "131660__bertrof__game-sound-correct.wav"; sourceTree = "<group>"; };
+		CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Puzzle-Game_Looping.mp3"; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
 		CAC2B64E1FD4ADE9008FD364 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
@@ -126,9 +139,6 @@
 		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerBank.h; sourceTree = "<group>"; };
 		CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerBank.m; sourceTree = "<group>"; };
-		CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.bundle"; sourceTree = "<group>"; };
-		CAFA58801FC8D63100F68AAB /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.h"; sourceTree = "<group>"; };
-		CAFA58811FC8D63100F68AAB /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8209BF1FD7785E006306F6 /* AVFoundation.framework in Frameworks */,
 				CA4F950D1FCA6C2B00F8D7F8 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +192,7 @@
 		CA25CE8C1FC08E9F0075D56C /* BrainAppQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CA8209C11FD778A7006306F6 /* Sound files */,
 				CAD859CD1FC2ED0C0096E9DF /* Pictures */,
 				CAD859CC1FC2ECE50096E9DF /* Fonts */,
 				CA25CE901FC08E9F0075D56C /* AppDelegate.h */,
@@ -219,27 +231,27 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA8209B11FD77547006306F6 /* MMDrawerBarButtonItem.h */,
+				CA8209B21FD77547006306F6 /* MMDrawerBarButtonItem.m */,
+				CA8209B31FD77547006306F6 /* MMDrawerController.h */,
+				CA8209B41FD77547006306F6 /* MMDrawerController.m */,
+				CA8209B51FD77547006306F6 /* MMDrawerController+Subclass.h */,
+				CA8209B61FD77547006306F6 /* MMDrawerVisualState.h */,
+				CA8209B71FD77547006306F6 /* MMDrawerVisualState.m */,
+				CA8209B81FD77547006306F6 /* UIViewController+MMDrawerController.h */,
+				CA8209B91FD77547006306F6 /* UIViewController+MMDrawerController.m */,
+				CA8209AC1FD77518006306F6 /* ProgressHUD.bundle */,
+				CA8209AD1FD77518006306F6 /* ProgressHUD.h */,
+				CA8209AE1FD77518006306F6 /* ProgressHUD.m */,
+				CA8209A91FD774F1006306F6 /* MZTimerLabel.h */,
+				CA8209AA1FD774F1006306F6 /* MZTimerLabel.m */,
+				CA8209A61FD773CF006306F6 /* RQShineLabel.h */,
+				CA8209A71FD773CF006306F6 /* RQShineLabel.m */,
+				CA8209A11FD7738F006306F6 /* ConfettiImages.bundle */,
+				CA8209A21FD7738F006306F6 /* PHConfettiView.h */,
+				CA8209A31FD7738F006306F6 /* PHConfettiView.m */,
 				CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */,
 				CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */,
-				CA028B581FCCCFC00023395A /* RQShineLabel.h */,
-				CA028B591FCCCFC00023395A /* RQShineLabel.m */,
-				CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */,
-				CA065B9D1FCC24A200981EB3 /* PHConfettiView.h */,
-				CA065B9E1FCC24A200981EB3 /* PHConfettiView.m */,
-				CA4F95081FCA5D7900F8D7F8 /* MZTimerLabel.h */,
-				CA4F95091FCA5D7900F8D7F8 /* MZTimerLabel.m */,
-				CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */,
-				CAFA58801FC8D63100F68AAB /* ProgressHUD.h */,
-				CAFA58811FC8D63100F68AAB /* ProgressHUD.m */,
-				CA25CED01FC0A21A0075D56C /* MMDrawerBarButtonItem.h */,
-				CA25CED11FC0A21A0075D56C /* MMDrawerBarButtonItem.m */,
-				CA25CED21FC0A21A0075D56C /* MMDrawerController.h */,
-				CA25CED31FC0A21A0075D56C /* MMDrawerController.m */,
-				CA25CED41FC0A21A0075D56C /* MMDrawerController+Subclass.h */,
-				CA25CED51FC0A21A0075D56C /* MMDrawerVisualState.h */,
-				CA25CED61FC0A21A0075D56C /* MMDrawerVisualState.m */,
-				CA25CED71FC0A21A0075D56C /* UIViewController+MMDrawerController.h */,
-				CA25CED81FC0A21A0075D56C /* UIViewController+MMDrawerController.m */,
 				CA25CE8E1FC08E9F0075D56C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -282,9 +294,21 @@
 		CA4F950B1FCA6C2B00F8D7F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA8209BE1FD7785E006306F6 /* AVFoundation.framework */,
 				CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8209C11FD778A7006306F6 /* Sound files */ = {
+			isa = PBXGroup;
+			children = (
+				CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */,
+				CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */,
+				CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */,
+				CA8209CB1FD780DA006306F6 /* buttontune.mp3 */,
+			);
+			name = "Sound files";
 			sourceTree = "<group>";
 		};
 		CAD859CC1FC2ECE50096E9DF /* Fonts */ = {
@@ -414,18 +438,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */,
 				CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */,
 				CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */,
-				CA065B9F1FCC24A200981EB3 /* ConfettiImages.bundle in Resources */,
+				CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */,
+				CA8209CC1FD780DA006306F6 /* buttontune.mp3 in Resources */,
+				CA8209AF1FD77518006306F6 /* ProgressHUD.bundle in Resources */,
 				CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */,
 				CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */,
 				CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */,
 				CAADC2921FC13139007A173E /* Nilland.ttf in Resources */,
+				CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */,
 				CA25CEC91FC09BF30075D56C /* l3.png in Resources */,
 				CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */,
 				CA25CE9A1FC08E9F0075D56C /* Assets.xcassets in Resources */,
+				CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */,
 				CA25CE981FC08E9F0075D56C /* Main.storyboard in Resources */,
+				CA8209A41FD7738F006306F6 /* ConfettiImages.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,24 +478,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8209BA1FD77547006306F6 /* MMDrawerBarButtonItem.m in Sources */,
 				CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */,
+				CA8209A81FD773CF006306F6 /* RQShineLabel.m in Sources */,
 				CA1E37E71FD34C0C00BB0676 /* failViewController.m in Sources */,
-				CA4F950A1FCA5D7900F8D7F8 /* MZTimerLabel.m in Sources */,
+				CA8209AB1FD774F1006306F6 /* MZTimerLabel.m in Sources */,
 				CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */,
-				CA25CEDB1FC0A21A0075D56C /* MMDrawerVisualState.m in Sources */,
 				CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,
-				CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */,
-				CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */,
-				CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */,
-				CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */,
+				CA8209BD1FD77547006306F6 /* UIViewController+MMDrawerController.m in Sources */,
+				CA8209B01FD77518006306F6 /* ProgressHUD.m in Sources */,
+				CA8209BB1FD77547006306F6 /* MMDrawerController.m in Sources */,
 				CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */,
 				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
 				CAC2B6501FD4ADE9008FD364 /* TrueFalseViewController.m in Sources */,
-				CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */,
+				CA8209A51FD7738F006306F6 /* PHConfettiView.m in Sources */,
 				CA73EBF41FCB56F0004EEC8E /* firstViewController.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
-				CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */,
+				CA8209BC1FD77547006306F6 /* MMDrawerVisualState.m in Sources */,
 				CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,

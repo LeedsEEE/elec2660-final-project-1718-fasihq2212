@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "ProgressHUD.h"
+#import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 
 
 @interface QuestionAnswerBank : NSObject
+
+@property (nonatomic, strong) AVAudioPlayer *ad;
 
 
 @property (nonatomic, strong) NSArray *questionfornumerical;

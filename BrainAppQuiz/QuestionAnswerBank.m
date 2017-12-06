@@ -10,6 +10,8 @@
 
 @implementation QuestionAnswerBank
 
+@synthesize ad;
+
 
 - (instancetype)init
 {
@@ -424,6 +426,7 @@
         else {
             
             [ProgressHUD showError:@"Wrong"];
+         
            
         }
     }

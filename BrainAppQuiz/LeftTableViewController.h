@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BeginSecondViewController.h" 
 #import "implementtypeanddes.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 
 @interface LeftTableViewController : UITableViewController
