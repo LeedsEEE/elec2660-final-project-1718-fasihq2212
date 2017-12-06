@@ -36,11 +36,12 @@
 		CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */; };
 		CAADC2921FC13139007A173E /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC51FC093850075D56C /* Nilland.ttf */; };
 		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
+		CAC2B6501FD4ADE9008FD364 /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */; };
+		CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */; };
 		CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */; };
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 		CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */; };
-		CAE7D0FB1FD1F31600869C23 /* DPScrollNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE7D0FA1FD1F31600869C23 /* DPScrollNumberLabel.m */; };
 		CAFA58821FC8D63100F68AAB /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */; };
 		CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFA58811FC8D63100F68AAB /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,10 @@
 		CA73EBF31FCB56F0004EEC8E /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
+		CAC2B64E1FD4ADE9008FD364 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
+		CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
+		CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScrollNumberLabel.h; sourceTree = "<group>"; };
+		CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPScrollNumberLabel.m; sourceTree = "<group>"; };
 		CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeoftestanddescription.h; sourceTree = "<group>"; };
 		CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = typeoftestanddescription.m; sourceTree = "<group>"; };
 		CAD859D11FC2F06E0096E9DF /* implementtypeanddes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implementtypeanddes.h; sourceTree = "<group>"; };
@@ -121,8 +126,6 @@
 		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerBank.h; sourceTree = "<group>"; };
 		CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerBank.m; sourceTree = "<group>"; };
-		CAE7D0F91FD1F31600869C23 /* DPScrollNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPScrollNumberLabel.h; path = "../../../../Downloads/DPScrollNumberLabel-master/DPScrollNumberLabel/DPScrollNumberLabel.h"; sourceTree = "<group>"; };
-		CAE7D0FA1FD1F31600869C23 /* DPScrollNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPScrollNumberLabel.m; path = "../../../../Downloads/DPScrollNumberLabel-master/DPScrollNumberLabel/DPScrollNumberLabel.m"; sourceTree = "<group>"; };
 		CAFA587F1FC8D63100F68AAB /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.bundle"; sourceTree = "<group>"; };
 		CAFA58801FC8D63100F68AAB /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.h"; sourceTree = "<group>"; };
 		CAFA58811FC8D63100F68AAB /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = "../../../../Downloads/ProgressHUD-master-3/ProgressHUD/ProgressHUD/ProgressHUD.m"; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				CA25CE931FC08E9F0075D56C /* ViewController.h */,
 				CA25CE941FC08E9F0075D56C /* ViewController.m */,
 				CA25CE961FC08E9F0075D56C /* Main.storyboard */,
+				CAC2B64E1FD4ADE9008FD364 /* TrueFalseViewController.h */,
+				CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */,
 				CA73EBF21FCB56F0004EEC8E /* firstViewController.h */,
 				CA73EBF31FCB56F0004EEC8E /* firstViewController.m */,
 				CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */,
@@ -214,8 +219,8 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAE7D0F91FD1F31600869C23 /* DPScrollNumberLabel.h */,
-				CAE7D0FA1FD1F31600869C23 /* DPScrollNumberLabel.m */,
+				CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */,
+				CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */,
 				CA028B581FCCCFC00023395A /* RQShineLabel.h */,
 				CA028B591FCCCFC00023395A /* RQShineLabel.m */,
 				CA065B9C1FCC24A200981EB3 /* ConfettiImages.bundle */,
@@ -454,15 +459,16 @@
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,
 				CA065BA01FCC24A200981EB3 /* PHConfettiView.m in Sources */,
 				CA25CEDC1FC0A21A0075D56C /* UIViewController+MMDrawerController.m in Sources */,
-				CAE7D0FB1FD1F31600869C23 /* DPScrollNumberLabel.m in Sources */,
 				CA25CEDA1FC0A21A0075D56C /* MMDrawerController.m in Sources */,
 				CA25CED91FC0A21A0075D56C /* MMDrawerBarButtonItem.m in Sources */,
 				CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */,
 				CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */,
+				CAC2B6501FD4ADE9008FD364 /* TrueFalseViewController.m in Sources */,
 				CA028B5A1FCCCFC00023395A /* RQShineLabel.m in Sources */,
 				CA73EBF41FCB56F0004EEC8E /* firstViewController.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
 				CAFA58831FC8D63100F68AAB /* ProgressHUD.m in Sources */,
+				CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
 				CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */,

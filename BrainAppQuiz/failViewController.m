@@ -14,6 +14,8 @@
 
 @implementation failViewController
 
+@synthesize  functest;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -45,6 +47,14 @@
         ThirdViewController *final = (ThirdViewController*) segue.destinationViewController;
         final.testtype = self.functest;
     }
+    
+    else if ([segue.identifier isEqualToString:@"tryagaintrue"]){
+        
+        TrueFalseViewController *trivia = (TrueFalseViewController *) segue.destinationViewController;
+        trivia.truefalsetest = self.functest;
+        
+        
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
@@ -52,7 +62,15 @@
 
 - (IBAction)failtry:(UIButton *)sender {
     
+    if ([self.functest isEqualToString:@"Numerical Reasoning"] || [self.functest isEqualToString:@"General Knowledge"]){
+    
     [self performSegueWithIdentifier:@"tryfromfail" sender:self];
+}
+    
+    else {
+        
+        [self performSegueWithIdentifier:@"tryagaintrue" sender:self];
+    }
 
 }
 

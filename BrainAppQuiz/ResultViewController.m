@@ -89,12 +89,16 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:@"tryagainsegue"]){
+    if ([segue.identifier isEqualToString:@"backtonorm"]){
         
         ThirdViewController *tryagainassign = (ThirdViewController *) segue.destinationViewController;
         tryagainassign.testtype = self.passedonteststring;
+    }
+    
+    else {
         
-        
+        TrueFalseViewController *dec = (TrueFalseViewController *) segue.destinationViewController;
+        dec.truefalsetest = self.passedonteststring;
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -103,6 +107,18 @@
 
 
 - (IBAction)tryagain:(id)sender {
+    
+    
+    if ([self.passedonteststring isEqualToString:@"General Knowledge"] || [self.passedonteststring isEqualToString:@"Numerical Reasoning"]){
+        
+        [self performSegueWithIdentifier:@"backtonorm" sender:self];
+    }
+    
+    else {
+        
+        [self performSegueWithIdentifier:@"backtotrue" sender:self];
+
+    }
 }
 
 - (IBAction)chooseanother:(id)sender {
@@ -175,8 +191,7 @@
         
         int score = (self.passedonscore * 6) + (1000/self.passedontime);
         [self.label changeToNumber:@(score) animated:YES];
-         NSLog(@"fifth");
-
+        NSLog(@"fifth");
         
     }
     

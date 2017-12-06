@@ -171,7 +171,7 @@
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
         self.Questionlabelfirst.numberOfLines = 0;
         [self.Questionlabelfirst.layer setBorderWidth:1.0];
-        [self.Questionlabelfirst.layer setBorderColor:[[UIColor blackColor] CGColor]];
+            [self.Questionlabelfirst.layer setBorderColor:[[UIColor blackColor] CGColor]];
 
         self.firstchoice.text = [controller nextanswerchoice:self.testtype : self.questionnumber*4];
         self.secondchoice.text = [controller nextanswerchoice:self.testtype :(self.questionnumber*4) +1];

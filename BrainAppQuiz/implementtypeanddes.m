@@ -31,7 +31,7 @@
         
         self.firtsection = [NSMutableArray array];
         typeoftestanddescription *sender3 = [[typeoftestanddescription alloc] init];
-        sender3.typeoftest = @"True/False Trivia";
+        sender3.typeoftest = @"True or False Trivia";
         sender3.desc = @"One of the more traditional quiz. You will be presented with a selection of True/False Questions. Sounds easy but be wary, the score system here is very unpredictable";
         
         [self.firtsection addObject:sender];

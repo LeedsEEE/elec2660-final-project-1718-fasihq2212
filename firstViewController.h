@@ -13,7 +13,6 @@
 @interface firstViewController : ViewController
 
 @property (weak, nonatomic) IBOutlet RQShineLabel *welcanimate;
-
 @property (weak, nonatomic) IBOutlet RQShineLabel *swipanimate;
 
 

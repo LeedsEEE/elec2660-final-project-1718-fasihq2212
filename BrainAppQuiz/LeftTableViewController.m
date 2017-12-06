@@ -67,7 +67,7 @@
     }
     else if (indexPath.row == 2){
         
-        cell.textLabel.text = @"True/False Trivia";
+        cell.textLabel.text = @"True or False Trivia";
         cell.detailTextLabel.text = @"50/50 chance. Easy.";
        
     }

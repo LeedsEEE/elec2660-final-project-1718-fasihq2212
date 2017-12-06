@@ -14,6 +14,8 @@
 
 @implementation BeginSecondViewController
 
+@synthesize typeoftestlabel, typee, descriptionlabel;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -39,8 +41,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-
- 
+    
  if([segue.identifier isEqualToString:@"quizbegin"]){
      
      ThirdViewController *controller = (ThirdViewController *) segue.destinationViewController;
@@ -51,6 +52,16 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+    
+ else if ([segue.identifier isEqualToString:@"true"]){
+     
+     TrueFalseViewController *controller  = (TrueFalseViewController *) segue.destinationViewController;
+     controller.truefalsetest = self.typee.typeoftest;
+     
+     
+     
+     
+ }
 
 }
 - (IBAction)backbuttonpressed:(UIButton *)sender { //similar to the initial view controller, when the go back button is pressed, the side panel in the welcome screen is initiated
@@ -92,5 +103,17 @@
     
     [self.beginoutlet.layer setBorderWidth:1.0];
     [self.beginoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    
+    if ([self.typeoftestlabel.text isEqualToString:@"Numerical Reasoning"] || [self.typeoftestlabel.text isEqualToString:@"General Knowledge"]){
+        
+        [self performSegueWithIdentifier:@"quizbegin" sender:self];
+        
+    }
+    
+    else{
+        
+        [self performSegueWithIdentifier:@"true" sender:self];
+        
+    }
 }
 @end

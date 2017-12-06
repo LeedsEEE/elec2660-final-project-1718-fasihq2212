@@ -61,7 +61,7 @@
                                    @"Most commonly used bleaching agent is",
                                    @"Neil Armstrong and Edwin Aldrin were the first to", nil];
         
-        self.questionfortruefalse = [NSArray arrayWithObjects:@"As far as has ever been reported, no-one has ever seen an ostrich bury its head in the sand"
+        self.questionfortruefalse = [NSArray arrayWithObjects:@"As far as has ever been reported, no-one has ever seen an ostrich bury its head in the sand",
                                      @"Approximately one quarter of human bones are in the feet",
                                      @"Popeye’s nephews were called Peepeye, Poopeye, Pipeye and Pupeye",
                                      @"In ancient Rome, a special room called a vomitorium was available for diners to purge food in during meals",
@@ -85,7 +85,7 @@
         
         self.answerfortruefalse = @[@"True",
                                    @"True",
-                                   @"True.",
+                                   @"True",
                                    @"False",
                                    @"False",
                                    @"True",
@@ -380,6 +380,11 @@
         _finalquestion = [self.questionforgeneral objectAtIndex: index];
 
     }
+    else if ([testtypefunc isEqualToString:@"True or False Trivia"]){
+        
+        _finalquestion = [self.questionfortruefalse objectAtIndex: index];
+
+    }
      
     return _finalquestion;
     
@@ -394,6 +399,11 @@
     }
     
     else if ([testtypefunc isEqualToString:@"General Knowledge"]){
+        
+        _choice = [self.choicesforgeneral objectAtIndex:index];
+    }
+    
+    else if ([testtypefunc isEqualToString:@"True or False Trivia"]){
         
         _choice = [self.choicesforgeneral objectAtIndex:index];
     }
@@ -437,6 +447,26 @@
         
         
   }
+    
+ else if ([testtypefunc isEqualToString:@"True or False Trivia"]){
+    
+     if ([answer isEqualToString:[self.answerfortruefalse objectAtIndex:index]]){
+         
+         
+         [ProgressHUD showSuccess:@"Excellent"];
+         self.score = self.score + 1;
+         
+     }
+     
+     else {
+         
+         [ProgressHUD showError:@"Wrong"];
+         
+         
+     }
+     
+     
+ }
     return &(_score);
 }
 

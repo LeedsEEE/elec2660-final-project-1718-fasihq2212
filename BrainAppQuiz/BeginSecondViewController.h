@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "typeoftestanddescription.h" //imported type and description
 #import "ThirdViewController.h"
+#import "TrueFalseViewController.h"
 
 @interface BeginSecondViewController : ViewController
 

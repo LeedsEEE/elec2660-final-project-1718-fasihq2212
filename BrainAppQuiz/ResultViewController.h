@@ -14,6 +14,7 @@
 #import "RQShineLabel.h"
 #import "DPScrollNumberLabel.h"
 #import "ProgressHUD.h"
+#import "TrueFalseViewController.h"
 
 @interface ResultViewController : ViewController
 

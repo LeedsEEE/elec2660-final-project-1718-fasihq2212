@@ -73,7 +73,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Um-lr-X3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="796"/>
+            <point key="canvasLocation" x="-161" y="694"/>
         </scene>
         <!--Begin Second View Controller-->
         <scene sceneID="GKF-XE-A1n">
@@ -105,7 +105,6 @@
                                 </state>
                                 <connections>
                                     <action selector="BeginAction:" destination="CBC-zJ-Xpx" eventType="touchUpInside" id="g0q-I6-BUQ"/>
-                                    <segue destination="9cq-24-wAw" kind="showDetail" identifier="quizbegin" action="showViewController:sender:" id="hqO-o4-amO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-FL-395">
@@ -149,17 +148,18 @@
                         <outlet property="descriptionlabel" destination="1QU-cv-VwC" id="Urp-8o-uHS"/>
                         <outlet property="gobackoutlet" destination="rwr-FL-395" id="XCX-eS-8u8"/>
                         <outlet property="typeoftestlabel" destination="fQr-yP-0Sh" id="YnY-nz-thw"/>
-                        <segue destination="9fp-gx-hyX" kind="show" id="f56-a4-yoY"/>
+                        <segue destination="9fp-gx-hyX" kind="show" identifier="true" id="f56-a4-yoY"/>
+                        <segue destination="9cq-24-wAw" kind="show" identifier="quizbegin" id="JG6-Jj-QlO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V76-cC-Opj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="908" y="188"/>
         </scene>
-        <!--View Controller-->
+        <!--True False View Controller-->
         <scene sceneID="P1j-GZ-Egb">
             <objects>
-                <viewController id="9fp-gx-hyX" sceneMemberID="viewController">
+                <viewController id="9fp-gx-hyX" customClass="TrueFalseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hjY-GE-qF0"/>
                         <viewControllerLayoutGuide type="bottom" id="ati-Or-JZl"/>
@@ -175,21 +175,27 @@
                                 <color key="textColor" red="0.86274509799999999" green="0.87843137250000003" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-dM-tg1">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-dM-tg1">
                                 <rect key="frame" x="16" y="449" width="137" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="28"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="True">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="answertruefalsepressed:" destination="9fp-gx-hyX" eventType="touchUpInside" id="DRI-V5-WNY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-Yo-Qw3">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-Yo-Qw3">
                                 <rect key="frame" x="222" y="449" width="137" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="28"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="False">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="answertruefalsepressed:" destination="9fp-gx-hyX" eventType="touchUpInside" id="nDG-nt-1LB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mep-rq-RiW">
                                 <rect key="frame" x="26" y="54" width="59" height="35"/>
@@ -198,8 +204,11 @@
                                 <state key="normal" title="Quit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="gobacktrue:" destination="9fp-gx-hyX" eventType="touchUpInside" id="E8w-aQ-Yhp"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpZ-Ir-m5O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpZ-Ir-m5O" customClass="MZTimerLabel">
                                 <rect key="frame" x="57" y="40" width="260" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="27"/>
@@ -217,12 +226,19 @@
                         <color key="backgroundColor" red="0.19215686274509802" green="0.031372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <segue destination="lCG-oP-17L" kind="show" id="0jm-dC-ifG"/>
+                        <outlet property="gobackoutlettrue" destination="mep-rq-RiW" id="4R6-zZ-fm9"/>
+                        <outlet property="questiontruefalse" destination="d1G-lz-2sh" id="j5v-3z-QjD"/>
+                        <outlet property="scorelabeltrue" destination="trL-Pf-zF0" id="Wrj-zt-nFS"/>
+                        <outlet property="sendertag1" destination="f8I-dM-tg1" id="0xI-st-Z5v"/>
+                        <outlet property="sendertag2" destination="Zao-Yo-Qw3" id="e1L-cT-zCT"/>
+                        <outlet property="timerlabeltruefalse" destination="UpZ-Ir-m5O" id="9CQ-OZ-0TQ"/>
+                        <segue destination="lCG-oP-17L" kind="show" identifier="passon" id="0jm-dC-ifG"/>
+                        <segue destination="Fcz-yH-Bcj" kind="show" identifier="failtrue" id="Ta6-GK-c38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMr-ge-Y5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224.8000000000002" y="-539.28035982008998"/>
+            <point key="canvasLocation" x="2383" y="-267"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="yy4-Oz-XxV">
@@ -359,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-Yl-pUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="139"/>
+            <point key="canvasLocation" x="3386" y="491"/>
         </scene>
         <!--Fail View Controller-->
         <scene sceneID="jAv-CB-ccr">
@@ -417,11 +433,12 @@
                         <outlet property="chooseanother" destination="Fvq-8W-mCi" id="RBm-SI-CC6"/>
                         <outlet property="scorefinalnegative" destination="MV2-Zi-7WY" id="KLy-uM-gUk"/>
                         <outlet property="tryagainp" destination="dV2-Th-47I" id="Hcc-xv-BDy"/>
+                        <segue destination="9fp-gx-hyX" kind="show" identifier="tryagaintrue" id="cas-oh-pZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUj-9d-wOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="788"/>
+            <point key="canvasLocation" x="1351" y="1035"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="fnZ-Eg-MM4">
@@ -479,7 +496,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tryagain:" destination="lCG-oP-17L" eventType="touchUpInside" id="uld-2G-b3P"/>
-                                    <segue destination="9cq-24-wAw" kind="presentation" identifier="tryagainsegue" modalTransitionStyle="crossDissolve" id="ip4-dr-beY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have completed: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-ON-wWg">
@@ -563,11 +579,13 @@
                         <outlet property="scoreshine" destination="hy4-qh-XVw" id="wX3-Y3-9ng"/>
                         <outlet property="timeshine" destination="wdr-KD-2ol" id="yvs-zf-wpz"/>
                         <outlet property="tryagainprop" destination="iTI-yJ-7q9" id="HJu-0h-ncV"/>
+                        <segue destination="9fp-gx-hyX" kind="show" identifier="backtotrue" id="eyd-GD-iKO"/>
+                        <segue destination="9cq-24-wAw" kind="show" identifier="backtonorm" id="m88-0r-aMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03o-Ob-d2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.8000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="4406" y="-981"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -591,7 +609,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to OneStepQuiz. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-qS-pJx">
-                                <rect key="frame" x="57" y="145" width="262" height="21"/>
+                                <rect key="frame" x="57.5" y="145" width="261.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Xyz-1K-c5O"/>
                                 </constraints>
@@ -643,7 +661,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-812" y="-423"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="MPx-wf-Xyf">
@@ -703,14 +721,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiU-67-0wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="138.98050974512745"/>
+            <point key="canvasLocation" x="114" y="-423"/>
         </scene>
     </scenes>
     <resources>
         <image name="l3.png" width="550" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hqO-o4-amO"/>
+        <segue reference="eyd-GD-iKO"/>
         <segue reference="0jm-dC-ifG"/>
+        <segue reference="m88-0r-aMg"/>
+        <segue reference="Ta6-GK-c38"/>
     </inferredMetricsTieBreakers>
 </document>
