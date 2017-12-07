@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
-  
-    
     self.questionnumber = arc4random() % 18;
     //self.rqshinelabel.text = @"test";
     //[self.rqshinelabel shine];
@@ -186,6 +184,14 @@
             if (self.score <0){
                 
                 [self performSegueWithIdentifier:@"fail" sender:self];
+                NSString *path = [NSString stringWithFormat:@"%@/342756__rhodesmas__failure-01.wav", [[NSBundle mainBundle] resourcePath]];
+                
+                NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                
+                self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                
+                [self.audio play];
+
             }
 
             NSLog(@"Score  = %ld",(long)self.score);
@@ -214,10 +220,14 @@
             if (sender.tag == 1){
                 self.chosenanswer = self.firstchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+            
+    
+                
                 if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
                     
                     self.score = self.score + 10;
                     self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
                     
                 }
                 else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
@@ -237,18 +247,65 @@
                 if (self.score <0){
                     
                     [self performSegueWithIdentifier:@"fail" sender:self];
+                    NSString *path = [NSString stringWithFormat:@"%@/342756__rhodesmas__failure-01.wav", [[NSBundle mainBundle] resourcePath]];
+                    
+                    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                    
+                    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                    
+                    [self.audio play];
+
                 }
+                
+                else{
                 
 
                  [self performSegueWithIdentifier:@"resultsegue" sender:self];
-                
-                            }
+                }
+            }
             
             else if (sender.tag == 2) {
                 self.chosenanswer = self.secondchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                
+                
+                if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
+                    
+                    self.score = self.score + 10;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                    
+                }
+                else if ([self.chosenanswer isEqualToString: [arr1 objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"General Knowledge"]){
+                    
+                    self.score = self.score + 5;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                
+                else {
+                    
+                    self.score = self.score - arc4random()%15;
+                    self.scoreanswer.text = [NSString stringWithFormat: @"%li", self.score];
+                    
+                }
+                
+                if (self.score <0){
+                    
+                    [self performSegueWithIdentifier:@"fail" sender:self];
+                    NSString *path = [NSString stringWithFormat:@"%@/342756__rhodesmas__failure-01.wav", [[NSBundle mainBundle] resourcePath]];
+                    
+                    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                    
+                    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                    
+                    [self.audio play];
+                }
+                else{
+                
                 [self performSegueWithIdentifier:@"resultsegue" sender:self];
-              
+                }
+                
             }
            
                 else if (sender.tag == 3){
@@ -256,6 +313,8 @@
                 
                 self.chosenanswer = self.thirdchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                  
+                    
                     if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
                         
                         self.score = self.score + 10;
@@ -279,12 +338,20 @@
                     if (self.score <0){
                         
                         [self performSegueWithIdentifier:@"fail" sender:self];
+                        NSString *path = [NSString stringWithFormat:@"%@/342756__rhodesmas__failure-01.wav", [[NSBundle mainBundle] resourcePath]];
+                        
+                        NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                        
+                        self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                        
+                        [self.audio play];
+
                     }
-                    
+                    else{
 
                     [self performSegueWithIdentifier:@"resultsegue" sender:self];
                   
-
+                    }
                 
                 
             }
@@ -292,6 +359,8 @@
                 
                 self.chosenanswer = self.fourthchoice.text;
                 [controller checkanswerfunc:self.testtype :self.chosenanswer :self.questionnumber];
+                
+                
                 if ([self.chosenanswer isEqualToString: [arr objectAtIndex:self.questionnumber]] && [self.testtype isEqualToString:@"Numerical Reasoning"]){
                     
                     self.score = self.score + 10;
@@ -315,12 +384,21 @@
                 if (self.score <0){
                     
                     [self performSegueWithIdentifier:@"fail" sender:self];
+                    NSString *path = [NSString stringWithFormat:@"%@/342756__rhodesmas__failure-01.wav", [[NSBundle mainBundle] resourcePath]];
+                    
+                    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+                    
+                    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+                    
+                    [self.audio play];
+
                 }
                 
 
-                [self performSegueWithIdentifier:@"resultsegue" sender:self];
+                else{
+                    [self performSegueWithIdentifier:@"resultsegue" sender:self];
                
-            
+                }
                 
             }
             
@@ -334,6 +412,14 @@
     self.gobackoutlet.selected = YES;
  
     [label pause];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/352651__foolboymedia__piano-notification-3.mp3", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [self.audio play];
   
     
     UIAlertController *back = [UIAlertController alertControllerWithTitle:@"You have chosen to quit"

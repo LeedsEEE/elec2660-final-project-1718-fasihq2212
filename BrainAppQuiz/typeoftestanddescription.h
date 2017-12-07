@@ -13,5 +13,7 @@
 @property (nonatomic, strong) NSString *typeoftest;
 @property (nonatomic, strong) NSString *desc;
 
+//creating variables for the data model for use in the table view controller- Type of test and its description 
+
 
 @end

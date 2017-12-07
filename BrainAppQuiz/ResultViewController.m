@@ -20,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *path = [NSString stringWithFormat:@"%@/352283__sirkoto51__success-loop-1.wav", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [self.audio play];
+
+    
     [self.tryagainprop.layer setBorderWidth:1.0];
     [self.tryagainprop.layer setBorderColor:[[UIColor blackColor] CGColor]];
     
@@ -112,11 +121,27 @@
     if ([self.passedonteststring isEqualToString:@"General Knowledge"] || [self.passedonteststring isEqualToString:@"Numerical Reasoning"]){
         
         [self performSegueWithIdentifier:@"backtonorm" sender:self];
+        NSString *path = [NSString stringWithFormat:@"%@/351256__kinoton__deep-whoosh-1.wav", [[NSBundle mainBundle] resourcePath]];
+        
+        NSURL *soundUrl = [NSURL fileURLWithPath:path];
+        
+        self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+        
+        [self.audio play];
+
     }
     
     else {
         
         [self performSegueWithIdentifier:@"backtotrue" sender:self];
+        NSString *path = [NSString stringWithFormat:@"%@/351256__kinoton__deep-whoosh-1.wav", [[NSBundle mainBundle] resourcePath]];
+        
+        NSURL *soundUrl = [NSURL fileURLWithPath:path];
+        
+        self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+        
+        [self.audio play];
+
 
     }
 }
@@ -150,6 +175,8 @@
     
     appdel.window.rootViewController = self.callfuncsidep; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
     [appdel.window makeKeyAndVisible];
+    
+    [self.audio stop];
     
 
 }

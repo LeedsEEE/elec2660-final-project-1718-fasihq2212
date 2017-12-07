@@ -57,10 +57,6 @@
      
      TrueFalseViewController *controller  = (TrueFalseViewController *) segue.destinationViewController;
      controller.truefalsetest = self.typee.typeoftest;
-     
-     
-     
-     
  }
 
 }
@@ -97,7 +93,7 @@
     appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
     [appdel.window makeKeyAndVisible];
     
-    NSString *path = [NSString stringWithFormat:@"%@/buttontune.mp3", [[NSBundle mainBundle] resourcePath]];
+    NSString *path = [NSString stringWithFormat:@"%@/352651__foolboymedia__piano-notification-3.mp3", [[NSBundle mainBundle] resourcePath]];
     
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
@@ -114,13 +110,17 @@
     [self.beginoutlet.layer setBorderWidth:1.0];
     [self.beginoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     
-    NSString *path = [NSString stringWithFormat:@"%@/buttontune.mp3", [[NSBundle mainBundle] resourcePath]];
+    [self.audio stop];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/351256__kinoton__deep-whoosh-1.wav", [[NSBundle mainBundle] resourcePath]];
     
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
-    self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    self.audio1 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
-    [self.audio play];
+    [self.audio1 play];
+    
+    
     
 
     

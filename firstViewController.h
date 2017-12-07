@@ -15,5 +15,7 @@
 @property (weak, nonatomic) IBOutlet RQShineLabel *welcanimate;
 @property (weak, nonatomic) IBOutlet RQShineLabel *swipanimate;
 
+// very little description, only 2 variables needed here -  Welcome label and swipe label. Each of them are animated. 
+
 
 @end

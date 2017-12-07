@@ -16,7 +16,6 @@
 		CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA25CE9B1FC08E9F0075D56C /* LaunchScreen.storyboard */; };
 		CA25CEA81FC08E9F0075D56C /* BrainAppQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEA71FC08E9F0075D56C /* BrainAppQuizTests.m */; };
 		CA25CEB31FC08E9F0075D56C /* BrainAppQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */; };
-		CA25CEC91FC09BF30075D56C /* l3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC81FC09BF30075D56C /* l3.png */; };
 		CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */; };
 		CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F95061FCA360A00F8D7F8 /* ResultViewController.m */; };
 		CA4F950D1FCA6C2B00F8D7F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4F950C1FCA6C2B00F8D7F8 /* QuartzCore.framework */; };
@@ -36,19 +35,18 @@
 		CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */; };
 		CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */; };
 		CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */; };
-		CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC01FC093850075D56C /* Nilland-Black.ttf */; };
-		CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */; };
-		CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */; };
-		CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */; };
-		CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */; };
-		CAADC2921FC13139007A173E /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA25CEC51FC093850075D56C /* Nilland.ttf */; };
 		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
+		CAB564511FD8EC7B00FFB68E /* l3.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB564501FD8EC7B00FFB68E /* l3.png */; };
 		CAC2B6501FD4ADE9008FD364 /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */; };
 		CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */; };
 		CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */; };
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
 		CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */; };
+		CAF8F7B31FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAF8F7B21FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav */; };
+		CAF8F7B51FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAF8F7B41FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 */; };
+		CAF8F7B71FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAF8F7B61FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav */; };
+		CAF8F7B91FD8613D00608426 /* 342756__rhodesmas__failure-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = CAF8F7B81FD8613D00608426 /* 342756__rhodesmas__failure-01.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,13 +85,6 @@
 		CA25CEAE1FC08E9F0075D56C /* BrainAppQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainAppQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA25CEB21FC08E9F0075D56C /* BrainAppQuizUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainAppQuizUITests.m; sourceTree = "<group>"; };
 		CA25CEB41FC08E9F0075D56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA25CEC01FC093850075D56C /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Black.ttf"; path = "../../../../Downloads/nilland/Nilland-Black.ttf"; sourceTree = "<group>"; };
-		CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-Bold.ttf"; path = "../../../../Downloads/nilland/Nilland-Bold.ttf"; sourceTree = "<group>"; };
-		CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-ExtraBold.ttf"; path = "../../../../Downloads/nilland/Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
-		CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps-Bold.ttf"; path = "../../../../Downloads/nilland/Nilland-SmallCaps-Bold.ttf"; sourceTree = "<group>"; };
-		CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nilland-SmallCaps.ttf"; path = "../../../../Downloads/nilland/Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
-		CA25CEC51FC093850075D56C /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nilland.ttf; path = ../../../../Downloads/nilland/Nilland.ttf; sourceTree = "<group>"; };
-		CA25CEC81FC09BF30075D56C /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l3.png; path = ../../../../Downloads/l3.png; sourceTree = "<group>"; };
 		CA25CEDD1FC0A2BB0075D56C /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		CA25CEDE1FC0A2BB0075D56C /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
 		CA4F95051FCA360A00F8D7F8 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
@@ -127,6 +118,13 @@
 		CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Puzzle-Game_Looping.mp3"; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
+		CAB5644A1FD8EC4100FFB68E /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-Black.ttf"; sourceTree = "<group>"; };
+		CAB5644B1FD8EC4100FFB68E /* Nilland-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-Bold.ttf"; sourceTree = "<group>"; };
+		CAB5644C1FD8EC4100FFB68E /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CAB5644D1FD8EC4100FFB68E /* Nilland-SmallCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-SmallCaps-Bold.ttf"; sourceTree = "<group>"; };
+		CAB5644E1FD8EC4100FFB68E /* Nilland-SmallCaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-SmallCaps.ttf"; sourceTree = "<group>"; };
+		CAB5644F1FD8EC4100FFB68E /* Nilland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nilland.ttf; sourceTree = "<group>"; };
+		CAB564501FD8EC7B00FFB68E /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l3.png; sourceTree = "<group>"; };
 		CAC2B64E1FD4ADE9008FD364 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
 		CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
 		CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScrollNumberLabel.h; sourceTree = "<group>"; };
@@ -139,6 +137,10 @@
 		CAD859D51FC317D80096E9DF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAD859D71FC3691F0096E9DF /* QuestionAnswerBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerBank.h; sourceTree = "<group>"; };
 		CAD859D81FC3691F0096E9DF /* QuestionAnswerBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerBank.m; sourceTree = "<group>"; };
+		CAF8F7B21FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "351256__kinoton__deep-whoosh-1.wav"; sourceTree = "<group>"; };
+		CAF8F7B41FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "352651__foolboymedia__piano-notification-3.mp3"; sourceTree = "<group>"; };
+		CAF8F7B61FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "352283__sirkoto51__success-loop-1.wav"; sourceTree = "<group>"; };
+		CAF8F7B81FD8613D00608426 /* 342756__rhodesmas__failure-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "342756__rhodesmas__failure-01.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,10 +305,14 @@
 		CA8209C11FD778A7006306F6 /* Sound files */ = {
 			isa = PBXGroup;
 			children = (
+				CAF8F7B81FD8613D00608426 /* 342756__rhodesmas__failure-01.wav */,
+				CAF8F7B61FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav */,
 				CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */,
 				CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */,
 				CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */,
 				CA8209CB1FD780DA006306F6 /* buttontune.mp3 */,
+				CAF8F7B21FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav */,
+				CAF8F7B41FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 */,
 			);
 			name = "Sound files";
 			sourceTree = "<group>";
@@ -314,12 +320,12 @@
 		CAD859CC1FC2ECE50096E9DF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CA25CEC01FC093850075D56C /* Nilland-Black.ttf */,
-				CA25CEC11FC093850075D56C /* Nilland-Bold.ttf */,
-				CA25CEC21FC093850075D56C /* Nilland-ExtraBold.ttf */,
-				CA25CEC31FC093850075D56C /* Nilland-SmallCaps-Bold.ttf */,
-				CA25CEC41FC093850075D56C /* Nilland-SmallCaps.ttf */,
-				CA25CEC51FC093850075D56C /* Nilland.ttf */,
+				CAB5644A1FD8EC4100FFB68E /* Nilland-Black.ttf */,
+				CAB5644B1FD8EC4100FFB68E /* Nilland-Bold.ttf */,
+				CAB5644C1FD8EC4100FFB68E /* Nilland-ExtraBold.ttf */,
+				CAB5644D1FD8EC4100FFB68E /* Nilland-SmallCaps-Bold.ttf */,
+				CAB5644E1FD8EC4100FFB68E /* Nilland-SmallCaps.ttf */,
+				CAB5644F1FD8EC4100FFB68E /* Nilland.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -327,7 +333,7 @@
 		CAD859CD1FC2ED0C0096E9DF /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				CA25CEC81FC09BF30075D56C /* l3.png */,
+				CAB564501FD8EC7B00FFB68E /* l3.png */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -438,18 +444,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAADC28D1FC13139007A173E /* Nilland-Black.ttf in Resources */,
-				CAADC28E1FC13139007A173E /* Nilland-Bold.ttf in Resources */,
+				CAF8F7B91FD8613D00608426 /* 342756__rhodesmas__failure-01.wav in Resources */,
+				CAF8F7B31FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav in Resources */,
 				CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */,
 				CA8209CC1FD780DA006306F6 /* buttontune.mp3 in Resources */,
 				CA8209AF1FD77518006306F6 /* ProgressHUD.bundle in Resources */,
-				CAADC28F1FC13139007A173E /* Nilland-ExtraBold.ttf in Resources */,
-				CAADC2901FC13139007A173E /* Nilland-SmallCaps-Bold.ttf in Resources */,
-				CAADC2911FC13139007A173E /* Nilland-SmallCaps.ttf in Resources */,
-				CAADC2921FC13139007A173E /* Nilland.ttf in Resources */,
 				CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */,
-				CA25CEC91FC09BF30075D56C /* l3.png in Resources */,
 				CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */,
+				CAF8F7B71FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav in Resources */,
+				CAF8F7B51FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 in Resources */,
+				CAB564511FD8EC7B00FFB68E /* l3.png in Resources */,
 				CA25CE9A1FC08E9F0075D56C /* Assets.xcassets in Resources */,
 				CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */,
 				CA25CE981FC08E9F0075D56C /* Main.storyboard in Resources */,

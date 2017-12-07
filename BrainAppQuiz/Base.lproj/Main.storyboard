@@ -674,15 +674,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to Choose Topic " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-cC-bMr" customClass="RQShineLabel">
-                                <rect key="frame" x="53" y="591" width="269" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="6ID-Gr-U1I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-qt-S9p" customClass="RQShineLabel">
                                 <rect key="frame" x="16" y="80" width="343" height="120"/>
                                 <constraints>
@@ -698,17 +689,26 @@
                                     <constraint firstAttribute="height" constant="185" id="tam-i2-f9i"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left to Choose Topic " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-cC-bMr" customClass="RQShineLabel">
+                                <rect key="frame" x="34" y="589" width="306" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="iIg-EZ-wyU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nilland" family="Nilland" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509799999999" green="0.87843137250000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4R2-cC-bMr" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="18" id="Aod-4P-Khf"/>
                             <constraint firstItem="wqn-fb-EAc" firstAttribute="top" secondItem="Lg9-qt-S9p" secondAttribute="bottom" constant="8" symbolic="YES" id="Cth-tT-GV0"/>
                             <constraint firstItem="Lg9-qt-S9p" firstAttribute="top" secondItem="22Q-q2-o9r" secondAttribute="bottom" constant="16" id="Emv-BE-y0O"/>
-                            <constraint firstItem="4R2-cC-bMr" firstAttribute="centerX" secondItem="wqn-fb-EAc" secondAttribute="centerX" id="NGs-65-lJ0"/>
+                            <constraint firstItem="C9K-qL-p24" firstAttribute="top" secondItem="4R2-cC-bMr" secondAttribute="bottom" constant="35" id="I0e-gx-zR2"/>
                             <constraint firstItem="wqn-fb-EAc" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="32" id="SHA-Mn-SPP"/>
                             <constraint firstItem="Lg9-qt-S9p" firstAttribute="trailing" secondItem="55c-jG-3gA" secondAttribute="trailingMargin" id="SO8-TH-gej"/>
-                            <constraint firstItem="4R2-cC-bMr" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" constant="37" id="Tyn-3W-KuW"/>
                             <constraint firstItem="Lg9-qt-S9p" firstAttribute="leading" secondItem="55c-jG-3gA" secondAttribute="leadingMargin" id="Za4-Ze-GRT"/>
-                            <constraint firstItem="C9K-qL-p24" firstAttribute="top" secondItem="4R2-cC-bMr" secondAttribute="bottom" constant="33" id="vWA-3O-zZ1"/>
+                            <constraint firstItem="4R2-cC-bMr" firstAttribute="centerX" secondItem="wqn-fb-EAc" secondAttribute="centerX" id="ZoF-xe-TYq"/>
                             <constraint firstItem="Lg9-qt-S9p" firstAttribute="centerX" secondItem="wqn-fb-EAc" secondAttribute="centerX" id="yo1-le-i9m"/>
                         </constraints>
                     </view>
@@ -720,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiU-67-0wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-423"/>
+            <point key="canvasLocation" x="112.8" y="-423.23838080959524"/>
         </scene>
     </scenes>
     <resources>

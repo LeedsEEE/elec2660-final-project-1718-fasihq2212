@@ -10,6 +10,7 @@
 #import "typeoftestanddescription.h" //imported type and description
 #import "ThirdViewController.h"
 #import "TrueFalseViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface BeginSecondViewController : ViewController
 
@@ -20,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *typeoftestlabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *descriptionlabel;
+@property (nonatomic, strong) AVAudioPlayer *audio1;
 
 #pragma mark Button properties
 

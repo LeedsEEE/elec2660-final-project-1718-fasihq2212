@@ -23,7 +23,6 @@
     [self.buttonp.layer setBorderWidth:1.0];
     [self.buttonp.layer setBorderColor:[[UIColor blackColor] CGColor]];
     
-    
     }
 
 
@@ -37,8 +36,6 @@
 
  #pragma mark - Navigation
 - (IBAction)action1button:(UIButton *)sender{
-    
-
     
     UIStoryboard *mainstory = [UIStoryboard storyboardWithName: @"Main" bundle:nil]; //create a story board
     
@@ -59,43 +56,53 @@
     
     [self.drawercontroller  setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]]; //This is the animation block.. different ones can be used such as parallax etc
     
-    [self presentViewController:self.drawercontroller animated:YES completion:nil];
+   [self presentViewController:self.drawercontroller animated:YES completion:nil];
     
-    //appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
-    //[appdel.window makeKeyAndVisible];
+    [self.buttonp.layer setBorderWidth:1.0];
+    [self.buttonp.layer setBorderColor:[[UIColor blackColor] CGColor]];
     
-    NSString *path = [NSString stringWithFormat:@"%@/Puzzle-Game_Looping.mp3", [[NSBundle mainBundle] resourcePath]];
+    NSString *path = [NSString stringWithFormat:@"%@/buttontune.mp3", [[NSBundle mainBundle] resourcePath]];
     
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
     self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
     [self.audio play];
-    self.audio.numberOfLoops = -1;
     
-  
+    
+    
+    //appdel.window.rootViewController = self.drawercontroller; // We are getting the window variable from app delegate and declaring it here. Normally, _window.rootViewController would have been used
+    //[appdel.window makeKeyAndVisible];
+    //discard code.. not needed
+    
 
 }
+#pragma mark Description
+/*
+ Here we are going to carry out the side drawer when the Begin button is pressed. It does not work when this code below is inserted into the viewdidload function in the welcome view controller. We are using the app delegate to set the root view controller.
+First, the main storyboard is initialised and the left view contoller and centre view controller is begin instantiated. Each of these view controller have been given story board ids called left table view controller and centre view controller. We use:
+
+UIViewController *leftview = [mainstory instantiateViewControllerWithIdentifier:@"LeftTableViewController"];
+UIViewController *centreview = [mainstory instantiateViewControllerWithIdentifier:@"CentreViewController"];
 
 
-// Here we are going to carry out the side drawer when the Begin button is pressed. It does not work when this code below is inserted into the viewdidload function in the welcome view controller. We are using the app delegate to set the root view controller.
-//First, the main storyboard is initialised and the left view contoller and centre view controller is begin instantiated. Each of these view controller have been given story board ids called left table view controller and centre view controller. We use:
+ Next we are going to initiate navaigation controllers to the view controllers. This is because for the MMDrawercontroller to work, we need to create navigation controllers. Centrenav and leftnav are the two navigation controllers created
 
-//UIViewController *leftview = [mainstory instantiateViewControllerWithIdentifier:@"LeftTableViewController"];
-//UIViewController *centreview = [mainstory instantiateViewControllerWithIdentifier:@"CentreViewController"];
+self.drawercontroller = [[MMDrawerController alloc]initWithCenterViewController:centrenav leftDrawerViewController:leftnav];
 
+ The properties of the panel are then set and drawer controller is initiated.
 
-// Next we are going to initiate navaigation controllers to the view controllers. This is because for the MMDrawercontroller to work, we need to create navigation controllers. Centrenav and leftnav are the two navigation controllers created
+ EDIT> The use of app delegate has been removed and a simple presentviewcontroller function is used to carry out animation
+ */
 
-//self.drawercontroller = [[MMDrawerController alloc]initWithCenterViewController:centrenav leftDrawerViewController:leftnav];
+ #pragma mark References
 
-// The properties of the panel are then set and drawer controller is initiated.
+/*
+-MMDDrawerController by MutualMobile-- fetched from Github.com
+-Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel
+-Audio implementation from https://codewithchris.com/avaudioplayer-tutorial/
+-Setting Borders: https://stackoverflow.com/questions/510382/how-do-i-create-a-round-cornered-uilabel-on-the-iphone
 
-
-
-///////////////////// MMDDrawerController by MutualMobile-- fetched from Github.com////////////////////////
-///////////////Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel/////
-
-
+*/
 
 @end

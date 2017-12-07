@@ -41,4 +41,7 @@
     }
     return self;
 }
+
+
+// we create an init function and assign the objects to the NSMutablearray called first section. There are 3 objects describing 3 different objects. Each object is referring to the type of test and its corresponding description. 
 @end
