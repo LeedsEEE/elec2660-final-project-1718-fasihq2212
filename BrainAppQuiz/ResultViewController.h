@@ -12,39 +12,45 @@
 #import "AppDelegate.h"
 #import "ThirdViewController.h"
 #import "RQShineLabel.h"
-#import "DPScrollNumberLabel.h"
 #import "ProgressHUD.h"
 #import "TrueFalseViewController.h"
+#import "TOMSMorphingLabel.h"
 
 @interface ResultViewController : ViewController
 
-@property (nonatomic, strong) PHConfettiView *confetti;
-@property (nonatomic, strong) NSString *passedonteststring;
-@property NSInteger passedonscore;
-@property NSTimeInterval passedontime;
-@property (weak, nonatomic) IBOutlet UIButton *tryagainprop;
-@property (weak, nonatomic) IBOutlet UIButton *chooseagainprop;
-@property (weak, nonatomic) IBOutlet UIButton *infooutlet;
-@property (nonatomic, strong) MMDrawerController *callfuncsidep;
+#pragma mark UILabel Class and Subclass
+
 @property (weak, nonatomic) IBOutlet UILabel *completelabel;
 @property (weak, nonatomic) IBOutlet RQShineLabel *resultfinish;
 @property (weak, nonatomic) IBOutlet RQShineLabel *improvementlabel;
 @property (weak, nonatomic) IBOutlet RQShineLabel *scoreshine;
 @property (weak, nonatomic) IBOutlet RQShineLabel *timeshine;
-
-
 @property (weak, nonatomic) IBOutlet RQShineLabel *finalscorealpha;
 
-@property (nonatomic, strong) DPScrollNumberLabel *label;
+@property (weak, nonatomic) IBOutlet TOMSMorphingLabel *morphlabelscore;
+
+
+#pragma mark Class functions and variables
+
+@property (nonatomic, strong) PHConfettiView *confetti;
+@property (nonatomic, strong) NSString *passedonteststring;
+@property NSInteger passedonscore;
+@property NSTimeInterval passedontime;
+@property (nonatomic, strong) MMDrawerController *callfuncsidep;
 @property NSNumber* time;
+@property int score;
+
+
+#pragma mark Button Variables
+
+@property (weak, nonatomic) IBOutlet UIButton *tryagainprop;
+@property (weak, nonatomic) IBOutlet UIButton *chooseagainprop;
+- (IBAction)tryagain:(id)sender;
+- (IBAction)chooseanother:(id)sender;
+
+#pragma mark functions
 
 -(void) displayfinalscore;
-
-
-- (IBAction)tryagain:(id)sender;
-
-
-- (IBAction)chooseanother:(id)sender;
 
 
 

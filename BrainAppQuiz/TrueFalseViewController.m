@@ -132,10 +132,10 @@
     QuestionAnswerBank *question = [[QuestionAnswerBank alloc] init];
     NSArray *arr = [question answerfortruefalse];
     
-    if (self.beta < 9){
+    if (self.beta < 9){ // beta is the question index
     
         if(sender.tag == 1){
-            
+             /// answer pick is either True or False
             self.answerpick = @"True";
         }
         
@@ -144,12 +144,12 @@
             self.answerpick = @"False";
         }
         
-            [controller checkanswerfunctrue:self.truefalsetest :self.answerpick :self.questionnumbertrue];
+            [controller checkanswerfunctrue:self.truefalsetest :self.answerpick :self.questionnumbertrue]; // this function compares the picked answer with the answer array for the true and false question bank.
             
             if ([self.answerpick isEqualToString: [arr objectAtIndex:self.questionnumbertrue]]){
                 
-                self.scoretrue = self.scoretrue + 10;
-                self.scorelabeltrue.text = [NSString stringWithFormat: @"%li", self.scoretrue];
+                self.scoretrue = self.scoretrue + 10; // when it is equal, the score increments by 10 and a correct answer tune is played.
+                self.scorelabeltrue.text = [NSString stringWithFormat: @"%li", self.scoretrue]; // score label is updated
                 NSString *path = [NSString stringWithFormat:@"%@/131660__bertrof__game-sound-correct.wav", [[NSBundle mainBundle] resourcePath]];
                 
                 NSURL *soundUrl = [NSURL fileURLWithPath:path];
@@ -166,17 +166,17 @@
                 NSString *path = [NSString stringWithFormat:@"%@/131657__bertrof__game-sound-wrong.wav", [[NSBundle mainBundle] resourcePath]];
                 NSURL *soundUrl = [NSURL fileURLWithPath:path];
                 self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
-                [self.audio play];
+                [self.audio play]; // if the answer is wrong, the score is deducted by a random number between 0 and 25 and a wrong answer ping is played.
             }
         
             if (self.scoretrue <0){
                 
                 [self performSegueWithIdentifier:@"failtrue" sender:self];
             }
-    
+     // if the score reaches below 0, the user is presented to the fail view controller.
         
-        self.questionnumbertrue = arc4random()%18;
-        self.beta = self.beta + 1;
+        self.questionnumbertrue = arc4random()%18; // another question is chosen between 0 and 18
+        self.beta = self.beta + 1; // the beta increases by 1
         
         self.questiontruefalse.text = [controller nextquestiontrue:self.truefalsetest :self.questionnumbertrue];
         
@@ -184,7 +184,7 @@
     
     else {
         
-        if(sender.tag == 1){
+        if(sender.tag == 1){  // if beta reaches 9 ie the last question, no new questions are printed out
             
             self.answerpick = @"True";
             [controller checkanswerfunctrue:self.truefalsetest :self.answerpick :self.questionnumbertrue];
@@ -203,7 +203,7 @@
                 
             }
             
-            if (self.scoretrue <0){
+            if (self.scoretrue <0){ // if the score is less than 0, then
                 
                 [self performSegueWithIdentifier:@"failtrue" sender:self];
             }
@@ -216,7 +216,7 @@
         }
         
         else if (sender.tag == 2){
-            
+              /// same code as sender.tag == 1 
             self.answerpick = @"False";
             [controller checkanswerfunctrue:self.truefalsetest :self.answerpick :self.questionnumbertrue];
             
@@ -247,8 +247,6 @@
         }
         }
 }
-    
-    
 }
 -(NSInteger*) checkanswerfunctrue: (NSString*) test :(NSString*) chosen : (NSInteger) indie{
     

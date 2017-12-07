@@ -35,10 +35,17 @@
 		CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */; };
 		CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */; };
 		CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */; };
+		CA9C746C1FD9792F00F613F8 /* Nilland-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644A1FD8EC4100FFB68E /* Nilland-Black.ttf */; };
+		CA9C746D1FD9792F00F613F8 /* Nilland-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644B1FD8EC4100FFB68E /* Nilland-Bold.ttf */; };
+		CA9C746E1FD9792F00F613F8 /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644C1FD8EC4100FFB68E /* Nilland-ExtraBold.ttf */; };
+		CA9C746F1FD9792F00F613F8 /* Nilland-SmallCaps-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644D1FD8EC4100FFB68E /* Nilland-SmallCaps-Bold.ttf */; };
+		CA9C74701FD9792F00F613F8 /* Nilland-SmallCaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644E1FD8EC4100FFB68E /* Nilland-SmallCaps.ttf */; };
+		CA9C74711FD9792F00F613F8 /* Nilland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB5644F1FD8EC4100FFB68E /* Nilland.ttf */; };
+		CA9C74741FD9C44200F613F8 /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C74731FD9C44200F613F8 /* TOMSMorphingLabel.m */; };
+		CA9C74771FD9C46B00F613F8 /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C74761FD9C46B00F613F8 /* NSString+Morphing.m */; };
 		CAADC2971FC251DE007A173E /* BeginSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC2961FC251DE007A173E /* BeginSecondViewController.m */; };
 		CAB564511FD8EC7B00FFB68E /* l3.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB564501FD8EC7B00FFB68E /* l3.png */; };
 		CAC2B6501FD4ADE9008FD364 /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */; };
-		CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */; };
 		CAD859D01FC2EF840096E9DF /* typeoftestanddescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */; };
 		CAD859D31FC2F06E0096E9DF /* implementtypeanddes.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D21FC2F06E0096E9DF /* implementtypeanddes.m */; };
 		CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD859D51FC317D80096E9DF /* ThirdViewController.m */; };
@@ -116,6 +123,10 @@
 		CA8209CF1FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "131657__bertrof__game-sound-wrong.wav"; sourceTree = "<group>"; };
 		CA8209D11FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "131660__bertrof__game-sound-correct.wav"; sourceTree = "<group>"; };
 		CA8209D31FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Puzzle-Game_Looping.mp3"; sourceTree = "<group>"; };
+		CA9C74721FD9C44200F613F8 /* TOMSMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMSMorphingLabel.h; sourceTree = "<group>"; };
+		CA9C74731FD9C44200F613F8 /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
+		CA9C74751FD9C46B00F613F8 /* NSString+Morphing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Morphing.h"; sourceTree = "<group>"; };
+		CA9C74761FD9C46B00F613F8 /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Morphing.m"; sourceTree = "<group>"; };
 		CAADC2951FC251DD007A173E /* BeginSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginSecondViewController.h; sourceTree = "<group>"; };
 		CAADC2961FC251DE007A173E /* BeginSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginSecondViewController.m; sourceTree = "<group>"; };
 		CAB5644A1FD8EC4100FFB68E /* Nilland-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-Black.ttf"; sourceTree = "<group>"; };
@@ -127,8 +138,6 @@
 		CAB564501FD8EC7B00FFB68E /* l3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l3.png; sourceTree = "<group>"; };
 		CAC2B64E1FD4ADE9008FD364 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
 		CAC2B64F1FD4ADE9008FD364 /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
-		CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScrollNumberLabel.h; sourceTree = "<group>"; };
-		CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPScrollNumberLabel.m; sourceTree = "<group>"; };
 		CAD859CE1FC2EF840096E9DF /* typeoftestanddescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeoftestanddescription.h; sourceTree = "<group>"; };
 		CAD859CF1FC2EF840096E9DF /* typeoftestanddescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = typeoftestanddescription.m; sourceTree = "<group>"; };
 		CAD859D11FC2F06E0096E9DF /* implementtypeanddes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implementtypeanddes.h; sourceTree = "<group>"; };
@@ -233,6 +242,10 @@
 		CA25CE8D1FC08E9F0075D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA9C74751FD9C46B00F613F8 /* NSString+Morphing.h */,
+				CA9C74761FD9C46B00F613F8 /* NSString+Morphing.m */,
+				CA9C74721FD9C44200F613F8 /* TOMSMorphingLabel.h */,
+				CA9C74731FD9C44200F613F8 /* TOMSMorphingLabel.m */,
 				CA8209B11FD77547006306F6 /* MMDrawerBarButtonItem.h */,
 				CA8209B21FD77547006306F6 /* MMDrawerBarButtonItem.m */,
 				CA8209B31FD77547006306F6 /* MMDrawerController.h */,
@@ -252,8 +265,6 @@
 				CA8209A11FD7738F006306F6 /* ConfettiImages.bundle */,
 				CA8209A21FD7738F006306F6 /* PHConfettiView.h */,
 				CA8209A31FD7738F006306F6 /* PHConfettiView.m */,
-				CAC597C71FD629D500B860EB /* DPScrollNumberLabel.h */,
-				CAC597C81FD629D500B860EB /* DPScrollNumberLabel.m */,
 				CA25CE8E1FC08E9F0075D56C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -444,18 +455,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9C746E1FD9792F00F613F8 /* Nilland-ExtraBold.ttf in Resources */,
+				CA9C74711FD9792F00F613F8 /* Nilland.ttf in Resources */,
 				CAF8F7B91FD8613D00608426 /* 342756__rhodesmas__failure-01.wav in Resources */,
 				CAF8F7B31FD85A4600608426 /* 351256__kinoton__deep-whoosh-1.wav in Resources */,
 				CA8209D21FD787F5006306F6 /* 131660__bertrof__game-sound-correct.wav in Resources */,
 				CA8209CC1FD780DA006306F6 /* buttontune.mp3 in Resources */,
 				CA8209AF1FD77518006306F6 /* ProgressHUD.bundle in Resources */,
+				CA9C74701FD9792F00F613F8 /* Nilland-SmallCaps.ttf in Resources */,
 				CA8209D01FD7845D006306F6 /* 131657__bertrof__game-sound-wrong.wav in Resources */,
+				CA9C746C1FD9792F00F613F8 /* Nilland-Black.ttf in Resources */,
 				CA25CE9D1FC08E9F0075D56C /* LaunchScreen.storyboard in Resources */,
 				CAF8F7B71FD8609400608426 /* 352283__sirkoto51__success-loop-1.wav in Resources */,
 				CAF8F7B51FD85B9700608426 /* 352651__foolboymedia__piano-notification-3.mp3 in Resources */,
 				CAB564511FD8EC7B00FFB68E /* l3.png in Resources */,
 				CA25CE9A1FC08E9F0075D56C /* Assets.xcassets in Resources */,
+				CA9C746D1FD9792F00F613F8 /* Nilland-Bold.ttf in Resources */,
 				CA8209D41FD78A3D006306F6 /* Puzzle-Game_Looping.mp3 in Resources */,
+				CA9C746F1FD9792F00F613F8 /* Nilland-SmallCaps-Bold.ttf in Resources */,
 				CA25CE981FC08E9F0075D56C /* Main.storyboard in Resources */,
 				CA8209A41FD7738F006306F6 /* ConfettiImages.bundle in Resources */,
 			);
@@ -487,6 +504,7 @@
 				CA8209A81FD773CF006306F6 /* RQShineLabel.m in Sources */,
 				CA1E37E71FD34C0C00BB0676 /* failViewController.m in Sources */,
 				CA8209AB1FD774F1006306F6 /* MZTimerLabel.m in Sources */,
+				CA9C74741FD9C44200F613F8 /* TOMSMorphingLabel.m in Sources */,
 				CAD859D61FC317D80096E9DF /* ThirdViewController.m in Sources */,
 				CAD859D91FC3691F0096E9DF /* QuestionAnswerBank.m in Sources */,
 				CA25CE951FC08E9F0075D56C /* ViewController.m in Sources */,
@@ -500,8 +518,8 @@
 				CA73EBF41FCB56F0004EEC8E /* firstViewController.m in Sources */,
 				CA25CE921FC08E9F0075D56C /* AppDelegate.m in Sources */,
 				CA8209BC1FD77547006306F6 /* MMDrawerVisualState.m in Sources */,
-				CAC597C91FD629D500B860EB /* DPScrollNumberLabel.m in Sources */,
 				CA25CEDF1FC0A2BB0075D56C /* LeftTableViewController.m in Sources */,
+				CA9C74771FD9C46B00F613F8 /* NSString+Morphing.m in Sources */,
 				CA25CE8F1FC08E9F0075D56C /* main.m in Sources */,
 				CA4F95071FCA360A00F8D7F8 /* ResultViewController.m in Sources */,
 			);

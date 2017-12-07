@@ -15,33 +15,26 @@
 
 @implementation ResultViewController
 
-@synthesize passedonteststring, label, finalscorealpha, passedonscore;
-
+@synthesize passedonteststring, morphlabelscore, finalscorealpha, passedonscore, improvementlabel, score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path = [NSString stringWithFormat:@"%@/352283__sirkoto51__success-loop-1.wav", [[NSBundle mainBundle] resourcePath]];
-    
+    NSString *path = [NSString stringWithFormat:@"%@/352283__sirkoto51__success-loop-1.wav", [[NSBundle mainBundle] resourcePath]]; // Play the theme tune for when the user finishes the test
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
-    
     self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
-    
     [self.audio play];
-
-    
+    [self.view addSubview:self.improvementlabel];
     [self.tryagainprop.layer setBorderWidth:1.0];
     [self.tryagainprop.layer setBorderColor:[[UIColor blackColor] CGColor]];
-    
     [self.chooseagainprop.layer setBorderWidth:1.0];
     [self.chooseagainprop.layer setBorderColor:[[UIColor blackColor] CGColor]];
-    
+     // putting the border around the choose category button and try again button
 
-    [self.view addSubview:self.resultfinish];
+    [self.view addSubview:self.resultfinish]; // resultfinish and finalscorealpha are animated variables so we need to assign a seperate view
     [self.view addSubview:self.finalscorealpha];
- 
-
-    self.resultfinish.text = self.passedonteststring;
-       [self.resultfinish shine];
+  
+    self.resultfinish.text = self.passedonteststring; // passed on string is the result finish label text
+       [self.resultfinish shine]; // This is then animated
     
     self.confetti = [[PHConfettiView alloc] initWithFrame:self.view.bounds];
     self.confetti.colors = @[[UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
@@ -49,48 +42,39 @@
                                  [UIColor colorWithRed:0.48 green:0.78 blue:0.64 alpha:1.0],
                                  [UIColor colorWithRed:0.30 green:0.76 blue:0.85 alpha:1.0],
                                  [UIColor colorWithRed:0.58 green:0.39 blue:0.55 alpha:1.0]];
-    self.confetti.type = PHConfettiTypeConfetti;
-    [self.finalscorealpha shine];
+    self.confetti.type = PHConfettiTypeConfetti; // the confetti is carried out
+    [self.finalscorealpha shine]; // the final score alpha is the score at the end of the test without the multiplier.
     
     [self.view addSubview:self.confetti];
     [self.confetti startConfetti];
     
     [self.view addSubview:self.tryagainprop];
      [self.view addSubview:self.chooseagainprop];
-    [self.view addSubview:self.infooutlet];
+    // the buttons are added as a sub view as well
     
-    self.timeshine.text = [NSString stringWithFormat:@"Time: %.2f seconds", self.passedontime];
+    self.timeshine.text = [NSString stringWithFormat:@"Time: %.2f seconds", self.passedontime]; // the time  and score is set to self.passedontime and self.passedonscore which come from the ThirdViewController
     self.scoreshine.text = [NSString stringWithFormat:@"Score: %li", (long)self.passedonscore];
     
-    [self.timeshine shine];
+    [self.timeshine shine]; // the time and score is animated
     [self.scoreshine shine];
-    self.label = [[DPScrollNumberLabel alloc] initWithNumber:@(0) font:[UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:40] textColor:[UIColor grayColor] rowNumber:5];
     
-    self.label.frame = CGRectMake(210, 500, self.label.frame.size.width, self.label.frame.size.height);
+    [self.morphlabelscore setText:[NSString stringWithFormat:@"%li", self.passedonscore] withCompletionBlock:^{
+        NSLog(@"done");
+    }];
     
-    [self.view addSubview:self.label];
 
-
-    [self performSelector:@selector(displayfinalscore) withObject:nil afterDelay:3.0];
+    [self.view addSubview:self.morphlabelscore];
     
-    
-    
+    [self performSelector:@selector(displayfinalscore) withObject:nil afterDelay:3]; // This function carries out the fade animation
 
 }
     // start Animation
    
-    
-            
-    
     // Do any additional setup after loading the view
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
-
 
 
 #pragma mark - Navigation
@@ -112,8 +96,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
-
 
 - (IBAction)tryagain:(id)sender {
     
@@ -177,61 +159,181 @@
     [appdel.window makeKeyAndVisible];
     
     [self.audio stop];
-    
-
 }
 
 -(void) displayfinalscore{
     
     if (self.passedonscore <10){
         
-        int score = (self.passedonscore * 1) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-        NSLog(@"first");
+         self.score = (self.passedonscore * 1) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+        
     }
     
     else if (self.passedonscore >=10 && self.passedonscore <15){
         
-        int score = (self.passedonscore * 2.5) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-         NSLog(@"sec");
+        self.score = (self.passedonscore * 1.1) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
 
     }
     else if (self.passedonscore >=15 && self.passedonscore <20){
         
-        int score = (self.passedonscore * 3.5) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-         NSLog(@"third");
+         self.score = (self.passedonscore * 1.3) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+
+
 
         
     }
     else if (self.passedonscore >=20 && self.passedonscore <25){
         
-        int score = (self.passedonscore * 5) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-         NSLog(@"fourth");
+        self.score = (self.passedonscore * 1.5) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
 
-        
+    
     }
     
     else if (self.passedonscore >=25 && self.passedonscore <30){
         
-        int score = (self.passedonscore * 6) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-        NSLog(@"fifth");
-        
-    }
-    
-    else if (self.passedonscore>=30){
-        
-        int score = (self.passedonscore * 8) + (1000/self.passedontime);
-        [self.label changeToNumber:@(score) animated:YES];
-         NSLog(@"six");
-        
+       self.score = (self.passedonscore * 1.7) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
 
     }
     
+    else if (self.passedonscore>=30 && self.passedonscore < 50){
+        
+      self.score = (self.passedonscore * 1.9) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+        
+    }
+    
+    else if (self.passedonscore>= 50 && self.passedonscore < 70 ){
+         self.score = (self.passedonscore * 2) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+        
+    }
 
+    else if (self.passedonscore >= 70 && self. passedonscore <80){
+        
+        self.score = (self.passedonscore * 2.2) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+    }
+    
+    else if (self.passedonscore >= 90 && self.passedonscore <100){
+        
+         self.score = (self.passedonscore * 2.4) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+        
+           }
+
+    else if (self.passedonscore >=100){
+        
+         self.score = (self.passedonscore * 2.6) + (1000/self.passedontime);
+        [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
+            NSLog(@"done");
+        }];
+        
+    }
+    
+    ///////////
+    
+    if (self.score <100){
+        
+        self.improvementlabel.text = @"Try harder next time";
+        [self.improvementlabel shine];
+        
+        NSLog(@"first");
+    }
+    
+    else if (self.score >=100 && self.score <150){
+        
+        self.improvementlabel.text = @"Keep going. You're still very far off perfect";
+        [self.improvementlabel shine];
+        
+    }
+    else if (self.score >=150 && self.score <200){
+        
+        self.improvementlabel.text = @"Still the same";
+        [self.improvementlabel shine];
+        NSLog(@"third");
+        
+        
+    }
+    else if (self.score >=200 && self.score <250){
+        
+        self.improvementlabel.text = @"Making some visible progress now. Keep practicing questions";
+        [self.improvementlabel shine];
+        NSLog(@"fourth");
+        
+        
+    }
+    
+    else if (self.score >=250 && self.score <300){
+        
+       
+        self.improvementlabel.text = @"Very good progress being made here";
+        [self.improvementlabel shine];
+    }
+    
+    else if (self.score>=300 && self.score < 500){
+        
+               self.improvementlabel.text = @"Great! You've entered 'the hard to get' scores. It will be very difficult to get a higher score from here so keep practicing!";
+        [self.improvementlabel shine];
+        NSLog(@"six");
+        
+    }
+    
+    else if (self.score>= 500 && self.score < 700 ){
+               self.improvementlabel.text = @"Excellent! A competant score";
+        [self.improvementlabel shine];
+        
+        NSLog(@"six");
+    }
+    
+    else if (self.score >= 700 && self. score <800){
+        
+        self.improvementlabel.text = @"Wow! Wow! You're on a streak! Keep going though you can still improve!";
+        [self.improvementlabel shine];
+        
+        NSLog(@"six");
+    }
+    
+    else if (self.score >= 900 && self.score <1000){
+        
+
+        self.improvementlabel.text =  @"You've finally done it! You're nearly an expert in this topic";
+        [self.improvementlabel shine];
+        NSLog(@"six");
+    }
+    
+    else if (self.score >=1000){
+        
+        self.improvementlabel.text = @"You're a legend! I should hire you for new questions! (Or you answered the questions really quickly...)";
+        [self.improvementlabel shine];
+        NSLog(@"six");
+        
+    }
+
+    
+    
     [ProgressHUD showSuccess];
 }
 
