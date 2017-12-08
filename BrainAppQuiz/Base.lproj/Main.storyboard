@@ -37,21 +37,21 @@
                         <color key="separatorColor" red="0.19215686274509802" green="0.031372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="firstcell" editingAccessoryType="detailDisclosureButton" textLabel="aBX-XE-yjz" detailTextLabel="3BS-Rx-Vh0" rowHeight="113" style="IBUITableViewCellStyleSubtitle" id="saP-6A-1SG">
-                                <rect key="frame" x="0.0" y="55.333333333333336" width="414" height="113"/>
+                                <rect key="frame" x="0.0" y="55" width="414" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="saP-6A-1SG" id="Yph-2o-LCf">
                                     <rect key="frame" x="0.0" y="0.0" width="381" height="112.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aBX-XE-yjz">
-                                            <rect key="frame" x="14.999999999999996" y="35" width="39.666666666666664" height="23.666666666666668"/>
+                                            <rect key="frame" x="14.999999999999996" y="35" width="37.666666666666664" height="23.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Nilland-Black" family="Nilland-Black" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3BS-Rx-Vh0">
-                                            <rect key="frame" x="15" y="58.666666666666671" width="43" height="19"/>
+                                            <rect key="frame" x="15.000000000000004" y="58.333333333333329" width="43.333333333333336" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Nilland-SmallCaps" family="Nilland-SmallCaps" pointSize="17"/>
                                             <nil key="textColor"/>

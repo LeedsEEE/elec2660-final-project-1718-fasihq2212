@@ -32,26 +32,26 @@
 
 #pragma mark Class functions and variables
 
-@property (nonatomic, strong) PHConfettiView *confetti;
-@property (nonatomic, strong) NSString *passedonteststring;
-@property NSInteger passedonscore;
+@property (nonatomic, strong) PHConfettiView *confetti; // confetti class declared
+@property (nonatomic, strong) NSString *passedonteststring; // passed on test string from previous view controller
+@property NSInteger passedonscore; // passed on score and time
 @property NSTimeInterval passedontime;
-@property (nonatomic, strong) MMDrawerController *callfuncsidep;
+@property (nonatomic, strong) MMDrawerController *callfuncsidep; // MMDrawerController callfuncisdep is declared so it can be used
 @property NSNumber* time;
 @property int score;
-
+//score is decalred.
 
 #pragma mark Button Variables
 
 @property (weak, nonatomic) IBOutlet UIButton *tryagainprop;
 @property (weak, nonatomic) IBOutlet UIButton *chooseagainprop;
 - (IBAction)tryagain:(id)sender;
-- (IBAction)chooseanother:(id)sender;
+- (IBAction)chooseanother:(id)sender; // button actions and outlets decalred
 
 #pragma mark functions
 
 -(void) displayfinalscore;
-
+ // function to display the final score.
 
 
 @end

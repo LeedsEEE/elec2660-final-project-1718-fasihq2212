@@ -31,7 +31,7 @@
      // putting the border around the choose category button and try again button
 
     [self.view addSubview:self.resultfinish]; // resultfinish and finalscorealpha are animated variables so we need to assign a seperate view
-    [self.view addSubview:self.finalscorealpha];
+    [self.view addSubview:self.finalscorealpha]; // we create a subview for the finalscorealpha label since confetti is a subview. We do this for each button and label. 
   
     self.resultfinish.text = self.passedonteststring; // passed on string is the result finish label text
        [self.resultfinish shine]; // This is then animated
@@ -42,6 +42,7 @@
                                  [UIColor colorWithRed:0.48 green:0.78 blue:0.64 alpha:1.0],
                                  [UIColor colorWithRed:0.30 green:0.76 blue:0.85 alpha:1.0],
                                  [UIColor colorWithRed:0.58 green:0.39 blue:0.55 alpha:1.0]];
+  
     self.confetti.type = PHConfettiTypeConfetti; // the confetti is carried out
     [self.finalscorealpha shine]; // the final score alpha is the score at the end of the test without the multiplier.
     
@@ -56,16 +57,13 @@
     self.scoreshine.text = [NSString stringWithFormat:@"Score: %li", (long)self.passedonscore];
     
     [self.timeshine shine]; // the time and score is animated
-    [self.scoreshine shine];
-    
+    [self.scoreshine shine]; // score is animated.
     [self.morphlabelscore setText:[NSString stringWithFormat:@"%li", self.passedonscore] withCompletionBlock:^{
-        NSLog(@"done");
+        NSLog(@"done"); // this is the improvementlabel that will be animated when the user initially finishes the
     }];
+    [self.view addSubview:self.morphlabelscore]; // add subview for morphlabel
     
-
-    [self.view addSubview:self.morphlabelscore];
-    
-    [self performSelector:@selector(displayfinalscore) withObject:nil afterDelay:3]; // This function carries out the fade animation
+    [self performSelector:@selector(displayfinalscore) withObject:nil afterDelay:3]; // This function carries out the fade animation. The 
 
 }
     // start Animation
@@ -75,8 +73,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -85,13 +81,13 @@
     if ([segue.identifier isEqualToString:@"backtonorm"]){
         
         ThirdViewController *tryagainassign = (ThirdViewController *) segue.destinationViewController;
-        tryagainassign.testtype = self.passedonteststring;
+        tryagainassign.testtype = self.passedonteststring;  // backtonorm segue goes to third view controller for General Knowledge and Numerical Reasoning
     }
     
     else {
         
         TrueFalseViewController *dec = (TrueFalseViewController *) segue.destinationViewController;
-        dec.truefalsetest = self.passedonteststring;
+        dec.truefalsetest = self.passedonteststring; // here if the identifier is not backtonorm, the type of test is passed on to the TrueFalseViewController.
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -122,7 +118,7 @@
         
         self.audio = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
         
-        [self.audio play];
+        [self.audio play];   // When the try again button is pressed, the segue with identifier function is performed. If the passedontest from the ThirdviewController or truefalseviewcontroller is equal to string of General Knowledge or Numerical Reasoning, the corresponding segue is performed and the appropiate audio is played.
 
 
     }
@@ -130,6 +126,7 @@
 
 - (IBAction)chooseanother:(id)sender {
     
+    // Same code used here in ViewController. This code initiates the MMDrawerController. This method uses the app delegate instead. Howev
     
     
     AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
@@ -331,8 +328,6 @@
         NSLog(@"six");
         
     }
-
-    
     
     [ProgressHUD showSuccess];
 }
