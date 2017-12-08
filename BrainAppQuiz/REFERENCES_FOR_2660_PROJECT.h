@@ -54,6 +54,8 @@
 - Logo from  http://logodust.com
  
  - All sounds have been obtained from https://freesound.org/
+ 
+ - perfromselector method called on ResultViewController from https://developer.apple.com/documentation/objectivec/nsobject/1416176-performselector
 
 */
 @end
