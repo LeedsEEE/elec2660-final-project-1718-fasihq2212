@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     self.typeoftestlabel.text = self.typee.typeoftest; //declaring the variables here 'typee' is the class for the type of test and description
-    self.descriptionlabel.text = self.typee.desc;
+    self.descriptionlabel.text = self.typee.desc;  // self.typee.desc is passed on from tableview
     
 //Line break code from stack overflow -- https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel ////
     
@@ -46,14 +46,14 @@
      
      ThirdViewController *controller = (ThirdViewController *) segue.destinationViewController;
      
-     controller.testtype = self.typee.typeoftest;
+     controller.testtype = self.typee.typeoftest; // If the type of test is Numerical Reasoning or General Knowledge, the type of test is passed on to ThirdViewController
      
      
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
     
- else if ([segue.identifier isEqualToString:@"true"]){
+ else if ([segue.identifier isEqualToString:@"true"]){ // otherwise, it is passed onto the TrueFalseViewController.
      
      TrueFalseViewController *controller  = (TrueFalseViewController *) segue.destinationViewController;
      controller.truefalsetest = self.typee.typeoftest;
@@ -105,7 +105,7 @@
     
 
 }
-- (IBAction)BeginAction:(UIButton *)sender {
+- (IBAction)BeginAction:(UIButton *)sender { // When the begin action is pressed, the user will go to either ThirdViewController or trueFalseviewcontroller.
     
     [self.beginoutlet.layer setBorderWidth:1.0];
     [self.beginoutlet.layer setBorderColor:[[UIColor whiteColor] CGColor]];
@@ -118,19 +118,17 @@
     
     self.audio1 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
-    [self.audio1 play];
-    
+    [self.audio1 play]; //a tune is played to show this.
     
     
 
-    
     if ([self.typeoftestlabel.text isEqualToString:@"Numerical Reasoning"] || [self.typeoftestlabel.text isEqualToString:@"General Knowledge"]){
         
-        [self performSegueWithIdentifier:@"quizbegin" sender:self];
+        [self performSegueWithIdentifier:@"quizbegin" sender:self]; // if the type of test is General Knowledge or Numerical reasoning, the user will go to ThirdViewController
         
     }
     
-    else{
+    else{ // otherwise, the user will go to TrueFalseViewController.
         
         [self performSegueWithIdentifier:@"true" sender:self];
         

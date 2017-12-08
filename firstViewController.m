@@ -39,14 +39,12 @@
     // Pass the selected object to the new view controller.
 }
 */
-#pragma mark Description and References 
+#pragma mark Description
 
 /*
  In this view controller, the user is welcomes to the main screen where the user can swipe to see the choices of questions. The MMDrawercontroller is initialised in this view controller. The welcome and swipe label are animated using RQShineLabel , a UILabel subclass
  
- -RQShineLabel from https://github.com/zipme/RQShineLabel
- -implementation from example project and m file. (Some variables in m file were changed such as text colour)
- 
+
  */
 
 

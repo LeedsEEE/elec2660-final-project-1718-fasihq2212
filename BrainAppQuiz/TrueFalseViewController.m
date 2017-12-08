@@ -294,19 +294,5 @@
  10                 9
  */
 
-#pragma mark References
-
-/*
- -MZTimerLabel from https://github.com/mineschan/MZTimerLabel  implementation of code from example project and m files
- - Line break code from https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
- -segues from Lab 3 
- -Audio implementation from https://codewithchris.com/avaudioplayer-tutorial/
- -functions from Lab 1
- -Setting Borders: https://stackoverflow.com/questions/510382/how-do-i-create-a-round-cornered-uilabel-on-the-iphone
- -MMDDrawerController by MutualMobile-- fetched from Github.com
-  Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel
- -UIALertController from Documentation and API Reference.
-
- */
 
 @end

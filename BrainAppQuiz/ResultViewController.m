@@ -126,7 +126,7 @@
 
 - (IBAction)chooseanother:(id)sender {
     
-    // Same code used here in ViewController. This code initiates the MMDrawerController. This method uses the app delegate instead. Howev
+    // Same code used here in ViewController. This code initiates the MMDrawerController. This method uses the app delegate instead. The MMDrawerController is declared as self.funcsidep
     
     
     AppDelegate *appdel = (AppDelegate*)[[UIApplication sharedApplication] delegate]; //created a type for app delegate. it has been imported here.
@@ -159,10 +159,17 @@
 }
 
 -(void) displayfinalscore{
+       // The passed on score is calculated based on how many points the user deducted and added when answering the questions. The final score is calculated by using a linear equation
     
+    //final score  = (passsedonscore x F) x 1000/passedontime  F is the multiplier and this depends on the score. A higher score means a greater multiplier.
+    // In these if statments, the value of F (multiplier) changes accordinngly. The score (self.score) is calculated and the morphlabelscore label is set to the score value (it is animated)
+    
+    // The highest score the user can get is 110 and the final boundary has the largest multiplier.
+    
+#pragma mark Calculating score
+
     if (self.passedonscore <10){
-        
-         self.score = (self.passedonscore * 1) + (1000/self.passedontime);
+                 self.score = (self.passedonscore * 1) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -171,7 +178,7 @@
     
     else if (self.passedonscore >=10 && self.passedonscore <15){
         
-        self.score = (self.passedonscore * 1.1) + (1000/self.passedontime);
+        self.score = (self.passedonscore * 1.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -179,18 +186,15 @@
     }
     else if (self.passedonscore >=15 && self.passedonscore <20){
         
-         self.score = (self.passedonscore * 1.3) + (1000/self.passedontime);
+         self.score = (self.passedonscore * 2) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
 
-
-
-        
     }
     else if (self.passedonscore >=20 && self.passedonscore <25){
         
-        self.score = (self.passedonscore * 1.5) + (1000/self.passedontime);
+        self.score = (self.passedonscore * 2.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -200,7 +204,7 @@
     
     else if (self.passedonscore >=25 && self.passedonscore <30){
         
-       self.score = (self.passedonscore * 1.7) + (1000/self.passedontime);
+       self.score = (self.passedonscore * 3) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -209,7 +213,7 @@
     
     else if (self.passedonscore>=30 && self.passedonscore < 50){
         
-      self.score = (self.passedonscore * 1.9) + (1000/self.passedontime);
+      self.score = (self.passedonscore * 3.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -217,7 +221,7 @@
     }
     
     else if (self.passedonscore>= 50 && self.passedonscore < 70 ){
-         self.score = (self.passedonscore * 2) + (1000/self.passedontime);
+         self.score = (self.passedonscore * 4.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -226,15 +230,15 @@
 
     else if (self.passedonscore >= 70 && self. passedonscore <80){
         
-        self.score = (self.passedonscore * 2.2) + (1000/self.passedontime);
+        self.score = (self.passedonscore * 5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
     }
     
-    else if (self.passedonscore >= 90 && self.passedonscore <100){
+    else if (self.passedonscore >= 80 && self.passedonscore <100){
         
-         self.score = (self.passedonscore * 2.4) + (1000/self.passedontime);
+         self.score = (self.passedonscore * 7.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
@@ -243,19 +247,21 @@
 
     else if (self.passedonscore >=100){
         
-         self.score = (self.passedonscore * 2.6) + (1000/self.passedontime);
+         self.score = (self.passedonscore * 8.5) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
         
     }
     
-    ///////////
+#pragma mark Setting the improvements/explanations     
+
+    //Here the self.score is then used to set the explanations and some improvements for the user. The boundaries are similar to the previous if statments in that in this case, each boundary has been multiplied by 10. The improvement is then animated using RQShineLabel.
     
-    if (self.score <100){
+    if (self.score <100){   // if the score from previous if statement is less than 0 --
         
-        self.improvementlabel.text = @"Try harder next time";
-        [self.improvementlabel shine];
+        self.improvementlabel.text = @"Try harder next time"; // improvement label is printed with text
+        [self.improvementlabel shine]; // the UILable is the animated with RQShineLabel. This pattern repeats for different boundaries.
         
         NSLog(@"first");
     }
@@ -313,7 +319,7 @@
         NSLog(@"six");
     }
     
-    else if (self.score >= 900 && self.score <1000){
+    else if (self.score >= 800 && self.score <1000){
         
 
         self.improvementlabel.text =  @"You've finally done it! You're nearly an expert in this topic";
@@ -323,13 +329,13 @@
     
     else if (self.score >=1000){
         
-        self.improvementlabel.text = @"You're a legend! I should hire you for new questions! (Or you answered the questions really quickly...)";
+        self.improvementlabel.text = @"You're a legend! I should hire you for new questions!";
         [self.improvementlabel shine];
         NSLog(@"six");
         
     }
     
-    [ProgressHUD showSuccess];
+    [ProgressHUD showSuccess]; /// This is a push notification telling the user the score calculation is finished.
 }
 
 

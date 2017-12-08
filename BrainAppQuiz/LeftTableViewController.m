@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = [[implementtypeanddes alloc]init];
+    self.data = [[implementtypeanddes alloc]init]; // allocate memory for data model
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

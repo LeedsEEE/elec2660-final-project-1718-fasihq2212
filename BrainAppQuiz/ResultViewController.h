@@ -37,7 +37,6 @@
 @property NSInteger passedonscore; // passed on score and time
 @property NSTimeInterval passedontime;
 @property (nonatomic, strong) MMDrawerController *callfuncsidep; // MMDrawerController callfuncisdep is declared so it can be used
-@property NSNumber* time;
 @property int score;
 //score is decalred.
 

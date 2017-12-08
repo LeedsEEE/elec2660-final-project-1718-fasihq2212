@@ -16,13 +16,12 @@
 
 
 @interface failViewController : ViewController
-@property (weak, nonatomic) IBOutlet RQShineLabel *scorefinalnegative;
 
-@property (nonatomic, strong) NSString *functest;
-
-- (IBAction)failtry:(UIButton *)sender;
-- (IBAction)choosefail:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet RQShineLabel *scorefinalnegative;   //view controller that notifies user that the score has fallen below 0
+@property (nonatomic, strong) NSString *functest; // type of test passed from previous view controller
+- (IBAction)failtry:(UIButton *)sender; // try again button action
+- (IBAction)choosefail:(UIButton *)sender; // choose another category button actions
 @property (weak, nonatomic) IBOutlet UIButton *tryagainp;
-@property (weak, nonatomic) IBOutlet UIButton *chooseanother;
+@property (weak, nonatomic) IBOutlet UIButton *chooseanother; //  property for each button
 
 @end

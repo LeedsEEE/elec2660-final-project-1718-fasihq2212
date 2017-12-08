@@ -95,14 +95,6 @@ self.drawercontroller = [[MMDrawerController alloc]initWithCenterViewController:
  EDIT> The use of app delegate has been removed and a simple presentviewcontroller function is used to carry out animation
  */
 
- #pragma mark References
 
-/*
--MMDDrawerController by MutualMobile-- fetched from Github.com
--Implementation of code from https://www.youtube.com/watch?v=snYmY138RIs by Akash Patel
--Audio implementation from https://codewithchris.com/avaudioplayer-tutorial/
--Setting Borders: https://stackoverflow.com/questions/510382/how-do-i-create-a-round-cornered-uilabel-on-the-iphone
-
-*/
 
 @end

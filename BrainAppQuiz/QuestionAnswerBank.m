@@ -10,9 +10,7 @@
 
 @implementation QuestionAnswerBank
 
-@synthesize ad;
-
-
+ // In the init function, the questions are declared here as well as the answers the choices for each category. Each of the questions, answers, and choices are NSArrays.
 - (instancetype)init
 {
     self = [super init];
@@ -366,17 +364,17 @@
 
     
     
--(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index{
+-(NSString*) printquestion: (NSString*) testtypefunc :(NSInteger) index{ // printquestion function.
     
     
 
-    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
+    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){ //if the testtype is Numerical Reasoning, we will access the question from the questionfornumerical array at index 'index' which will be a value set. (ThirdViewController - index = self.questionnumber)
         
        _finalquestion = [self.questionfornumerical objectAtIndex: index];
         
     }
     
-    else if ([testtypefunc isEqualToString:@"General Knowledge"]){
+    else if ([testtypefunc isEqualToString:@"General Knowledge"]){ //Same concept applied
         
         
         _finalquestion = [self.questionforgeneral objectAtIndex: index];
@@ -388,11 +386,12 @@
 
     }
      
-    return _finalquestion;
+    return _finalquestion;  //the question is then returned as a string
     
 }
 
--(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index{
+-(NSString*) printanswerchoices: (NSString*) testtypefunc :(NSInteger) index{ //if the testtype is Numerical Reasoning, we will access the choice from the questionfornumerical array at index 'index' which will be a value set. (ThirdViewController - index = self.questionnumber + n )
+
     
     if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
         
@@ -410,14 +409,14 @@
         _choice = [self.choicesforgeneral objectAtIndex:index];
     }
   
-    return _choice;
+    return _choice; // choice is then returned
 }
 
--(NSInteger*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index{
+-(NSInteger*) checkanswer: (NSString*) testtypefunc :(NSString*) answer :(NSInteger) index{ // Here the chosen answer is compared.
     
-    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){
+    if ([testtypefunc isEqualToString:@"Numerical Reasoning"]){ // if the type of test is numerical
         
-        if ([answer isEqualToString: [self.answerfornumerical objectAtIndex:index]]){
+        if ([answer isEqualToString: [self.answerfornumerical objectAtIndex:index]]){ // if the answer is the same as the answer in the answerfornumerical array at index 'index' , a notfication will come up showing success and printing Excellent
             
             [ProgressHUD showSuccess:@"Excellent"];
             self.score = self.score + 1;
@@ -425,15 +424,15 @@
         }
         else {
             
-            [ProgressHUD showError:@"Wrong"];
+            [ProgressHUD showError:@"Wrong"]; // otherwise it will print an error
          
            
         }
     }
     
  else if ([testtypefunc isEqualToString:@"General Knowledge"]){
-        
-        if ([answer isEqualToString:[self.answerforgeneral objectAtIndex:index]]){
+     
+        if ([answer isEqualToString:[self.answerforgeneral objectAtIndex:index]]){ // Same code pasted in each condition, same concept. 
             
             
             [ProgressHUD showSuccess:@"Excellent"];
