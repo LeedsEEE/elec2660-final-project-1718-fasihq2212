@@ -238,7 +238,7 @@
     
     else if (self.passedonscore >= 80 && self.passedonscore <100){
         
-         self.score = (self.passedonscore * 6.5) + (1000/self.passedontime);
+         self.score = (self.passedonscore * 7.0) + (1000/self.passedontime);
         [self.morphlabelscore setText:[NSString stringWithFormat:@"%i", self.score] withCompletionBlock:^{
             NSLog(@"done");
         }];
