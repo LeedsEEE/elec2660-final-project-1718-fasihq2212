@@ -56,6 +56,21 @@
  - All sounds have been obtained from https://freesound.org/
  
  - perfromselector method called on ResultViewController from https://developer.apple.com/documentation/objectivec/nsobject/1416176-performselector
+ 
+ - Questions from 
+ 
+ Numerical
+ 
+https://www.buzzfeed.com/floperry/maths-challenge-is-impossible
+http://metro.co.uk/2015/10/15/quiz-these-tricky-maths-problems-are-very-difficult-to-solve-5439872/
+ 
+ General Knowledge 
+ https://www.indiabix.com/general-knowledge/questions-and-answers/
+ 
+ True or False Trivia
+ 
+ http://readymadepubquiz.com/quiz-18-round-5-true-or-false/
+ 
 
 */
 @end

@@ -276,7 +276,7 @@
         
                                    @"All of them",
                                    @"discovered that the movement of pendulum produces a regular time measurement",
-                                   @"discovered four satellites of Jupite",
+                                   @"discovered four satellites of Jupiter",
                                    @"developed the telescope",
         
                                    @"1843",

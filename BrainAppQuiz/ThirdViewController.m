@@ -223,7 +223,7 @@
  
 
         self.questionnumber = arc4random() % 18; //  a new question is generated
-           // self.questionnumber = self.questionnumber + 1;
+            //self.questionnumber = self.questionnumber + 1;
         self.alpha = self.alpha + 1; // alpha incremented by 1 so second question is then printed
         self.Questionlabelfirst.text = [controller nextquestion:self.testtype :self.questionnumber]; // second random question is printed and its choices.
         self.Questionlabelfirst.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
